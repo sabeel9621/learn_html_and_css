@@ -1,110 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: rgb(241, 204, 204);
+            }
 
-        td,th{
-            border: 1px solid black;
-            height: 80px;
-            /* background-color: grey; */
-            width: 30px;
-            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(247, 27, 15, 0.35) 0px -2px 6px 0px inset; */
-        }
-        th{
-            background-color:rgb(231, 254, 103);
-        }
+            td,
+            th {
+                padding: 10px 20px;
+                border: 2px solid black;
+                height: 80px;
+                /* border-radius: 5px; */
+                width: 50px;
+                /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(247, 27, 15, 0.35) 0px -2px 6px 0px inset; */
+            }
 
+            th {
+                background-color: rgb(230, 233, 218);
+                height: 20px;
+            }
 
-        table{
+            td {
+                text-align: center;
+                height: 100px;
+            }
 
-            border: 2px solid black;
-            width: 60%;
-            margin: auto;
-            margin-top: 10%;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-        tr:nth-of-type(odd){
-            background-color: aquamarine;
-        }
-        
+            table {
+                padding-left: 30px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                padding-right: 30px;
+                border: 2px solid black;
+                border-radius: 10px;
+                width: 60%;
+                margin: auto;
+                margin-top: 2%;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+                    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                background-color: rgb(54, 95, 14);
+            }
 
-        h2{
-            text-align: center;
+            tr:nth-of-type(odd) {
+                background-color: aquamarine;
+            }
 
-        font-style: italic;
-        font-weight: bold;
-        font-size: 30px;
-        }
+            h2 {
+                text-align: center;
 
+                font-style: italic;
+                font-weight: bold;
+                font-size: 30px;
+            }
 
-    </style>
-</head>
-<body>,
+            #lane {
+                background-color: rgb(104, 179, 6);
+            }
 
+            #swim {
+                background-color: rgb(60, 138, 247);
+            }
 
-    <table>
+            #equacise {
+                background-color: hsl(324, 91%, 46%);
+            }
 
+            .aquasice {
+                background-color: rgb(249, 102, 195);
+            }
 
-<thead>
-<tr>
+            .second {
+                background-color: rgb(43, 206, 206);
+            }
 
-    <th>monday</th>
-    <th>tuesday</th>
-    <th>wednesday</th>
-    <th>thirsday</th>
-    <th>friday</th>
-    <th>saturday</th>
-    <th>sunday</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>public swim 6:30-10:30</td>
-    <td>public swim 6:30-9:00</td>
-    <td>public swim 6:30-9:00</td>
-    <td>public swim 6:30-11:15</td>
-    <td>public swim 6:30-9:00</td>
-    <td>lane swim 8:00-9:00</td>
-    <td>lane swim 8:00-9:00</td>
-</tr>
-<tr>
-    <td>aquasice 10:30-11:15</td>
-    <td>aquasice 9:15-10:00</td>
-    <td>education 9:00-12:00</td>
-    <td>aquasice 11:15-12:00</td>
-    <td>education 9:00-12:00</td>
-    <td>oldhem active 9:00-13:00</td>
-    <td>public swim 9:00-11:00</td>
-</tr>
-<tr>
-    <td>lane swim 11:30-13:00</td>
-    <td>parent and baby class 9:15-10:00</td>
-    <td>lane swim 12:00-13:00</td>
-    <td>lane swim 12:00-13:00</td>
-    <td>lane swim12:00-13:00</td>
-    <td>parent and baby class 12:00-12:45</td>
-    <td>equacise 11:00-11:45</td>
-</tr>
-<tr>
-    <td>education 6:30-10:30</td>
-    <td>public swim 6:30-9:00</td>
-    <td>public swim 6:30-9:00</td>
-    <td>education 6:30-11:15</td>
-    <td>public swim 6:30-9:00</td>
-    <td>public swim 8:00-9:00</td>
-    <td>oldhem swim 8:00-9:00</td>
-</tr>
+            #oldhem {
+                background-color: rgb(250, 140, 7);
+            }
 
-</tbody>
+            .public {
+                background-color: rgb(62, 139, 227);
+            }
 
+            #parent {
+                background-color: rgb(235, 11, 138);
+            }
 
+            .lane {
+                background-color: rgb(104, 179, 6);
+            }
 
+            #education {
+                background-color: rgb(20, 125, 195);
+            }
 
+            .readme {
+                background-color: rgb(45, 213, 213);
+            }
 
+            #publicswim {
+                background-color: rgb(250, 140, 7);
+            }
+        </style>
+    </head>
 
-    </table>
-</body>
+    <body>
+        ,
+
+        <table>
+            <thead>
+                <tr>
+                    <th>monday</th>
+                    <th>tuesday</th>
+                    <th>wednesday</th>
+                    <th>thirsday</th>
+                    <th>friday</th>
+                    <th>saturday</th>
+                    <th>sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="swim">public swim 6:30-10:30</td>
+                    <td id="swim">public swim 6:30-9:00</td>
+                    <td id="swim">public swim 6:30-9:00</td>
+                    <td id="swim">public swim 6:30-11:15</td>
+                    <td id="swim">public swim 6:30-9:00</td>
+                    <td id="lane">lane swim 8:00-9:00</td>
+                    <td id="lane">lane swim 8:00-9:00</td>
+                </tr>
+                <tr>
+                    <td class="aquasice">aquasice 10:30-11:15</td>
+                    <td id="equacise">aquasice 9:15-10:00</td>
+                    <td class="second">education 9:00-12:00</td>
+                    <td id="equacise">aquasice 11:15-12:00</td>
+                    <td class="second">education 9:00-12:00</td>
+                    <td id="oldhem">oldhem active 9:00-13:00</td>
+                    <td class="public">public swim 9:00-11:00</td>
+                </tr>
+                <tr>
+                    <td class="lane">lane swim 11:30-13:00</td>
+                    <td id="parent">parent and baby class 9:15-10:00</td>
+                    <td class="lane">lane swim 12:00-13:00</td>
+                    <td class="lane">lane swim 12:00-13:00</td>
+                    <td class="lane">lane swim12:00-13:00</td>
+                    <td id="parent">parent and baby class 12:00-12:45</td>
+                    <td id="parent">equacise 11:00-11:45</td>
+                </tr>
+                <tr>
+                    <td class="readme">education 6:30-10:30</td>
+                    <td id="education">public swim 6:30-9:00</td>
+                    <td id="education">public swim 6:30-9:00</td>
+                    <td class="readme">education 6:30-11:15</td>
+                    <td id="publicswim">public swim 6:30-9:00</td>
+                    <td id="education">public swim 8:00-9:00</td>
+                    <td id="education">oldhem swim 8:00-9:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 </html>
