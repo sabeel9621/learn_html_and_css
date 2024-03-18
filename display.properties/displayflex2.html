@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *body{
-            margin:0% ;
+        *body {
+            margin: 0%;
             padding: 0%;
             box-sizing: border-box;
         }
-        .contaner{
-width: 80%;
+
+        .contaner {
+            width: 80%;
             height: 220px;
             margin: auto;
             border: 2px solid green;
             display: flex;
             flex-wrap: wrap;
-        align-items:stretch;
-        padding: 5px;
-        gap: 5px;
-        margin-top: 10px;
-        background-color: bisque;
+            align-items: stretch;
+            padding: 5px;
+            gap: 5px;
+            margin-top: 10px;
+            background-color: bisque;
 
         }
-        .item{
+
+        .item {
             /* background-color: chartreuse; */
-width: 20%;
-border: 2px solid blanchedalmond;
-/* margin: 10px; */
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            width: 20%;
+            border: 2px solid blanchedalmond;
+            /* margin: 10px; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
-        .item img{
-        width: 100%;
-        /* height: 200px; */
+
+        .item img {
+            width: 100%;
+            /* height: 200px; */
         }
-        .main_cont{
+
+        .main_cont {
             /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
             width: 80%;
             height: 220px;
@@ -43,28 +49,29 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
             border: 2px solid rgb(246, 246, 4);
             display: flex;
             flex-wrap: wrap;
-        align-items:flex-start;
-        padding: 5px;
-        gap: 5px;
-        /* padding-left: 15%; */
-        margin-top: 10px;
-        background-color: rgb(234, 255, 149);
+            align-items: flex-start;
+            padding: 5px;
+            gap: 5px;
+            /* padding-left: 15%; */
+            margin-top: 10px;
+            background-color: rgb(234, 255, 149);
         }
 
-        .item1{
+        .item1 {
             width: 20%;
-border: 2px solid blanchedalmond;
-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-/* margin: 10px; */
-/* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+            border: 2px solid blanchedalmond;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+            /* margin: 10px; */
+            /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 
         }
-        .item1 img{
+
+        .item1 img {
             width: 100%;
 
         }
 
-        .main1_cont{
+        .main1_cont {
             /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
             width: 80%;
             height: 220px;
@@ -72,26 +79,27 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
             border: 2px solid rgb(10, 17, 10);
             display: flex;
             flex-wrap: wrap;
-        align-items:flex-end;
-        padding: 5px;
-        gap: 5px;
-        /* padding-left: 15%; */
-        margin-top: 10px;
-        background-color: rgb(92, 254, 138);
+            align-items: flex-end;
+            padding: 5px;
+            gap: 5px;
+            /* padding-left: 15%; */
+            margin-top: 10px;
+            background-color: rgb(92, 254, 138);
         }
 
-        .item1{
+        .item1 {
             width: 20%;
-border: 2px solid blanchedalmond;
-/* margin: 10px; */
+            border: 2px solid blanchedalmond;
+            /* margin: 10px; */
 
         }
-        .item1 img{
+
+        .item1 img {
             width: 100%;
 
         }
 
-        .main2_cont{
+        .main2_cont {
             /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
             width: 80%;
             height: 220px;
@@ -99,50 +107,56 @@ border: 2px solid blanchedalmond;
             border: 2px solid rgb(216, 92, 4);
             display: flex;
             flex-wrap: wrap;
-        align-items:center;
-        padding: 5px;
-        gap: 5px;
-        /* padding-left: 15%; */
-        margin-top: 10px;
-        background-color: rgb(106, 244, 244)
+            align-items: center;
+            padding: 5px;
+            gap: 5px;
+            /* padding-left: 15%; */
+            margin-top: 10px;
+            background-color: rgb(106, 244, 244)
         }
 
-        .item3{
+        .item3 {
             width: 20%;
-border: 2px solid blanchedalmond;
-/* margin: 10px; */
+            border: 2px solid blanchedalmond;
+            /* margin: 10px; */
 
         }
-        .item3 img{
+
+        .item3 img {
             width: 100%;
 
         }
     </style>
 </head>
+
 <body>
 
     <div class="contaner">
 
         <div class="item">Nature
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400" alt="">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400"
+                alt="">
 
         </div>
         <h2></h2>
         <p></p>
         <div class="item">Nature
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400" alt="">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400"
+                alt="">
 
         </div>
         <h2></h2>
         <p></p>
         <div class="item">Nature
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400" alt="">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400"
+                alt="">
 
         </div>
         <h2></h2>
         <p></p>
         <div class="item">Nature
-            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400" alt="">
+            <img src="https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=600&h=400"
+                alt="">
 
         </div>
         <h2></h2>
@@ -150,34 +164,34 @@ border: 2px solid blanchedalmond;
     </div>
 
     <div class="main_cont">
-<div class="item1">THE taj-mahal
-    <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
-        alt="">
+        <div class="item1">THE taj-mahal
+            <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                alt="">
 
-</div>
-<h2></h2>
-<p></p>
-<div class="item1">THE taj-mahal
-    <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
-        alt="">
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="item1">THE taj-mahal
+            <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                alt="">
 
-</div>
-<h2></h2>
-<p></p>
-<div class="item1">THE taj-mahal
-    <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
-        alt="">
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="item1">THE taj-mahal
+            <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                alt="">
 
-</div>
-<h2></h2>
-<p></p>
-<div class="item1">THE taj-mahal
-    <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
-        alt="">
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="item1">THE taj-mahal
+            <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="
+                alt="">
 
-</div>
-<h2></h2>
-<p></p>
+        </div>
+        <h2></h2>
+        <p></p>
 
     </div>
 
@@ -212,36 +226,37 @@ border: 2px solid blanchedalmond;
         <p></p>
 
     </div>
-        <div class="main2_cont">
-            <div class="item3">Nature
-                <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
-                    alt="">
-
-            </div>
-            <h2></h2>
-            <p></p>
-            <div class="item3">Nature
-                <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
-                    alt="">
-
-            </div>
-            <h2></h2>
-            <p></p>
-            <div class="item3">Nature
-                <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
-                    alt="">
-
-            </div>
-            <h2></h2>
-            <p></p>
-            <div class="item3">Nature
-                <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
-                    alt="">
-
-            </div>
-            <h2></h2>
-            <p></p>
+    <div class="main2_cont">
+        <div class="item3">Nature
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
+                alt="">
 
         </div>
+        <h2></h2>
+        <p></p>
+        <div class="item3">Nature
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
+                alt="">
+
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="item3">Nature
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
+                alt="">
+
+        </div>
+        <h2></h2>
+        <p></p>
+        <div class="item3">Nature
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kxrvi4w0/wallpaper/5/a/u/92-62-1-poster-no-48-color-solution-original-imaga5qyv2qws2br.jpeg?q=90&crop=false"
+                alt="">
+
+        </div>
+        <h2></h2>
+        <p></p>
+
+    </div>
 </body>
+
 </html>
