@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *body {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+
+            form {
+                width: 40%;
+                margin: auto;
+                padding-top: 10px;
+                padding: 10px;
+                /* border: 2px solid black; */
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+
+            input {
+                width: 95%;
+                font-size: 25px;
+                font-style: oblique;
+                font-weight: normal;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+                    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+                    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+                border: none;
+                margin-top: 10px;
+            }
+
+            label {
+                font-size: 20px;
+            }
+
+            span {
+                color: rgb(249, 183, 16);
+            }
+
+            .d {
+                width: 40%;
+            }
+
+            .textarea {
+                width: 95%;
+                margin-top: 10px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+                    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+                    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+                border: none;
+            }
+
+            h2 {
+                padding: 5px;
+                text-align: center;
+                color: rgb(251, 248, 248);
+                width: 20%;
+                background-color: rgb(6, 6, 242);
+                margin: 0%;
+                text-transform: capitalize;
+                font-weight: 500;
+            }
+
+            button {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                background-color: blue;
+                border-radius: 5px;
+                border: none;
+                height: 30px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>How to layout a form</h2>
+        <br /><br />
+        <button 1>cancel</button>
+        <button type="button">Create</button>
+        <form action="">
+            <label for=""><span>*</span>Emp first name</label>
+            <input type="text" /><br /><br />
+            <label for="">Emp Middle initial</label>
+            <input type="text" /><br /><br />
+            <label for=""><span>*</span>Emp last name</label>
+            <input type="text" /><br /><br />
+            <label for=""><span>*</span>Emp part or full time</label>
+            <input type="text" /><br /><br />
+            <label for="">Empxp salary</label>
+            <input type="text" /><br /><br />
+            <label for="">Emp Dept</label>
+            <input type="text" /><br /><br />
+            <label for="">Emp hiredate</label>
+            <input class="d" type="date" /><br /><br />
+            <label for="">Emp manager</label>
+            <input type="text" /><br /><br />
+            <label for="">Emp special info</label>
+            <textarea
+                class="textarea"
+                name=""
+                id=""
+                cols="30"
+                rows="5"></textarea
+            ><br /><br />
+            <label for="">Emp Telecommute</label>
+            <input type="number" /><br /><br />
+            <label for=""><span>*</span>Rec Create date</label>
+            <input type="text" /><br /><br />
+            <label for="">Rec update date</label>
+            <input type="text" />
+        </form>
+    </body>
+</html>
