@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>30th march assignment</title>
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+            body {
+                height: 800px;
+                margin-top: 2%;
+                background: linear-gradient(
+                    rgb(253, 233, 242) 0%,
+                    rgb(253, 240, 232) 100%,
+                    rgb(253, 242, 232) 100%
+                );
+            }
+            .container {
+                width: 30%;
+                background: #ffffff;
+
+                /* border: 2px solid rgb(236, 239, 236); */
+                box-shadow: rgba(253, 251, 251, 0.05) 0px 0px 0px 1px;
+                border-radius: 10px;
+                height: 100vh;
+                margin: auto;
+            }
+            .box {
+                width: 100%;
+                height: 30%;
+            }
+            .box img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0px 0px;
+            }
+            h6 {
+                margin-top: 10%;
+                text-align: center;
+                height: 10%;
+                color: #353543;
+                font-size: 20px;
+                /* font-weight: bold; */
+                font-family: sans-serif;
+                margin-right: 24%;
+            }
+            input {
+                border: none;
+                width: 20%;
+                border-bottom: 1px solid rgb(178, 177, 177);
+                margin-left: 5px;
+            }
+            p {
+                color: #838ba3;
+                margin-bottom: 20px;
+                font-size: 12px;
+                margin-left: 40px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+            }
+            #phone {
+                width: 60%;
+                color: #838ba3;
+            }
+            .content {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button {
+                width: 100%;
+                /* border: 2px solid rgb(27, 10, 212); */
+                /* background-color: blue; */
+                border: none;
+                text-align: center;
+                margin-top: 10%;
+                /* height: 80%; */
+            }
+            .button button {
+                background-color: rgb(142, 12, 120);
+                border: none;
+                color: #ffffff;
+                width: 80%;
+                height: 50px;
+                border-radius: 5px;
+                font-size: 18px;
+            }
+            .content1 {
+                margin-top: 32%;
+            }
+            .content1 h4 {
+                color: #838ba3;
+                font-size: 12px;
+            }
+            span {
+                color: #9f2089;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            b {
+                color: #838ba3;
+            }
+            .text {
+                font-weight: bold;
+                /* color: 2px solid black; */
+                font-size: 16px;
+                color: #0a0a0a;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <img
+                    src="https://images.meesho.com/images/marketing/1661417516766.webp"
+                    alt="" />
+            </div>
+            <h6>Sign Up to view your profile</h6>
+            <p>country</p>
+            <div class="content">
+                <input
+                    class="text"
+                    type="text"
+                    placeholder="🇮🇳 +91" />&nbsp;&nbsp;
+                <input id="phone" type="text" placeholder="Phone Number" />
+            </div>
+            <div class="button">
+                <button>continue</button>
+                <div class="content1">
+                    <h4>By continuing, you agree to Meesho’s</h4>
+                    <span>Terms & Conditions <b>and</b></span>
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
