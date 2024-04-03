@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>w3.css tamplates</title>
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+
+            .header {
+                height: 10vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                /* border: 2px solid black; */
+                background-color: #ffffff;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .left ul {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px;
+                letter-spacing: 5px;
+            }
+
+            .left ul li:nth-child(1) {
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                list-style: none;
+                padding: 10px;
+            }
+            .left ul li:nth-child(2) {
+                margin-left: 10px;
+                font-size: 20px;
+                font-family: sans-serif;
+                list-style: none;
+                padding: 10px;
+            }
+            .left ul li:nth-child(3) {
+                padding: 10px;
+                list-style: none;
+                font-size: 20px;
+            }
+
+            .right ul {
+                display: flex;
+                justify-content: end;
+                letter-spacing: 5px;
+            }
+            .right ul li {
+                /* margin: 10px; */
+                list-style: none;
+                font-size: 20px;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .right ul li:nth-child(1) {
+                margin-left: 20px;
+                padding: 10px;
+                color: solid black;
+                font-weight: bolder;
+            }
+
+            .right ul li:nth-child(2) {
+                padding: 10px;
+            }
+
+            .right ul li:hover {
+                background-color: #c3c2c2;
+                cursor: pointer;
+            }
+            .left ul li:hover {
+                background-color: #c3c2c2;
+                cursor: pointer;
+            }
+
+            .container {
+                height: 100vh;
+                /* background-color: black; */
+                color: rgb(19, 19, 19);
+                position: relative;
+                background: url("https://www.w3schools.com/w3images/architect.jpg");
+                background-attachment: scroll;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .content b {
+                font-size: 35px;
+                /* border: 2px solid black; */
+
+                /* background-color: black;opacity: 0.7; */
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            b {
+                position: absolute;
+                border: 2px white;
+                /* padding: 0px 20px; */
+                padding: 8px 16px 15px 15px;
+                width: 70px;
+                background-color: #000000;
+                opacity: 0.7;
+                text-align: center;
+                top: 18px;
+                right: 100px;
+            }
+
+            span {
+                /* position: absolute; */
+                position: absolute;
+                top: 345px;
+                right: 600px;
+
+                font-size: 35px;
+                letter-spacing: 5px;
+                color: #ffffff;
+                font-family: sans-serif;
+            }
+            p {
+                font-size: 25px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                border-bottom: 2px solid #eee;
+                height: 10%;
+                padding-top: 40px;
+                /* padding: 10px; */
+                padding-bottom: 15px;
+                padding-left: 20px;
+            }
+            .main-cont {
+                /* background-color: black; */
+                /* height: 100vh; */
+                /* display: flex; */
+                min-height: 80vh;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                /* margin: 0px 10px; */
+            }
+            .item {
+                height: 350px;
+                width: 360px;
+                /* background-color: yellow; */
+                /* border: 2px solid red; */
+                margin: 5px;
+            }
+            #item1 {
+                background: url(https://www.w3schools.com/w3images/house5.jpg);
+            }
+            #item2 {
+                background: url(https://www.w3schools.com/w3images/house2.jpg);
+            }
+            #item3 {
+                background: url(https://www.w3schools.com/w3images/house3.jpg);
+            }
+            #item4 {
+                background: url(https://www.w3schools.com/w3images/house4.jpg);
+            }
+            #item5 {
+                background: url(https://www.w3schools.com/w3images/house2.jpg);
+            }
+            #item6 {
+                background: url(https://www.w3schools.com/w3images/house5.jpg);
+            }
+            #item7 {
+                background: url(https://www.w3schools.com/w3images/house4.jpg);
+            }
+            #item8 {
+                background: url(https://www.w3schools.com/w3images/house3.jpg);
+            }
+
+            h4 {
+                font-size: 15px;
+                padding-left: 10px;
+                padding-top: 10px;
+                height: 40px;
+                text-align: center;
+                /* padding: 10px; */
+                background-color: black;
+                color: #ffffff;
+                width: 46%;
+            }
+            pre {
+                font-size: 25px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                border-bottom: 2px solid #eee;
+                height: 10%;
+                padding-top: 30px;
+                /* padding: 10px; */
+                padding-bottom: 15px;
+                padding-left: 25px;
+                font-family: Arial, sans-serif;
+            }
+            sub {
+                /* border: 2px solid black; */
+                height: 30%;
+                /* background-color: #838383; */
+                font-size: 15px;
+            }
+            .box10 {
+                /* border: 2px solid red; */
+                text-align: justify;
+                margin-left: 20px;
+            }
+
+            .main-container {
+                width: 100%;
+                padding: 10px;
+                margin: auto;
+                /* border: 2px solid green; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .box {
+                min-height: 250px;
+                width: 350px;
+                /* border: 2px solid black; */
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            #box1 img {
+                width: 100%;
+                height: 240px;
+            }
+            #box2 img {
+                width: 100%;
+                height: 240px;
+            }
+            #box3 img {
+                width: 100%;
+                height: 240px;
+            }
+            #box4 img {
+                width: 100%;
+                height: 240px;
+            }
+            .name {
+                height: 50px;
+                /* border: 2px solid rgb(225, 21, 21); */
+                font-size: 24px;
+                font-family: sans-serif;
+                padding: 10px 0px;
+            }
+            .founder {
+                height: 50px;
+                /* border: 2px solid green; */
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #838383;
+                /* margin: 15px 0px; */
+            }
+            .con {
+                height: 50px;
+                /* border: 2px solid yellow; */
+                /* font-size: px; */
+                /* margin: 15px 0px; */
+                font-family: sans-serif;
+                color: #000000;
+                line-height: 1.5x;
+            }
+            button {
+                height: 40px;
+                /* border: 1px solid rgb(228, 9, 177); */
+                width: 100%;
+                font-size: 15px;
+                padding: 8px 16px;
+                background-color: #f1f1f1;
+                border: none;
+                /* border-radius: 5px; */
+                margin-top: 10px;
+            }
+            button:hover {
+                background-color: rgb(209, 210, 210);
+                cursor: pointer;
+            }
+            h3 {
+                font-size: 25px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                border-bottom: 2px solid #eee;
+                height: 10%;
+                padding-top: 30px;
+                /* padding: 10px; */
+                padding-bottom: 15px;
+                padding-left: 38px;
+                font-family: Arial, sans-serif;
+            }
+            .form {
+                width: 95%;
+                margin: auto;
+            }
+            input {
+                /* margin:0px 20px; */
+                width: 100%;
+                height: 37px;
+                padding: 10px;
+                font-size: 18px;
+                font-family: sans-serif;
+                border: none;
+                border: 2px solid #dbd9d9;
+            }
+            sup {
+                font-size: 15px;
+                margin: 37px;
+                /* background-color: #eee; */
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                padding-bottom: 5px;
+            }
+            .submit {
+                width: 100%;
+                margin-top: 5%;
+                margin-bottom: 50px;
+            }
+            button2 {
+                padding: 10px 16px;
+                font-size: 15px;
+                background-color: #000000;
+                color: #ffffff;
+                /* height: 40px; */
+                text-transform: uppercase;
+                font-family: sans-serif;
+            }
+            button2:hover {
+                background-color: #838383;
+                cursor: pointer;
+                color: black;
+            }
+
+            .map {
+                max-width: 95%;
+                margin: auto;
+
+                /* border: 2px solid black; */
+            }
+            .map img {
+                max-width: 100%;
+                height: auto;
+            }
+            /* img{
+    border-style: none;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+} */
+            .footer {
+                height: 50%;
+                border: 2px solid black;
+                background-color: rgb(12, 12, 12);
+                padding: 30px;
+                margin-top: 5px;
+                color: #ffffff;
+            }
+            .footer ul li {
+                font-size: 15px;
+                font-family: vardana, sans-serif;
+            }
+            .footer ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+            .w3schools:hover {
+                color: green;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <b>BR</b>
+                <span>Architects</span>
+            </div>
+
+            <div class="header">
+                <div class="right">
+                    <ul>
+                        <li>BR</li>
+                        <li>Architects</li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <ul>
+                        <li>Projects</li>
+                        <li>about</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>Projects</p>
+
+        <div class="main-cont">
+            <div class="item" id="item1">
+                <h4>summer house</h4>
+            </div>
+            <div class="item" id="item2">
+                <h4>Brick House</h4>
+            </div>
+            <div class="item" id="item3">
+                <h4>Renovated</h4>
+            </div>
+            <div class="item" id="item4">
+                <h4>Barn House</h4>
+            </div>
+            <div class="item" id="item5">
+                <h4>Brick House</h4>
+            </div>
+            <div class="item" id="item6">
+                <h4>summer house</h4>
+            </div>
+            <div class="item" id="item7">
+                <h4>Barn House</h4>
+            </div>
+            <div class="item" id="item8">
+                <h4>Renovated</h4>
+            </div>
+        </div>
+        <pre>About</pre>
+        <div class="box10">
+            <sub
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                maiores ad, ipsa et, accusamus, dolorem eligendi ducimus ratione
+                odit perspiciatis doloremque nam? Corrupti itaque sed
+                necessitatibus esse quo asperiores perspiciatis neque suscipit?
+                Tempore aliquid qui, laboriosam architecto fugiat repudiandae
+                esse, iusto error est praesentium quisquam totam natus in
+                doloremque mollitia, nemo sunt aliquam culpa ut numquam ipsa
+                laudantium perferendis reiciendis et? Fuga maxime, vero ratione
+                in corporis est totam eveniet at quibusdam rem quam voluptatibus
+                quidem iste explicabo nostrum iusto accusamus a odio dolorum ut
+                nihil! Totam qui eligendi nesciunt magni, soluta inventore nam
+                nobis assumenda, aperiam commodi voluptate recusandae.</sub
+            >
+        </div>
+
+        <div class="main-container">
+            <div class="box" id="box1">
+                <div class="image">
+                    <img
+                        src="https://www.w3schools.com/w3images/team2.jpg"
+                        alt="" />
+                </div>
+                <div class="name">John Doe</div>
+                <div class="founder">CEO & Founder</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <button>Contact</button>
+            </div>
+            <div class="box" id="box2">
+                <img
+                    src="https://www.w3schools.com/w3images/team1.jpg"
+                    alt="" />
+                <div class="name">Jane Doe</div>
+                <div class="founder">Architect</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <button>Contact</button>
+            </div>
+            <div class="box" id="box3">
+                <img
+                    src="https://www.w3schools.com/w3images/team3.jpg"
+                    alt="" />
+                <div class="name">Jane Doe</div>
+                <div class="founder">Architect</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <button>Contact</button>
+            </div>
+            <div class="box" id="box4">
+                <img
+                    src="https://www.w3schools.com/w3images/team4.jpg"
+                    alt="" />
+                <div class="name">Jane Doe</div>
+                <div class="founder">Architect</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <button>Contact</button>
+            </div>
+        </div>
+        <h3>Contact</h3>
+        <sup>Lets get in touch and talk about your next project. </sup>
+        <div class="form">
+            <form action="">
+                <input type="text" placeholder="Name" /><br /><br />
+                <input type="text" placeholder="Subject" /><br /><br />
+                <input type="text" placeholder="Email" /><br /><br />
+                <input type="text" placeholder="comment" />
+                <div class="submit">
+                    <button2>send massege</button2>
+                </div>
+            </form>
+        </div>
+        <div class="map">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="" />
+        </div>
+        <div class="footer">
+            <ul>
+                <li>Powered by</li>
+                <li class="w3schools">w3.css</li>
+            </ul>
+        </div>
+    </body>
+</html>
