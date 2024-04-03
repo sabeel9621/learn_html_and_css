@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+            body {
+                height: 800px;
+                margin-top: 2%;
+                background: linear-gradient(
+                    rgb(253, 233, 242) 0%,
+                    rgb(253, 240, 232) 100%,
+                    rgb(253, 242, 232) 100%
+                );
+            }
+            .container {
+                margin: auto;
+                width: 30%;
+                height: 100vh;
+                /* border: 2px solid red; */
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                border-radius: 10px;
+                margin-top: 7%;
+            }
+            .box {
+                /* width: 30%; */
+                height: 30%;
+                /* border:2px dashed green */
+            }
+            .box1 {
+                height: 30%;
+                /* border: 2px dashed blue; */
+            }
+            .box3 {
+                height: 20%;
+                /* border: 2px dashed rgb(42, 66, 7); */
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin-top: 15px;
+            }
+            button {
+                height: 50px;
+                width: 85%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+                /* margin-right: 5px; */
+                background-color: darkmagenta;
+                border: none;
+                border-radius: 5px;
+                color: #ffffff;
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .box4 {
+                height: 20%;
+                /* border: 2px dashed purple ; */
+                text-align: center;
+                margin-top: 32%;
+            }
+            .box img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 10px 0 0;
+            }
+            .box1 h6 {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 10%;
+                margin-right: 38%;
+            }
+
+            .text {
+                border: none;
+                border-bottom: 2px solid rgb(185, 182, 182);
+                width: 15%;
+                padding-bottom: 5px;
+                margin-left: 20px;
+                color: #353543;
+                font-size: 16px;
+                font-weight: bold;
+                /* text-align: center; */
+            }
+            .phone {
+                border: none;
+                border-bottom: 1px solid rgb(211, 209, 209);
+                padding-bottom: 5px;
+                outline: none;
+                width: 68%;
+                font-size: 16px;
+            }
+            p {
+                margin-top: 30px;
+                margin-bottom: 25px;
+                margin-left: 20px;
+            }
+            .box4 h5 {
+                color: #838ba3;
+                font-size: 12px;
+            }
+            span {
+                color: #9f2089;
+                font-size: 13px;
+                cursor: pointer;
+            }
+            b {
+                color: #838ba3;
+            }
+
+            .cont {
+                width: 100%;
+                margin: auto;
+                height: 100%;
+                position: fixed;
+                top: 0;
+            }
+
+            .header {
+                height: 10%;
+                width: 100%;
+                /* border: 2px solid black; */
+                background-color: #ffffff;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .header img {
+                height: 120px;
+                width: 150px;
+                margin-left: 5%;
+            }
+            /* .text2{
+                height: 50px;
+                width: 25%;
+                border: 1px solid #eee;
+                margin-right: 15%;
+                border-radius: 5px;
+                outline: none;
+                padding: 15px;
+                text-transform: capitalize;
+
+            } */
+            .header ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .header ul li {
+                font-size: 15px;
+                font-style: normal;
+                font-family: sans-serif;
+                list-style: none;
+                /* margin-right: 25%; */
+            }
+            .header ul li:nth-child(1) {
+                border-right: 2px solid #eee;
+                margin: 10px;
+                padding: 10px;
+            }
+            .header ul li:nth-child(2) {
+                border-right: 2px solid #eee;
+                margin: 10px;
+                padding: 10px;
+            }
+            #New {
+                margin-right: 90px;
+            }
+
+            i {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+            .text2 {
+                border: none;
+                padding: 0;
+            }
+
+            input.text2 {
+                width: 25%;
+                height: 45px;
+                border: 1px solid #555;
+                border-radius: 5px;
+                display: block;
+                padding: 9px 4px 9px 40px;
+                margin-right: 25%;
+                outline: none;
+                font-size: 15px;
+                background: transparent
+                    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+                    no-repeat 13px center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="header">
+                <img
+                    src="https://www.meesho.com/assets/svgicons/meeshoLogo.svg"
+                    alt="" />
+
+                <input
+                    class="text2"
+                    type="search"
+                    placeholder="Try kurti,saree or search by product code" />
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-mobile-screen"></i> </span>
+                        Download App
+                    </li>
+                    <li>Become a suplier</li>
+                    <li id="New">Newsroom</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <img
+                    src="https://images.meesho.com/images/marketing/1661417516766.webp"
+                    alt="" />
+            </div>
+            <div class="box1">
+                <h6>Sign Up to view your profile</h6>
+                <p>country</p>
+                <input
+                    class="text"
+                    type="text"
+                    placeholder="🇮🇳 +91" />&nbsp;&nbsp;
+                <input class="phone" type=" text" placeholder="Phone number" />
+            </div>
+            <div class="box3">
+                <button>Continue</button>
+            </div>
+            <div class="box4">
+                <h5>By continuing, you agree to Meesho’s</h5>
+                <span>Terms & Conditions </span><b>and</b>
+                <span>Privacy Policy</span>
+            </div>
+        </div>
+    </body>
+</html>
