@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            height: 800px;
+        }
+        .container{
+            width: 100%;
+            min-height: 100%;
+            /* border: 2px solid black; */
+            position: relative;
+        }
+        #box1{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid black; */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            position:fixed;
+            top: 0px;
+            background-color: #f44336;
+        }
+        .inner1{
+            height: 40%;
+            /* border: 2px solid yellow; */
+
+        }
+        .content{
+            /* border: 2px  dashed black; */
+            height: 100%;
+            margin-top: 30%;
+            margin-left: 50px;
+
+        }
+        .content h2 b{
+          font-size: 30px;
+          /* padding: 20px; */
+          text-transform: capitalize;
+          color: white;
+          font-family: 'poppins',sans-serif
+        }
+
+
+        .inner2{
+            height: 60%;
+            /* border: 2px solid purple; */
+            text-align: center;
+        display: flex;
+
+
+        }
+        .inner2 ul{
+            /* padding: 10px 16px; */
+            list-style: none;
+            font-size: 30px;
+            /* border: 2px solid green; */
+            text-align:justify;
+            margin-left: 30px;
+            color: #ffffff;
+             font-family: 'poppins',sans-serif
+        }
+        .inner2 ul li{
+            padding: 8px 16px;
+            text-transform: capitalize;
+        }
+        .inner2 ul li:hover{
+            background-color: white;
+            cursor: pointer;
+            color: #000000;
+        }
+
+
+        #box2{
+        min-height: 100%;
+        /* border: 4px solid yellow; */
+        margin-left: 400px;
+        margin-right: 120px;
+        min-width: 68%;
+        display: flex;
+        /* justify-content: space-evenly; */
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 15px;
+        }
+
+
+    .interior h2{
+            font-size: 64px;
+            /* text-align: center; */
+            /* margin-left:26%; */
+            /* padding: 5%; */
+            font-family: poppins,sans-serif;
+            text-transform: capitalize;
+
+
+
+        }
+        .interior{
+            height: 5%;
+    /* border: 2px solid black; */
+            margin-top: 8%;
+            /* width: 40%; */
+            margin-left: 26.2%;
+    text-align: justify;
+    /* margin-right: 25%; */
+
+        padding-right: 180px;
+        }
+        .interior p{
+            /* margin-left: 26%; */
+            font-size: 48px;
+            font-family: poppins,sans-serif;
+            /* padding: 30px; */
+            padding-top: 25px;
+            text-transform: capitalize;
+            margin-top: 10px;
+            color: red;
+            font-weight: bolder;
+        }
+        h3{
+            width: 60px;
+            border-bottom: 10px solid red;
+            /* margin-left: 26.5%; */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+            #item1{
+        height: 450px;
+        width: 495px;
+            /* border: 2px solid red; */
+        }
+            #item2{
+            height: 450px;
+            width: 500px;
+            /* border: 2px solid red; */
+        }
+            #item3{
+            height: 260px;
+            width: 495px;
+            /* border: 2px solid red; */
+        }
+            #item4{
+            height: 260px;
+            width: 500px;
+            /* border: 2px solid red; */
+        }
+            #item5{
+            height: 260px;
+            width: 490px;
+            /* border: 2px solid red; */
+        }
+            #item6{
+            height: 250px;
+            width: 500px;
+            /* border: 2px solid red; */
+        }
+         #item1 img{
+            width: 100%;
+            height: 100%;
+        }
+
+            #item2 img{
+            width: 100%;
+            height: 100%;
+        }
+            #item3 img{
+            width: 100%;
+            height: 100%;
+        }
+            #item4 img{
+            width: 100%;
+            height: 100%;
+        }
+            #item5 img{
+            width: 100%;
+            height: 100%;
+        }
+            #item6 img{
+            width: 100%;
+            height: 100%;
+        }
+  .services{
+    height: 20%;
+    /* border: 2px solid green; */
+    width: 98%;
+    padding-top: 60px;
+    font: size 48px;
+ }
+  b{
+    padding-top: 20px;
+    font-size: 48px;
+    color: #f44336;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif
+ }
+ .services h3{
+    margin-left: 2px;
+    width: 55px;
+ }
+ .services p{
+    text-align: justify;
+        font-family: 'poppins',sans-serif;
+    color: #000000;
+ }
+ .lorem{
+    margin-top: 16px;
+    text-align: justify;
+    font-family: 'poppins',sans-serif;
+    color: #000000;
+ }
+ #designers{
+    height: 20%;
+    /* border: 2px solid green; */
+    width: 98%;
+    padding-top: 80px;
+    font: size 48px;
+ }
+ sup{
+    /* padding-top: 60px; */
+    font-size: 48px;
+    color: #f44336;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif
+ }
+ h5{
+            width: 60px;
+            border-bottom: 10px solid red;
+            margin-left: 2px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+.dolor{
+    margin-top: 16px;
+    text-align: justify;
+    font-family: 'poppins',sans-serif;
+    color:#000000;
+}
+#designers p{
+    text-align: justify;
+        font-family: 'poppins',sans-serif;
+    color: #000000;
+}
+.main-container {
+                /* width:100%; */
+                /* padding: 10px; */
+                margin: auto;
+                /* border: 2px solid green; */
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                /* margin-left: 20px; */
+                /* justify-content:space-evenly ; */
+            }
+            .box1 {
+                min-height: 330px;
+            width: 322px;
+                /* border: 2px solid black; */
+                /* margin: 12px; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-right: 20px;
+                background-color: #f1f1f1;
+            }
+            #box3 img {
+                width: 100%;
+                height: 250px;
+            }
+            #box4 img {
+                width: 100%;
+                height: 250px;
+            }
+            #box5 img {
+                width: 100%;
+                height: 250px;
+            }
+
+            .name {
+                height: 50px;
+                /* border: 2px solid rgb(225, 21, 21); */
+                font-size: 24px;
+                font-family: sans-serif;
+                padding: 10px 0px;
+            }
+            .founder {
+                height: 50px;
+                /* border: 2px solid green; */
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #838383;
+                /* margin: 15px 0px; */
+            }
+            .con {
+                height: 50px;
+                /* border: 2px solid yellow; */
+                /* font-size: px; */
+                margin: 15px 0px;
+                font-family: sans-serif;
+                color: #000000;
+                line-height: 1.5x;
+            }
+            .packages{
+    height: 20%;
+    /* border: 2px solid green; */
+    width: 98%;
+    padding-top: 80px;
+    font: size 48px;
+ }
+ sub{
+    /* padding-top: 60px; */
+    font-size: 48px;
+    color: #f44336;
+    text-transform: capitalize;
+    font-family: 'poppins',sans-serif
+ }
+ h5{
+            width: 60px;
+            border-bottom: 10px solid red;
+            margin-left: 2px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+    .packages p{
+    text-align: justify;
+        font-family: 'poppins',sans-serif;
+    color: #000000;
+}
+.com {
+                width:98%;
+                height: 100vh;
+                /* padding: 10px; */
+                /* margin: auto; */
+                /* border: 2px solid green; */
+                display: flex;
+                flex-direction: row;
+                /* flex-wrap: wrap; */
+                gap: 18px;
+
+                /* margin-left: 20px; */
+                /* justify-content:space-evenly ; */
+            }
+            .basic{
+                width: 49%;
+                height: 100vh;
+                /* border: 2px solid green; */
+                /* margin: 10px; */
+                display: flex;
+                justify-content: center;
+
+            }
+            .pro{
+                width: 49%;
+                height: 100vh;
+                /* border: 2px solid purple; */
+                /* margin: 10px; */
+            }
+            .basic ol li{
+                border: none;
+                list-style: none;
+                /* padding: 20px; */
+                background-color: #EfEfEf;
+            }
+
+        ol #basic{
+                /* border: 2px solid black; */
+                text-align: center;
+                /* margin: 10px; */
+                font-size:25px ;
+                padding: 32px 16px;
+                width: 100%;
+                background-color: #616161;
+                text-transform: capitalize;
+                font-family: 'poppins',sans-serif;
+                color: #ffffff;
+            }
+            .basic ol{
+                width: 100%;
+            }
+            #sho{
+                border-bottom: 2px solid #dbd7d7;
+                text-align: center;
+                /* margin: 10px; */
+                font-size:16px ;
+                padding: 25px;
+                width: 100%;
+                background-color: #EfEfEf;
+                text-transform: capitalize;
+                font-family: 'poppins',sans-serif;
+            }
+            ol li dt {
+                font-size: 16px;
+                padding: 16px;
+                color: #000000;opacity: 0.4;
+            }
+            #pr{
+                border-bottom: 2px solid #d6d4d4;
+                text-align: center;
+                /* margin: 10px; */
+                font-size:30px ;
+                /* font-weight: bold; */
+                padding: 20px;
+                width: 100%;
+                background-color: #EfEfEf;
+                text-transform: capitalize;
+                font-family: 'poppins',sans-serif;
+                list-style: none;
+            }
+     .btn{
+        border: none;
+           width: 100%;
+           text-align: center;
+           /* border: 2px solid black; */
+           /* margin-top: 30px; */
+           padding: 40px;
+           background-color: #eae7e7;
+
+            }
+            button{
+                font-size: 16px;
+                padding: 12px 24px;
+                background-color: #ffffff;
+                border: none;
+                /* border: 2px solid red; */
+            }
+            .btn button:hover{
+                background-color: #000000;
+                cursor: pointer;
+                color:#ffffff;
+            }
+            #pre{
+                /* border: 2px solid black; */
+                text-align: center;
+                /* margin: 10px; */
+                font-size:25px ;
+                padding: 32px 16px;
+                width: 100%;
+                background-color: #f44336;
+                text-transform: capitalize;
+                font-family: 'poppins',sans-serif;
+                color: #ffffff;
+                list-style: none;
+
+            }
+            #pro{
+                border-bottom: 2px solid #c7c7c7;
+                text-align: center;
+                /* margin: 10px; */
+                font-size:16px ;
+                padding: 25px;
+                width: 100%;
+                background-color: #EfEfEf;
+                text-transform: capitalize;
+                font-family: 'poppins',sans-serif;
+            }
+            ol #pro{
+                list-style: none;
+            }
+            .button{
+                border: none;
+           width: 100%;
+           text-align: center;
+           /* border: 2px solid black; */
+           /* margin-top: 30px; */
+           padding: 40px;
+           background-color: #eae7e7;
+
+            }
+.button button{
+    background-color: #f44336;
+    color: #ffffff;
+}
+.button button:hover{
+    background-color: #000000;
+    cursor: pointer;
+}
+            .contact{
+                /* border: 2px solid black; */
+                width: 100%;
+                padding-top: 10%;
+            }
+            .contact h3{
+                margin-left: 6px;
+            }
+.form{
+    width: 98%;
+
+}
+input{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+}
+label{
+    font-size: 20px;
+    /* color: red; */
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.submit{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    width: 100%;
+    background-color: #f44336;
+    border: none;
+}
+#submit:hover{
+    background-color: #c7c5c5;
+    cursor: pointer;
+}
+.footer{
+    /* border: 2px solid red; */
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 70px;
+    margin-top: 6%;
+    background-color: #eeeded;
+
+}
+h6{
+    /* padding: 40px; */
+    font-size: 16px;
+}
+
+.footer h6 span{
+    border-bottom: 2px solid black;
+}
+.footer h6 span:hover{
+    color: #aca9a9;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="inner1">
+                <div class="content">
+                    <h2>
+                    <b>compony</b>
+                      <br>
+                      <b> name</b>
+
+
+
+                </h2>
+
+
+
+                </div>
+
+            </div>
+            <div class="inner2">
+                <ul>
+                    <li>home</li>
+                    <li>showcase</li>
+                    <li>services</li>
+                    <li>designers</li>
+                    <li>packges</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="interior">
+            <h2>interior design</h2>
+            <p>showcase</p>
+            <h3><span></span></h3>
+        </div>
+
+        <div class="box" id="box2">
+            <div class="item"id="item1">
+                <div class="image">
+
+                </div>
+           <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg
+" alt="">
+        </div>
+            <div class="item"id="item2">
+<img src="https://www.w3schools.com/w3images/atrium.jpg" alt="">
+            </div>
+            <div class="item"id="item3">
+                <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="">
+
+            </div>
+            <div class="item"id="item4">
+<img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="">
+            </div>
+            <div class="item"id="item5">
+<img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="">
+            </div>
+            <div class="item"id="item6">
+<img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="">
+            </div>
+            <div class="services">
+                <b>services</b>
+                <h3></h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem dolorum nam perspiciatis praesentium asperiores eveniet! Facilis soluta voluptatibus aut accusamus?</p>
+                <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellat laboriosam, a delectus aspernatur magnam, facilis nemo consequatur veniam soluta reiciendis totam! Iusto assumenda rerum numquam distinctio. Provident, quo corrupti maiores omnis nostrum autem id quidem ratione sit tempore itaque nesciunt hic eligendi alias ipsum quibusdam error officia! Atque itaque temporibus nobis omnis quos repudiandae animi deleniti consectetur, obcaecati aperiam voluptates earum facilis ratione, distinctio libero tempore corrupti, non reiciendis. Aut tenetur a quis ab quas tempora delectus sapiente error dolores soluta esse natus velit, atque nihil obcaecati perspiciatis molestias iusto eveniet rerum dolor provident odit, reiciendis deserunt aspernatur! Repellendus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit ex iure sed natus ut ab exercitationem officia, id beatae ratione error, omnis, quidem inventore eaque alias obcaecati impedit vero vel voluptates laudantium illo nihil! Inventore dicta saepe tenetur enim adipisci, quas dolorum magnam tempore, atque, harum necessitatibus maiores asperiores eaque sit obcaecati odit? Error sint sit inventore voluptate fugiat, quidem a laboriosam qui blanditiis eligendi aliquid delectus expedita et perferendis pariatur odio iure consectetur debitis quia magni placeat id reiciendis earum. Fuga culpa commodi perferendis cupiditate unde, esse nostrum repellendus ut repellat ipsum, inventore libero ad sunt vero aperiam!</pcl>
+            </div>
+
+            <div class="designers" id="designers">
+                <sup>designers</sup>
+                <h5></h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nihil!</p>
+                <p class="dolor">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempora, iste corporis repellendus animi veniam omnis quibusdam quae? Quibusdam molestiae eum aspernatur, veniam sunt repellat ea? Nostrum quod ipsum earum repellendus ex soluta, doloribus optio natus odit delectus voluptatem totam accusamus impedit itaque fugiat iure asperiores distinctio iste hic. Atque, nulla assumenda. Ullam sapiente totam quo atque quos nihil aperiam illo distinctio, maxime, laboriosam minima nisi, nemo dolorem. Dolores vero iste, quod eveniet architecto sit hic at repudiandae optio nesciunt ipsa totam! Eum molestiae facilis, et provident totam, reprehenderit nesciunt mollitia sit delectus rerum ex porro eos fuga ratione incidunt quisquam excepturi fugiat, dolores voluptatibus? Aliquam assumenda odio ad maiores eius rem error beatae eaque in minus, sapiente similique neque architecto repellendus distinctio, repudiandae vel delectus cum ab! Suscipit esse ab quae molestias autem eos placeat sapiente accusamus laborum hic recusandae voluptas quam harum, id iusto aspernatur magni ratione nisi perferendis provident amet consequuntur sequi? Ullam omnis adipisci assumenda facilis earum doloremque officiis suscipit id quaerat corrupti quis sit, corporis dolore, ipsum nisi, beatae ex sint deleniti laudantium sed modi? Quia quasi quisquam distinctio aperiam a explicabo soluta, maxime amet rem earum, veritatis porro ab sequi voluptas iusto magni illum.</p>
+            </div>
+
+        <div class="main-container">
+            <div class="box1" id="box3">
+                <div class="image">
+                    <img
+                        src="https://www.w3schools.com/w3images/team2.jpg"
+                        alt="" />
+                </div>
+                <div class="name">John Doe</div>
+                <div class="founder">CEO & Founder</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <!-- <button>Contact</button> -->
+            </div>
+            <div class="box1" id="box4">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
+                <div class="name">Jane Doe</div>
+                <div class="founder">Architect</div>
+                <div class="con">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <!-- <button>Contact</button> -->
+            </div>
+            <div class="box1" id="box5">
+                <img
+                    src="https://www.w3schools.com/w3images/team3.jpg"
+                    alt="" />
+                <div class="name">Jane Doe</div>
+                <div class="founder">Architect</div>
+                <div class="cont">
+                    Phasellus eget enim eu lectus faucibus vestibulum.
+                    Suspendisse sodales pellentesque elementum.
+                </div>
+                <!-- <button>Contact</button> -->
+            </div>
+            </div>
+            <div class="packages">
+            <sub>packages</sub>
+            <h5></h5>
+         <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+            </div>
+
+            <div class="com">
+                <div class="basic">
+                    <ol>
+                        <li id="basic">basic</li>
+                        <li id="sho">floorplaning</li>
+                        <li id="sho">10 hours support</li>
+                        <li id="sho">photograhy</li>
+                        <li id="sho">20%furniture discount</li>
+                        <li id="sho">good deals</li>
+                        <li id="pr">$199
+                            <dt>per month</dt>
+                        </li>
+                        <div class="btn">
+                     <button>sign up</button>
+                        </div>
+                    </ol>
+                </div>
+                <div class="pro">
+                      <ol>
+                        <li id="pre">pre</li>
+                        <li id="pro">floorplaning</li>
+                        <li id="pro">10 hours support</li>
+                        <li id="pro">photograhy</li>
+                        <li id="pro">20%furniture discount</li>
+                        <li id="pro">good deals</li>
+                        <li id="pr">$199
+                            <dt>per month</dt>
+                        </li>
+                        <div class="button">
+                     <button id="sing">sign up</button>
+                        </div>
+                    </ol>
+                </div>
+
+            </div>
+              <div class="contact">
+                <b>contact</b>
+                <h3></h3>
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+              </div>
+              <div class="form">
+                <form action="">
+              <label for="name">name</label>
+              <input type="text"><br><br>
+              <label for="">email</label>
+              <input type="text"><br><br>
+              <label for="">massege</label>
+              <input type="text">
+              <div class="submit">
+                <button id="submit">Send Massege</button>
+              </div>
+
+                </form>
+              </div>
+            </div>
+
+    </div>
+    <div class="footer">
+<h6>powerd by  <span>w3.css</span></h6>
+    </div>
+</body>
+</html>
