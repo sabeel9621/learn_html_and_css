@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .container{
+            width: 40%;
+            height: 60vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            /* box-shadow:inset 0 0 50px rgb(15, 164, 27); */
+        }
+        .main-container{
+            width: 40%;
+            height: 60vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        box-shadow: 0 0 30px rgb(72, 73, 72);
+        }
+        .box{
+            height: 49vh;
+            width:90%;
+
+            border: 2px solid black;
+            box-shadow: inset 0 0 100px green,0 0 40px rgb(252, 2, 2);
+            border-radius: 10px;
+
+        }
+        .box1{
+                height: 49vh;
+            width:90%;
+
+            border: 2px solid black;
+            overflow:scroll;
+            font-size: 20px;text-align: justify;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgb(243, 13, 47);
+            }
+h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 20px rgb(6, 249, 18);
+}
+div.con{
+width: 80%;
+            height: 60vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        background:linear-gradient(45deg,red,yellow,blue,black,green);opacity: 0.8;
+}
+.cont{
+    width: 25%;
+    height: 50vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.item{
+    height: 150px;
+    width: 150px;
+    border: 2px solid green;
+    position: absolute;
+}
+.item:nth-child(1){
+    background-color: chartreuse;
+    top: 0;
+    z-index: 200;
+}
+.item:nth-child(2){
+    background-color: blue;
+    left: 0;
+    z-index: 2;
+}
+.item:nth-child(3){
+    background-color: coral;
+bottom: 0;
+    z-index: 1;
+}
+.item:nth-child(4){
+    background-color: darkgreen;
+    right: 0;
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+
+        <div class="box"></div>
+
+    </div>
+    <div class="container">
+        <div class="box1">
+            <h1>my bookmarks</h1>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto itaque sit similique nisi minima ad modi ex fuga, maiores, ullam dolores pariatur sapiente eum, placeat aperiam quidem eius consectetur veritatis iure! Hic qui optio incidunt amet temporibus modi exercitationem illo veritatis at placeat, a sunt. Praesentium est minima ab corporis, quae ea, soluta eius sint modi similique dolorem numquam provident voluptatibus temporibus pariatur. Quis consectetur ipsum ullam recusandae, cum tempora, expedita esse quia architecto unde soluta consequuntur, maiores iste. Laborum quae optio id nulla, voluptates dolorum? In nihil, hic, blanditiis iste magni exercitationem fuga iure esse veniam ducimus amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maxime voluptate provident facere labore, est blanditiis accusantium id nihil tempora iste, sit quae assumenda perferendis non? Quas porro est nulla iure repudiandae, atque sint sit, doloremque debitis id sapiente laboriosam enim ea autem quisquam officiis error, eos architecto nostrum explicabo nobis. Fuga, error! Incidunt sequi deleniti eveniet placeat iure nam dolores nostrum architecto ducimus voluptate magnam reiciendis accusamus ipsam ad blanditiis neque, mollitia quaerat temporibus velit unde quasi omnis delectus, in esse. Eaque obcaecati quis ad sit dolor maxime ipsum perspiciatis, incidunt aliquid qui inventore molestiae ratione, nisi dolorem consequuntur.
+        </div>
+
+    </div>
+    <div class="con"></div>
+    <div class="cont">
+<div class="item" id="item1"></div>
+<div class="item" id="item2"></div>
+<div class="item" id="item3"></div>
+<div class="item" id="item4"></div>
+    </div>
+</body>
+</html>
