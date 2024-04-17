@@ -5,63 +5,60 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <style>
-                    *{
-                        margin: 0;
-                        padding: 0;
-                    }
-
-            .container{
-             width: 200px;
-                      height: 200px;
-                      border: 2px solid black;
-                      animation-name: box;
-                      animation-duration: 5s;
-                      animation-iteration-count:infinite;
-                      position: relative;
-
-
+            * {
+                margin: 0;
+                padding: 0;
             }
 
-            .box3{
-            width: 200px;
-                      height: 200px;
-                      border: 2px solid black;
-                      animation-name:identifier;
-                      animation-duration: 5s;
-                      animation-iteration-count:infinite;
-                      position:absolute;
-            }
-            .box4{
-            width: 200px;
-                      height: 200px;
-                      border: 2px solid black;
-                      animation-name:box4;
-                      animation-duration :10s;
-                      animation-iteration-count:infinite;
-                      position:absolute;
-                      animation-fill-mode: backwards;
+            .container {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                animation-name: box;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                position: relative;
             }
 
-            .box5{
-            width: 200px;
-                      height: 200px;
-                      border: 2px solid black;
-                      animation-name:box5;
-                      animation-duration: 6s;
-                      animation-iteration-count:infinite;
-                      position:absolute;
+            .box3 {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                animation-name: identifier;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                position: absolute;
             }
-            .box6{
-            width: 200px;
-                      height: 200px;
-                      border: 2px solid black;
-                      animation-name:box6;
-                      animation-duration: 6s;
-                      animation-iteration-count:infinite;
-                      position:absolute;
+            .box4 {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                animation-name: box4;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                position: absolute;
+                animation-fill-mode: backwards;
+            }
 
+            .box5 {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                animation-name: box5;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                position: absolute;
             }
-            .box7{
+            .box6 {
+                width: 200px;
+                height: 200px;
+                border: 2px solid black;
+                animation-name: box6;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                position: absolute;
+            }
+            .box7 {
                 width: 200px;
                 height: 200px;
                 border: 2px solid red;
@@ -71,7 +68,7 @@
                 position: absolute;
                 background-color: black;
             }
-            .box8{
+            .box8 {
                 width: 200px;
                 height: 200px;
                 margin: auto;
@@ -80,224 +77,175 @@
                 align-items: center;
                 border: 2px solid black;
                 animation-name: box8;
-                animation-iteration-count:infinite;
+                animation-iteration-count: infinite;
                 animation-duration: 2s;
                 position: relative;
             }
-            .container1{
-            width: 200px;
+            .container1 {
+                width: 200px;
                 height: 200px;
                 margin: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border: 2px solid black;
-                animation-name:container1;
-                animation-iteration-count:infinite;
+                animation-name: container1;
+                animation-iteration-count: infinite;
                 animation-duration: 2s;
                 position: relative;
             }
 
-
             @keyframes box {
-                from{
-            width: 0;
-            height: 0;
-            background-color: rgb(246, 90, 17);
-            border-radius: 0;
-               left: 0px;
-                        top: 0px;
+                from {
+                    width: 0;
+                    height: 0;
+                    background-color: rgb(246, 90, 17);
+                    border-radius: 0;
+                    left: 0px;
+                    top: 0px;
                 }
 
-                to{
-            width: 200;
-            height: 200;
-            background-color:rgb(75, 13, 190);
-            border-radius: 800px;
-               left: 800px;
-                        top: 500px;
+                to {
+                    width: 200;
+                    height: 200;
+                    background-color: rgb(75, 13, 190);
+                    border-radius: 800px;
+                    left: 800px;
+                    top: 500px;
                 }
             }
-
-
 
             @keyframes identifier {
-                   from{
+                from {
+                    width: 0px;
+                    height: 0px;
+                    background-color: red;
+                    border-radius: 0px;
+                    right: 0px;
+                    top: 0px;
+                }
 
-                        width: 0px;
-                        height: 0px;
-                        background-color: red;
-                        border-radius: 0px;
-                        right: 0px;
-                        top: 0px;
-                    }
-
-                    to{
-
-                        width: 200px;
-                        height: 200px;
-                        background-color: yellow;
-                        border-radius: 800px;
-                        right: 800px;
-                        top: 500px;
-                    }
+                to {
+                    width: 200px;
+                    height: 200px;
+                    background-color: yellow;
+                    border-radius: 800px;
+                    right: 800px;
+                    top: 500px;
+                }
             }
             @keyframes box4 {
-                   from{
+                from {
+                    width: 0px;
+                    height: 0px;
+                    background-color: rgb(224, 165, 165);
+                    border-radius: 0px;
+                    right: 700px;
 
-                        width: 0px;
-                        height: 0px;
-                        background-color: rgb(224, 165, 165);
-                        border-radius: 0px;
-                        right: 700px;
-
-                        top: 0px;
-                    }
-
-                    to{
-
-                        width: 200px;
-                        height: 200px;
-                        background-color: rgb(86, 86, 1);
-                        border-radius: 800px;
-                        right: 800px;
-                        top: 500px;
-                    }
-
+                    top: 0px;
                 }
+
+                to {
+                    width: 200px;
+                    height: 200px;
+                    background-color: rgb(86, 86, 1);
+                    border-radius: 800px;
+                    right: 800px;
+                    top: 500px;
+                }
+            }
 
             @keyframes box5 {
-                   from{
+                from {
+                    width: 0px;
+                    height: 0px;
+                    background-color: rgb(235, 4, 4);
+                    border-radius: 0px;
+                    right: 0px;
 
-                        width: 0px;
-                        height: 0px;
-                        background-color: rgb(235, 4, 4);
-                        border-radius: 0px;
-                        right: 0px;
-
-                        top: 0px;
-                    }
-
-                    to{
-
-                        width: 200px;
-                        height: 200px;
-                        background-color: rgb(255, 255, 8);
-                        border-radius: 800px;
-                        right: 800px;
-                        top: 500px;
-                    }
-
+                    top: 0px;
                 }
+
+                to {
+                    width: 200px;
+                    height: 200px;
+                    background-color: rgb(255, 255, 8);
+                    border-radius: 800px;
+                    right: 800px;
+                    top: 500px;
+                }
+            }
             @keyframes box6 {
-                   from{
+                from {
+                    width: 0px;
+                    height: 0px;
+                    background-color: rgb(158, 235, 4);
+                    border-radius: 0px;
+                    left: 0px;
 
-                        width: 0px;
-                        height: 0px;
-                        background-color: rgb(158, 235, 4);
-                        border-radius: 0px;
-                        left: 0px;
-
-                        top: 0px;
-                    }
-
-                    to{
-
-                        width: 200px;
-                        height: 200px;
-                        background-color: rgb(190, 93, 133);
-                        border-radius: 800px;
-                        left: 800px;
-                        top: 400px;
-                    }
-
+                    top: 0px;
                 }
+
+                to {
+                    width: 200px;
+                    height: 200px;
+                    background-color: rgb(190, 93, 133);
+                    border-radius: 800px;
+                    left: 800px;
+                    top: 400px;
+                }
+            }
             @keyframes box7 {
-                   0%{
+                0% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: white;
+                    box-shadow: 0px 0px 50px red;
+                }
 
-                      top: 0px;
-                      left: 0px;
-                      background-color: white;
-                      box-shadow: 0px 0px 50px red;
+                25% {
+                    top: 0px;
+                    left: 500px;
+                    background-color: red;
+                    box-shadow: 0px 0px 50px green;
+                }
 
-                    }
+                50% {
+                    top: 500px;
+                    left: 500px;
+                    background-color: yellow;
+                    box-shadow: 0px 0px 50px blue;
+                }
 
+                75% {
+                    left: 0px;
+                    top: 500px;
+                    background-color: green;
+                    box-shadow: 0px 0px 50px brown;
+                }
 
-                    25%{
-
-                       top: 0px;
-                       left: 500px;
-                       background-color: red;
-                       box-shadow: 0px 0px 50px green;
-                    }
-
-                    50%{
-
-                       top: 500px;
-                       left: 500px;
-                       background-color: yellow;
-                       box-shadow: 0px 0px 50px blue;
-                    }
-
-                    75%{
-
-                      left: 0px;
-                      top: 500px;
-                      background-color: green;
-                      box-shadow: 0px 0px 50px brown;
-                    }
-
-                    100%{
-                      top: 0px;
-                      left: 0px;
-                      background-color: brown;
-                      box-shadow: 0px 0px 50px orangered;
-
-                    }
-                  }
-            @keyframes box8 {
-
-            from{
-            /* right: 0px; */
-            /* top: 0px; */
-            transform: rotate(0deg)
-            transform:scale(0);
-            }
-            to{
-            /* right: 400px; */
-            /* top:400px; */
-            transform: rotate(365deg);
-            transform: scale(-1.5);
-
-
-
+                100% {
+                    top: 0px;
+                    left: 0px;
+                    background-color: brown;
+                    box-shadow: 0px 0px 50px orangered;
+                }
             }
 
-            }
-
-
-
-             @keyframes container1  {
-              from{
-
-
-                        background-color: rgb(89, 4, 235);
-                        /* border-radius: 0px; */
-                        transform: rotate(0deg);
-
-              }
-                    to{
-
-
-                        background-color: rgb(22, 248, 6);
-                        /* border-radius: 800px; */
-                        /* right: 800px;
+            @keyframes container1 {
+                from {
+                    background-color: rgb(89, 4, 235);
+                    /* border-radius: 0px; */
+                    transform: rotate(0deg);
+                }
+                to {
+                    background-color: rgb(22, 248, 6);
+                    /* border-radius: 800px; */
+                    /* right: 800px;
                         top: 500px; */
-                        transform: rotate(360deg);
-                    }
-
+                    transform: rotate(360deg);
+                }
             }
-
 
             /* div{
                 width: 15rem ;
