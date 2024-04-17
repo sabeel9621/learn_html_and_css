@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0%;
+            padding: 0%;
+            box-sizing:inherit;
+        }
+        /* body{
+            height: 100%;
+        } */
+        .header{
+            /* height: 40vh; */
+            padding: 20px;
+            /* border: 2px solid black; */
+            display: flex;
+            background-color:#009688;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            
+
+
+        }
+        i{
+            padding: 10px 16px;
+            color: white;
+
+        }
+        #center1{
+            width: 100%;
+            line-height: 1.2;
+        }
+        #center1 h4{
+            padding: 10px;
+            color: white;
+            text-align: center;
+            /* border: 2px solid green; */
+            font-size: 18px;font-weight: 100;
+
+            font-family: Arial, Helvetica, sans-serif;
+            /* margin-top: 25px; */
+
+
+        }
+        #center1 h1{
+            /* height:13px ; */
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            font-weight: 100;
+            /* padding: 15px; */
+            margin: 12px;
+        }
+        #center1 .submit{
+            width: 100%;
+        }
+        .submit{
+            text-align: center;
+            /* border: 2px solid green; */
+            /* margin-top: 10%; */
+            margin-bottom: 20px;
+        }
+        button{
+          padding: 10px;
+
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #004A43;
+            font-family: 'vardana',sans-serif;
+            border: none;
+
+        }
+        button:hover{
+            background-color: #009688;
+            cursor: pointer;
+        }
+        .container{
+            width: 100%;
+            /* height: 70vh; */
+         /* border: 2px solid black; */
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         margin-bottom: 15px;
+         justify-content: center;
+         align-items: center;
+
+
+        }
+        .box{
+            margin-top: 10px;
+            height:460px;
+            width: 480px;
+            /* border: 2px solid red; */
+            margin-left:20px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction:column ;
+            flex-wrap: wrap;
+        /* box-shadow: rgba(119, 116, 116, 0.1) 0px 10px 50px; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+
+        .box i{
+            font-size: 120px;
+            color: #009688;
+            /* padding: 40px; */
+            /* margin-top: 20px; */
+        }
+        .box h3{
+            padding: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        p{
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .main-cont{
+            width: 100%;
+            /* border: 2px solid black; */
+            /* height: 100vh; */
+            margin-top:10px ;
+            display: flex;
+            /* justify-content: left; */
+            align-items: center;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+
+
+        }
+
+        #color{
+             /* border: 2px solid red; */
+             width: 97%;
+             margin: auto;
+             margin-top: 10px;
+             margin-bottom: 10px;
+             /* height: 30px; */
+             text-align: center;
+             font-size: 20px;
+             font-family:'Segoe UI' Arial, sans-serif;
+        }
+        #box2{
+            width: 97.5%;
+          margin: auto;
+            /* border: 2px solid rgb(16, 16, 15); */
+            display: flex;
+            padding: 5px 3px;
+            flex-grow: calc(1,2,3,4,5,6);
+
+            /* justify-content:space-evenly; */
+            align-items: center;
+            flex-wrap: wrap;
+
+
+
+
+
+        }
+
+         #item1{
+            width:245px;
+            /* border: 2px solid blue; */
+            border: none;
+            padding: 10px;
+            padding-left: 10px;
+            background-color:#f44336;
+            font-size: 16px;
+            font-family: Verdana,sans-serif;
+                flex-grow: calc(1);
+/* padding-left:10px; */
+
+        }
+         #item2{
+
+            width:245px;
+            /* border: 2px solid rgb(240, 69, 30); */
+            border: none;
+            padding: 10px;
+            background-color: #2196f3;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                flex-grow: calc(1);
+/* padding-left:10px; */
+        }
+         #item3{
+width:245px;
+/* height: 100%; */
+            /* border: 2px solid rgb(216, 181, 8); */
+            border: none;
+padding: 10px;
+background-color: #607D8B;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: calc(1);
+/* padding-left:10px; */
+        }
+         #item4{
+width:245px;
+            /* border: 2px solid rgb(102, 194, 225); */
+            border: none;
+padding: 10px;
+background-color: #009688;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: calc(1);
+/* padding-left:10px; */
+        }
+         #item5{
+width:245px;
+            /* border: 2px solid rgb(220, 70, 152); */
+            border: none;
+padding: 10px;
+background-color: #ffc82f;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: calc(1);
+/* padding-left:10px; */
+        }
+         #item6{
+width: 245px;
+            /* border: 2px solid rgb(11, 221, 141); */
+            border: none;
+padding: 10px;
+color: #ffffff;
+background-color: #FF9800;
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-grow: calc(1);
+/* padding-left:10px; */
+        }
+
+        #box3{
+            width: 97%;
+            /* border: 2px solid green; */
+            text-align: center;
+            margin:auto;
+            padding-top: 10px;
+            font-size: 15px;
+            font-family:"Segoe UI", Arial, sans-serif;
+;
+
+
+        }
+#box4{
+    border: 1px solid #ccc;
+    width: 97%;
+    /* height: 20vh; */
+margin: auto;
+/* box-sizing: inherit; */
+
+    margin-top: 30px;
+    display:flex;
+/* justify-content: center; */
+flex-direction:row;
+    flex-wrap: wrap;
+}
+.half1{
+    width: 730px;
+    /* border:2px solid #f44336; */
+    background: #2196f3;
+    flex-grow:calc(n);
+
+}
+#half2 h5{
+    color: black;
+    background-color: #ffffff;
+    font-weight: 400;
+
+}
+
+
+h5{
+    font-size: 20px;
+    margin: 15px;
+    color: #ffffff;
+    font-family: Arial sans-serif sans-serif;
+    font-weight: 400;
+}
+.half1 p{
+    font-size: 20px;
+    margin: 15px;
+    color: #ffffff;
+    font-family: Arial sans-serif sans-serif;
+    font-weight: 400;
+
+}
+
+#box5{
+    width: 97%;
+    margin: auto;
+    /* height: 30vh; */
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    /* box-sizing: inherit; */
+
+}
+.half3{
+    /* height: 100%; */
+    width: 490px;
+    /* border: 2px solid yellow; */
+    background-color: #19c81f;
+    color: #ffffff;
+    flex-grow: calc(1);
+
+}
+
+
+.half3 p{
+    padding: 8px;
+    font-size: 20px;
+    font-family: Arial sans-serif sans-serif;
+    font-weight: 400;
+}
+.half2{
+/* height: 100%; */
+    width:490px;
+    /* border: 2px solid yellow; */
+    font-family: Arial sans-serif;
+    flex-grow: calc(1);
+}
+.half2 h5{
+    color: #0b0b0b;
+    font-size: 20px;
+
+}
+
+#box6{
+    width: 97%;
+    margin: auto;
+    /* height: 30vh; */
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.quater{
+    /* height: 100%; */
+    width:368px;
+    /* border: 2px solid yellow; */
+    background-color: #f44336;
+    color: #ffffff;
+    flex-grow: calc(1);
+
+}
+.quater p{
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial sans-serif sans-serif;
+    font-weight: 400;
+}
+.quater1{
+    /* height: 100%; */
+    width: 367px;
+    /* border: 2px solid yellow; */
+    flex-grow: calc(1);
+}
+.quater1 h5{
+    color: #0b0b0b;
+    font-family:  "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+}
+#content{
+    /* border: 2px solid rgb(43, 12, 198); */
+    width: 97%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+h2{
+padding: 15px;
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+font-weight: 400;
+text-transform: capitalize;
+}
+.header1{
+    width: 97%;
+    margin: auto;
+    /* border: 2px solid red; */
+background-color: #607D8B;
+margin-top: 10px;
+color: #ffffff;
+font-family: "Segoe UI", Arial, sans-serif;
+
+}
+.london{
+    width: 97%;
+    margin: auto;
+    /* border:2px solid #09dd; */
+}
+h2{
+font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+
+h2 {
+    font-size: 30px;
+}
+.footer{
+    width: 97%;
+    margin: auto;
+    /* border: 2px solid red; */
+background-color: #607D8B;
+margin-top: 10px;
+color: #ffffff;
+text-transform: capitalize;
+}
+.footer h5{
+
+font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+.footer p{
+    margin: 15px;
+    font-size: 15px;
+    color: #ffffff;opacity: 0.60;
+}
+.center{
+    width: 97%;
+    margin: auto;
+    /* border: 2px solid ; */
+    text-align: center;
+}
+.cont{
+    width: 99%;
+    /* height: 50vh; */
+    margin: auto;
+    /* border: 2px solid yellow; */
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.theme{
+    /* margin: auto; */
+    font-weight: 400px;
+    width:730px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgb(188, 186, 186);
+
+}
+.theme1{
+    font-weight: 400px;
+    width:730px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+.them h3{
+    background-color: #3f51b5;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+    font-weight: 400px;
+}
+.movie h3{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+
+    color:#3f51b5;
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight:200px;
+}
+ul h3{
+
+    padding: 15px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    list-style: none;
+    margin: 10px;
+}
+ul li{
+
+list-style: none;
+border: 1px solid #cbc8c8;
+}
+.next{
+    width: 100%;
+    /* border: 2px solid purple; */
+    text-align: end;
+    background-color: #3f51b5;
+    /* padding: 5px; */
+}
+span{
+    font-size: 18px;
+    margin: 5px;
+    color: #ffffff;
+    border: none;
+}
+.them1 h3{
+    background-color: #009688;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+    font-weight: 400px;
+}
+.movie1 h3{
+    padding: 10px;
+
+    color:#009688;
+    font-size: 20px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight:200px;
+}
+.next1{
+    width: 100%;
+    /* border: 2px solid purple; */
+    text-align: end;
+    background-color: #009688;
+    /* padding: 5px; */
+}
+span{
+    font-size: 18px;
+    margin: 5px;
+    color: #ffffff;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    width: 97%;
+    margin: auto;
+    /* color: #e11616; */
+}
+
+.contenet3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight:200;
+}
+
+
+
+.main-cont2{
+    width: 99%;
+    margin: auto;
+    /* border: 2px solid rgb(255, 191, 0); */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    flex-wrap: wrap;
+
+
+}
+ .card{
+    width: 480px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px rgb(188, 186, 186);
+
+ }
+ .card img{
+    width: 100%;
+ }
+  h4{
+    /* margin: 10px 0px; */
+    padding: 15px;
+    font-size: 18px;
+
+ }
+
+ .tabel{
+    margin-top: 25px;
+ }
+
+ table{
+    width: 97%;
+    margin: auto;
+    /* border-bottom: 2px solid black; */
+    /* border-bottom: 2px solid rgb(210, 208, 208); */
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgb(188, 186, 186);
+
+
+
+ }
+ th,td{
+    /* border: 2px solid black; */
+    text-align:left;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px;
+ }
+ th{
+background-color: #009688;
+color: #ffffff;
+font-family: sans-serif;
+ }
+ .tabel p{
+    text-align: center;
+ }
+ .tabel p:nth-child(1){
+    font-size: 25px;
+ }
+ .first{
+    border-bottom: 2px solid rgb(210, 208, 208);
+ }
+ .secound{
+    border-bottom: 2px solid rgb(210, 208, 208);
+ }
+ hr{
+    margin-top: 10px;
+ }
+ .main-container3{
+    width: 99%;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+padding: 10px;
+
+ }
+.form-list{
+    width: 650px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+
+
+
+}
+form{
+    width: 730px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 20px rgb(188, 186, 186);
+
+}
+.list{
+    width: 730px;
+    height: 400px;
+    /* border: 2px solid green; */
+    box-shadow: 0 0 20px rgb(188, 186, 186);
+
+}
+.list ul li{
+    border: none;
+}
+form h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 100;
+   padding: 10px;
+    padding-bottom: 50px;
+    /* border-bottom: 2px solid rgb(218, 217, 217); */
+}
+ label{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 10px;
+    padding-bottom: 30px;
+
+ }
+ .male{
+    width: 20px;
+    height:20px;
+ }
+ h4{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+ }
+
+ .list h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 100;
+   padding: 10px;
+    /* padding-bottom: 0px; */
+    /* border-bottom: 2px solid rgb(218, 217, 217); */
+}
+.list ul li{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-size:20px;
+    font-family: sans-serif;
+}
+.list ul .adam{
+    margin-bottom: 30px;
+}
+.list ol{
+    border: 1px solid rgb(187, 186, 186);
+    margin: 15px;
+}
+
+.list ol li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(187, 186, 186);
+
+}
+.list ol li:hover{
+    background-color: #d5d5d5;
+}
+.list ol li:nth-child(1){
+    background-color: #009688;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+}
+
+.progress h4{
+font-size: 30px;
+font-weight: 100;
+font-family: sans-serif;
+
+}
+.w3-light-grey{
+    background-color: rgb(235, 233, 233);
+    margin: 15px;
+}
+
+.w3-container {
+    background-color: #1d736a;
+    padding: 10px ;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.click{
+    padding: 8px 10px;
+    margin: 15px;
+    background-color: #1d736a;
+    border: none;
+}
+.slide-show{
+    width: 99%;
+    margin: auto;
+    /* border: 2px solid black; */
+    /* padding:0px 250px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image1{
+    width:800px;
+    height: 600px;
+    margin: auto;
+    /* margin: 40px 200px; */
+
+    /* border: 2px solid red; */
+}
+
+.image1 img{
+    width: 100%;
+    height: 100%;
+}
+sub{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.last-container{
+    /* border: 2px solid rgb(17, 17, 17); */
+    width: 97%;
+    margin: auto;
+
+}
+.last-container h2{
+    font-size: 30px;
+    text-align: center;
+}
+.main-box{
+    /* border: 2px solid green; */
+    padding: 15px;
+    background-color: #009688;
+
+}
+.main-box a{
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+
+}
+a:hover{
+    background-color: rgb(218, 216, 216);
+}
+.dropdown i{
+    padding: 0%;
+}
+i{
+    margin: 0px 5px;
+}
+.main-box1{
+    border-top: 2px solid rgb(244, 242, 242);
+    margin-top: 15px;
+    border-bottom: 2px solid rgb(149, 147, 147);
+    padding-bottom:15px ;
+
+}
+.main-box1 p{
+    border-bottom: 1px solid rgba(249, 249, 249, 0.314);
+    background-color:#009688;
+    color: #ffffff;
+    padding: 15px;
+    margin: 0%;
+}
+#section{
+    border: none;
+}
+.main-box1 p:hover{
+    background-color: rgb(208, 205, 205);
+}
+.main-box2{
+    border: 2px solid #bebdbd;
+    border-top:none ;
+
+}
+
+.name{
+    /* border: 2px solid black; */
+    background-color: #009688;
+    padding: 15px 0;
+    border: none;
+    margin-bottom: 15px;
+
+}
+.main-box2 a{
+    /* border: 2px solid black; */
+    padding: 15px;
+    font: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+#london{
+    background-color: #004A43;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+#london:hover{
+    background-color: rgb(208, 205, 205);
+
+}
+.name a:hover{
+    background-color: rgb(208,205,205);
+}
+.main-box2 h5{
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 3px;
+}
+.main-box2 p{
+    color: #0b0b0b;
+    padding: 3px 10px;
+    font-family: sans-serif;
+}
+.button-box{
+    text-align: center;
+
+}
+.button-box h4{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.button1{
+    padding: 8px 20px;
+    font-size: 18px;
+        font-weight: 100;
+    text-transform: capitalize;
+    background-color: #009688;
+    /* margin: 2px; */
+}
+.button2{
+    padding: 8px 20px;
+    font-size: 18px;
+        font-weight: 100;
+    text-transform: capitalize;
+    background-color: #009688;
+    margin: 2px;
+}
+.button3{
+    padding: 8px 20px;
+    font-size: 18px;
+        font-weight: 100;
+    text-transform: capitalize;
+        background-color: #bbdad6;
+}
+.button-box button:hover{
+    background-color: rgb(188, 184, 184);
+}
+
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus i{
+    color:black;
+margin: 10px;
+padding: 15px;
+    /* border: 2px solid red; */
+    border-radius: 50px;
+
+}
+#plus1{
+    background-color: #0b0b0b;
+    color: #ffffff;
+}
+#plus2{
+    background-color: #009688;
+    color: #ffffff;
+}
+#plus3{
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 0 0 15px;
+        font-size: 20px;
+}
+i{
+    font-size: 20px;
+    font-weight: bolder;
+}
+ .inner4 i:hover{
+    background-color: #babfba;
+ }
+
+#plus2:hover{
+    background-color: #babfba;
+    color: black;
+}
+#plus1:hover{
+    background-color: #babfba;
+    color: #0b0b0b;
+}
+
+.w3-dropdown-hover{
+    text-align: center;
+    margin: 20px;
+}
+.w3-button{
+    padding: 0% 0%;
+    background-color: transparent;
+    color: black;
+    background-color: #009688;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+
+
+}
+.w3-button i{
+    color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+}
+
+.w3-button:hover{
+    background-color: #babfba;
+    color: black;
+}
+.w3-button i:hover{
+    color: black;
+}
+
+
+
+
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nubers{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.nubers:hover{
+    background-color: #009688;
+}
+
+.w3-bar-item {
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.w3-bar-item:hover {
+    background-color: #009688;
+
+}
+.content5 h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+#nubers1{
+    background-color: #009688;
+}
+
+.footer1{
+    width: 97%;
+    margin:auto;
+    /* border: 2px solid black; */
+    padding: 20px 0px;
+    background-color: #1e675f;
+    color: #ffffff;
+    display: flex;
+    margin-top: 30px;
+
+
+}.footer1 p{
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.footer1 h4{
+    font-size: 25px;
+    text-align: left;
+    padding: 10px;
+    font-weight: 100;
+}
+.footer1 span{
+    /* color: black; */
+    font-size: 15px;
+    padding: 8px 5px;
+    color: #ffffff;
+}
+.word{
+    /* border: 2px solid black; */
+    text-decoration:underline ;
+}
+.footer1 b{
+    font-size: 20px;
+    background-color: #009688;
+    color:#ffffff;
+    font-weight: 100;
+    padding: 8px;
+    font-family: sans-serif
+}
+.footer2{
+    width: 90%;
+    /* border: 2px solid red; */
+}
+.icon{
+     width: 10%;
+    height: 25px;
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+
+}
+.icon i{
+    background-color: #ffffff;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    padding: 0%;
+    color: rgb(23, 28, 27);
+
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-bars"></i>
+        <div class="center" id="center1">
+            <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
+            <h1>BUILT WITH W3.CSS</h1>
+            <div class="submit">
+            <button>LEARN W3.CSS</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h3>Responsive</h3>
+            <br>
+
+            <i class="fa-solid fa-desktop"></i>
+
+            <p>Built-in responsiveness</p>
+            <p>Mobile first fluid grid</p>
+            <p>Fits any screen sizes</p>
+            <p>PC Tablet and Mobile</p>
+        </div>
+        <div class="box">
+                <h3>Standard CSS</h3>
+            <i class="fa-brands fa-css3"></i>
+                <p>Built-in responsiveness</p>
+            <p>Mobile first fluid grid</p>
+            <p>Fits any screen sizes</p>
+            <p>PC Tablet and Mobile</p>
+        </div>
+        <div class="box">
+            <h3>Standard CSS</h3>
+        <i class="fa-regular fa-gem"></i>
+        <p>Paper like design</p>
+            <p>Bold colors and shadows</p>
+            <p>Equal across platforms</p>
+            <p>Equal across devices</p>
+        </div>
+    </div>
+    <hr>
+
+<div class="main-cont">
+<div class="box1" id="color">
+    <h2>color classes</h2>
+</div>
+<div class="box2" id="box2">
+    <div class="item" id="item1" ><span>Red</span></div>
+    <div class="item" id="item2" ><span>Blue</span></div>
+    <div class="item" id="item3" ><span>Blue Grey</span></div>
+    <div class="item" id="item4" ><span>teal</span></div>
+    <div class="item" id="item5" ><span>yellow</span></div>
+    <div class="item" id="item6" ><span>orange</span></div>
+</div>
+<hr>
+<div class="box1" id="box3">
+    <h2>Built-In Responsiveness</h2>
+    <p>Resize the page to see the effect!
+
+</p>
+</div>
+<div class="box1" id="box4">
+<div class="half1">
+    <h5>w3-half</h5>
+    <p>The w3-half class uses half (50%) of the screen window.</p>
+    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+
+</div>
+<div class="half" id="half2">
+
+    <h5>w3-half</h5>
+
+</div>
+</div>
+<div class="box1" id="box5">
+    <div class="half3">
+        <h5>w3-third</h5>
+    <p>The w3-third class uses one third (33.33%) of the screen widow.</p>
+
+    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+    </div>
+    <div class="half2">
+<h5>w3-third</h5>
+    </div>
+    <div class="half2">
+<h5>w3-third</h5>
+    </div>
+</div>
+<div class="box1" id="box6">
+    <div class="quater">
+<h5>w3-quarter</h5>
+    <p>The w3-third class uses one third (25%) of the screen widow.</p>
+
+    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+    </div>
+    <div class="quater1">
+        <h5>w3-quarter</h5>
+    </div>
+    <div class="quater1">
+        <h5>w3-quarter</h5>
+    </div>
+    <div class="quater1">
+        <h5>w3-quarter</h5>
+    </div>
+</div>
+<div class="box1" id="content">
+    <h2>containers</h2>
+    <p>Use containers to create headers, sections and footers.</p>
+</div>
+<div class="header1">
+    <h2>Header</h2>
+</div>
+<div class="london">
+    <!-- <span><i class="fa-solid fa-xmark"></i></span> -->
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <p>By the way, you can add a close icon to all containers if you want the ability to hide them. Look to your right!</p>
+</div>
+<div class="footer">
+    <h5>footer</h5>
+    <p>Footer information goes here</p>
+</div>
+</div>
+<br>
+<hr>
+<div class="center">
+    <h2>Color Themes</h2>
+    <p>The color themes have been designed to work harmoniously with each other.</p>
+</div>
+<div class="cont">
+    <div class="theme">
+<div class="them">
+    <h3>Theme Indigo</h3>
+</div>
+<div class="movie">
+    <h3>Movies 2014</h3>
+</div>
+<ul>
+    <li>
+        <h3>Frozen</h3>
+        <p>The response to the animations was ridiculous</p>
+    </li>
+    <li>
+        <h3>The Fault in Our Stars</h3>
+        <p>Touching, gripping and genuinely well made</p>
+    </li>
+    <li>
+        <h3>The Avengers</h3>
+        <p>A huge success for Marvel and Disney</p>
+    </li>
+</ul>
+<div class="next">
+<span>Next</span>
+</div>
+    </div>
+    <div class="theme">
+        <div class="them1">
+    <h3>Theme Indigo</h3>
+</div>
+<div class="movie1">
+    <h3>Movies 2014</h3>
+</div>
+<ul>
+    <li>
+        <h3>Frozen</h3>
+        <p>The response to the animations was ridiculous</p>
+    </li>
+    <li>
+        <h3>The Fault in Our Stars</h3>
+        <p>Touching, gripping and genuinely well made</p>
+    </li>
+    <li>
+        <h3>The Avengers</h3>
+        <p>A huge success for Marvel and Disney</p>
+    </li>
+</ul>
+<div class="next1">
+<span>Next</span>
+</div>
+    </div>
+
+</div>
+<hr>
+
+<div class="contenet3">
+    <h3>Paper-like Cards with Shadows</h3>
+</div>
+
+
+<div class="main-cont2">
+    <div class="card">
+        <img src="https://www.w3schools.com/w3images/car.jpg" alt="">
+        <div class="container2">
+            <h4>w3-card</h4>
+        </div>
+        </div>
+
+    <div class="card">
+        <img src="https://www.w3schools.com/w3images/car.jpg" alt="">
+        <div class="container2">
+            <h4>w3-card-4</h4>
+        </div>
+        </div>
+
+    <div class="card">
+        <img src="https://www.w3schools.com/w3images/car.jpg" alt="">
+        <div class="container2">
+            <h4>w3-card-4</h4>
+        </div>
+        </div>
+</div>
+<div class="tabel">
+    <p>Table</p>
+    <p>Don't worry. W3.CSS takes care of your tables.</p>
+
+
+<table>
+    <tr>
+        <th>first name</th>
+        <th>last name</th>
+        <th>points</th>
+    </tr>
+
+    <tr>
+        <td class="first">jill</td>
+        <td class="first" >smith</td>
+        <td class="first">50</td>
+    </tr>
+    <tr>
+        <td class="secound">eve</td>
+        <td class="secound">jackson</td>
+        <td class="secound">94</td>
+    </tr>
+    <tr>
+        <td>adam</td>
+        <td>johnson</td>
+        <td>67</td>
+    </tr>
+</table>
+
+</div>
+
+<hr>
+
+<h4>Forms and Lists</h4>
+
+
+<div class="main-container3">
+    <div class="form">
+        <form action="">
+        <h3>Input form</h3>
+        <hr>
+       <label for="">name</label><br><br><br>
+       <hr>
+       <label for="">email</label><br><br><br>
+       <hr>
+       <label for="">subjects</label><br><br>
+       <div class="form-list">
+      <div class="left1">
+         <input class="male" type="checkbox">
+       <label for="">milk</label><br><br>
+       <input  class="male"type="checkbox">
+       <label for="">sugar</label><br><br>
+       <input  class="male"type="checkbox">
+       <label for="">lemon (desabled)</label>
+
+      </div>
+      <div class="right1">
+        <input class="male" type="radio" name="gender">
+        <label for="gender">male</label><br><br>
+        <input class="male" type="radio" name="gender">
+        <label for="gender">female</label><br><br>
+        <input  class="male"  type="radio" name="gender">
+        <label for="gender">don't know(disabled)</label>
+      </div>
+
+</div>
+
+
+
+    </form>
+    </div>
+    <div class="list">
+        <h3>lists</h3>
+
+        <ul>
+            <li>jill</li>
+            <hr>
+            <li>eve</li>
+            <hr>
+            <li class="adam">adam</li>
+        </ul>
+
+            <ol>
+            <li>jill</li>
+            <li>eve</li>
+            <li>adam</li>
+            <li>steve</li>
+        </ol>
+    </div>
+</div>
+<hr>
+<div class="progress">
+    <h4>Progress Bars</h4>
+</div>
+
+<div class="w3-light-grey">
+  <div id="myBar" class="w3-container w3-theme w3-padding" style="width:2%">0</div>
+</div>
+<button class="click">click me</button>
+<hr>
+<sub>slideshow</sub>
+<div class="slide-show">
+
+    <dim class="image1">
+        <img src="https://www.w3schools.com/w3images/snow.jpg" alt="">
+    </dim>
+</div>
+<hr>
+
+<div class="last-container">
+    <h2>navigation</h2>
+    <div class="main-box">
+      <a href="">home</a>
+      <a href="">link1</a>
+      <a class="dropdown" href="">dropdown<i class="fa-solid fa-caret-down"></i></a>
+</div>
+
+<div class="main-box1">
+    <h2>Accordians</h2>
+<p>open section 1</p>
+<p>open section 2</p>
+<p id="section">open section 3</p>
+</div>
+<h4>tabs</h4>
+<div class="main-box2">
+
+     <div class="name">
+        <a id="london" href="">london</a>
+<a id="paris" href="">paris</a>
+<a id="tokyo" href="">tokyo</a>
+ </div>
+ <h5>London</h5>
+ <p>London is the capital city of England.</p>
+ <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+
+</p>
+</div>
+ </div>
+ <hr>
+
+ <div class="button-box">
+    <h4>buttons</h4>
+    <button class="button1" >button</button>
+    <button class="button2" >button</button>
+    <button class="button3" >button</button>
+    <div class="plus">
+
+<div class="inner4"><i class="fa-solid fa-plus" id="plus1"></i></div>
+<div class="inner4"><i class="fa-solid fa-plus" id="plus2"></i></div>
+<div class="inner4"><i class="fa-solid fa-plus" id="plus3"></i></div>
+</div>
+</div>
+
+
+<div class="w3-dropdown-hover">
+    <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
+</div>
+<hr>
+<div class="content5">
+    <h4>pagination</h4>
+    <div class="number">
+        <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+<div class="nubers" id="nubers1">1</div>
+    <div class="nubers">2</div>
+    <div class="nubers">3</div>
+    <div class="nubers">4</div>
+    <div class="nubers">5</div>
+    <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+    </div>
+
+</div>
+
+
+<div class="footer1">
+    <div class="footer2">
+        <h4>Footer</h4>
+    <p>Powered by <span class="word">w3.css</span> </p>
+    <span>Remember to check out our  </span>
+    <b>w3.css refrence</b>
+    </div>
+
+    <div class="icon">
+        <i class="fa-solid fa-chevron-up"></i>
+    </div>
+</div>
+</body>
+</html>
