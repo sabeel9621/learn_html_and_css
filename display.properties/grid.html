@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+           border: 2px solid black;
+           /* width: 90%; */
+           height: 100vh;
+           margin: auto;
+        display: grid;
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        /* grid-template-rows: 1fr 5fr 1fr; */
+        grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+
+        }
+
+
+.item1 { grid-area: header;
+background-color: aqua;
+
+}
+.item2 { grid-area: menu;
+background-color: blue;
+border: 5px solid red;
+
+}
+.item3 { grid-area: main;
+background-color: brown;
+}
+.item4 { grid-area: right;
+background-color: rgb(240, 140, 10);
+border: 2px solid red;
+}
+.item5 { grid-area: footer;
+background-color: chartreuse;
+}
+
+
+#box1{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+.inner{
+    background-color: rgb(254, 168, 168);
+    margin: 5px;
+}
+
+#p-inner{
+    background-color: blue;
+    display: grid;
+
+}
+.inner1{
+    background-color: darkgreen;
+    margin: 5px;
+}
+
+#inner-1{
+    border: 2px solid purple;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
+.inner2{
+    background-color: chartreuse;
+    border: 2px solid yellow;
+    margin: 5px;
+}
+
+
+#inner-2{
+    background-color: darkblue;
+    display: grid;
+    grid-template-columns: 2fr 3fr  1fr;
+}
+
+.inner3{
+    background-color: cornflowerblue;
+    margin: 5px;
+}
+
+
+#item3{
+    background-color: darkgoldenrod;
+    display: grid;
+    height: 100%;
+    /* grid-template-rows: 1f; */
+    grid-template-columns: 2fr 2fr;
+}
+.box{
+
+    background-color: darkgreen;
+    margin: 5px;
+}
+#box2{
+
+    background-color: rgb(2, 36, 25);
+    display: grid;
+    grid-template-columns:auto
+}
+
+.inner-box{
+    background-color: darkmagenta;
+    margin: 5px;
+}
+
+
+#mango{
+background-color: bisque;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+}
+
+.box3{
+    background-color: rgb(5, 97, 97);
+    margin: 5px ;
+}
+
+#bad{
+background-color: blue;
+display: grid;
+/* grid-template-rows: auto; */
+
+}
+
+
+.box4{
+    background-color: forestgreen;
+margin: 2px;
+}
+/* .item4{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.item5{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.item6{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.item7{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.item8{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+} */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="item1" id="box1">
+<div class="inner"></div>
+<div class="inner" id="p-inner">
+    <div class="inner1" id="inner-1">
+        <div class="inner2"></div>
+        <div class="inner2"></div>
+    </div>
+    <div class="inner1" id="inner-2">
+        <div class="inner3"></div>
+        <div class="inner3"></div>
+        <div class="inner3"></div>
+    </div>
+
+</div>
+</div>
+<div class="item2">2</div>
+<div class="item3" id="item3">
+    <div class="box"></div>
+    <div class="box" id="box2">
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+        <div class="inner-box"></div>
+    </div>
+</div>
+<div class="item4" id="mango">
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+    <div class="box3"></div>
+</div>
+<div class="item5" id="bad">
+    <div class="box4"></div>
+    <div class="box4"></div>
+    <div class="box4"></div>
+</div>
+
+
+<!-- <div class="item4">4</div>
+<div class="item5">5</div>
+<div class="item6">6</div>
+<div class="item7">7</div>
+<div class="item8">8</div> -->
+
+
+    </div>
+</body>
+</html>
