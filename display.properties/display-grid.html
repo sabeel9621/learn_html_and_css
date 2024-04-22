@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        background-color: rgb(154, 221, 244);
+        height: 100vh;
+        grid-template-rows: 1fr 5fr 1fr;
+      }
+
+      .box {
+        background-color: pink;
+        margin: 5px;
+      }
+
+      #box-2 {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        border: 5px solid green;
+      }
+
+      .inner-box {
+        height: 100%;
+        /* width: 400px; */
+        background-color: rgb(11, 68, 211);
+        /* border: 2px solid yellow; */
+      }
+
+      .item {
+        height: 100%;
+        /* width: 200px; */
+        background-color: yellow;
+        border: 2px solid red;
+      }
+
+      #inner-box-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+      }
+
+      .item:nth-child(1){
+        background-color: rgb(9, 255, 0);
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .item:nth-child(8){
+        background-color: rgb(233, 108, 108);
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      @media (max-width: 806px) {
+
+        #box-2{
+            grid-template-columns: 1fr;
+        }
+        #inner-box-2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 400px) {
+        #inner-box-2 {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box" id="box-2">
+        <div class="inner-box"></div>
+        <div class="inner-box" id="inner-box-2">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
