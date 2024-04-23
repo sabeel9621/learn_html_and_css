@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamplate</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    border: 2px solid black;
+    height: 100vh;
+    background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url(https://themewagon.github.io/travela/img/tour-booking-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.box{
+    border: 2px solid red;
+}
+
+
+.item{
+    width: 90%;
+    margin: auto;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left{
+    width: 600px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.left button{
+    padding: 20px 60px;
+    margin: 0px;
+    border-radius: 50px;
+    border: none;
+    background-color: #13357b;
+    color: white;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+.left button:hover{
+    transform: scale(1.1s);
+    background-color: white;
+    color: black;
+}
+
+.reight{
+    border: 2px solid yellow;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0px;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+
+
+}
+h5{
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px 30px;
+}
+
+span{
+border-bottom: 2px solid rgb(255, 254, 254);
+padding: 0px 30px;
+/* margin-left: 10px; */
+/* margin-top: px; */
+width: 40px;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+    margin: 20px 0px;
+}
+p{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0px;
+}
+
+#action{
+font-size: 30px;
+width: 100%;
+border: 2px solid yellow;
+}
+
+#action h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 0px 15px;
+}
+#action p{
+font-size: 18px;
+padding: 0px 15px;
+}
+#action p span{
+    color: red;
+    border: none;
+    padding: 0px;
+}
+
+
+.row1{
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+
+}
+
+.col input{
+    padding: 25px 85px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#option1{
+padding: 25px 7.5rem;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#option2{
+padding: 25px 7.5rem;
+    margin-top: 20px;
+border-radius: 10px;
+}
+#option{
+padding: 25px 8rem;
+    margin-top: 20px;
+border-radius: 10px;
+}
+
+
+
+
+
+ textarea{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px ;
+    border-radius: 10px;
+    border: 2px solid yellow;
+
+}
+.col button{
+    width: 100%;
+    border: 2px solid red;
+}
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid yellow;
+    /* background-color: #13357b; */
+}
+.btn button{
+    padding: 25px;
+    border: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    background-color: #13357b;
+}
+
+#col1{
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+    transition: all 1s ease-in-out;
+
+}
+#col2{
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+}
+#col2:hover button{
+    /* transform: rotate(-50px); */
+    transform:scalex(1.8s);
+background-color: white;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="box">
+
+<div class="item">
+
+<div class="left">
+<div class="con"><h5>Booking</h5><span></span></div>
+
+<h1>Online Booking</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.</p>
+
+<button>read more</button>
+
+
+</div>
+<div class="reight">
+    <form id="action" action="">.
+        <h1>book a tour deal</h1>
+        <p>Get<span> 50% off</span>On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
+<div class="row1">
+
+<div class="col">
+    <input type="text" placeholder="your name">
+</div>
+<div class="col">
+    <input type="text"placeholder="your email">
+</div>
+<div class="col">
+    <input type="text" placeholder="date &time">
+</div>
+<div class="col">
+    <!-- <div class="col2"> -->
+    <select name="" id="option1">
+        <option value="">destination</option>
+        <option value="">destination1</option>
+        <option value="">destination2</option>
+        <option value="">destination3</option>
+        <label for="">destination</label>
+    </select>
+    </div>
+
+<div class="col">
+    <!-- <div class="col2"> -->
+            <select name="" id="option2">
+        <option value="">person</option>
+        <option value="">destination1</option>
+        <option value="">destination2</option>
+        <option value="">destination3</option>
+    </select>
+
+    </div>
+
+
+<div class="col">
+    <!-- <div class="col2"> -->
+    <select name="" id="option">
+        <option value="">categeory</option>
+        <option value="">kids</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <label for="">destination</label>
+    </select>
+    </div>
+    <div class="col" id="col1">
+    <textarea name="" id="" cols="30" rows="5"> Special Request</textarea>
+</div>
+<div class="col" id="col2">
+    <div class="btn"> <button>Submit</button></div>
+</div>
+
+</div>
+</form>
+</div>
+     </div>
+</div>
+    </div>
+     </div>
+    </div>
+</body>
+</html>
