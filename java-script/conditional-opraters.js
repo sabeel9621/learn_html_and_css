@@ -222,3 +222,121 @@
 // else {
 //     console.log("input mismatch")
 // }
+
+
+// angel of traingels
+// let a = 40;
+// let b = 60;
+// let c = 80;
+// if (a + b + c == 180) {
+//     console.log("triangel is valid")
+// }
+// else {
+//     console.log("triangel is not valid")
+// }
+
+// Write a Java Script Program to input all sides of a triangle and check whether triangle is valid or not.
+
+// let a = 10;
+// let b = 50;
+// let c = 5;
+// if (a == b + c || b == a + c || c == a + b) {
+//     console.log("triangel is valid")
+// }
+// else {
+//     console.log("triangel is not valid")
+//  }
+
+
+
+
+// Write a Java Script Program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+
+
+// let a = 6;
+// let b = 6;
+// let c = 6;
+// if (a == b && b == c) {
+//     console.log( "Equilateral Triangle")
+// }
+// else if (a == b || a == c || b == c) {
+//     console.log("Isosceles Triangle")
+// }
+// else {
+//     console.log("scalen trainge")
+// }
+
+// Write a Java Script Program to find all roots of a quadratic equation.
+
+
+// profit and loss
+
+
+// let a = 100;
+// let b = 80;
+// let c = a - b;
+// if (c > 0) {
+//     console.log("profit")
+//     console.log(c)
+// }
+// else {
+//     console.log("loss")
+// }
+
+
+// Write a Java Script Program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.Calculate percentage and grade according to following:
+
+// Percentage >= 90 % : Grade A
+// Percentage >= 80 % : Grade B
+// Percentage >= 70 % : Grade C
+// Percentage >= 60 % : Grade D
+// Percentage >= 40 % : Grade E
+// Percentage < 40 % : Grade F
+
+// let a = 80;
+// let b = 80;
+// let c = 90;
+// let d = 75;
+// let e = 85;
+// let f=a+b+c+d+e;
+// let g = (f / 5);
+// console.log(g)
+// if (g >= 90) {
+//     console.log("grade A")
+// }
+// else if (g >= 80 && g < 90) {
+//     console.log("grade B")
+// }
+// else if (g >= 70 && g < 80) {
+//     console.log("grade C")
+// }
+// else if (g >= 60 && g < 70) {
+//     console.log("grade D")
+// }
+// else if (g >= 40 && g < 60) {
+//     console.log("grade E")
+// }
+// else {
+//     console.log("grade F")
+// }
+
+
+// let a = 20;
+// let b = 80;
+// if (a > b) {
+//     console.log("a is greter")
+// }
+// else {
+//     console.log("b is greter")
+// }
+
+// let a = 40;
+// let b = 60;
+// let c = 80;
+// if (a + b + c == 180) {
+//     console.log("valid tringel")
+// }
+// else {
+//     console.log("not valid")
+// }
