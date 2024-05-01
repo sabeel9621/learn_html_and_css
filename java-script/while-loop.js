@@ -329,4 +329,273 @@
 
 // console.log(res)
 
-// Write a Java Script Program to find all factors of a number.
+ Write a Java Script Program to calculate factorial of a number
+
+// const factorial = n =>
+//     n < 0
+//         ? (() => {
+//             throw new TypeError('Negative numbers are not allowed!');
+//         })()
+//         : n <= 1
+//             ? 1
+//             : n * factorial(n - 1);
+
+// // console.log(factorial(1));
+// console.log(factorial(5));
+// // console.log(factorial(7));
+
+// second mathed
+
+// // let n = 6, i = 1, fact = 1
+// // while (i <= n) {
+// //     fact = fact * i
+// //     i++
+// // }
+// // console.log(fact)
+
+// for loop
+// for (i = 1; i <= n; i++) {
+//     fact = fact * i
+// }
+// console.log(fact)
+
+
+// rite a Java Script Program to find HCF(GCD) of two numbers..
+
+
+// let hcf;
+// const number1 = 20;
+// const number2 = 30;
+// for (let i = 1; i <= number1 && i <= number2; i++) {
+//     if (number1 % i == 0 && number2 % i == 0) {
+//         hcf = i;
+//     }
+// }
+// console.log('HCF of ', (number1), (number2), '=', (hcf));
+
+
+// Write a Java Script Program to find LCM of two numbers.
+
+// let a, b, hcf, lcm, x, y, temp
+// a = 50
+// b = 30
+// x = a
+// y = b
+// while (b != 0) {  //50!=0 condition true
+//     temp = b // temp=50 then b=20
+//     b = a % b // b=50%30 b=20 again b= 30%20 b=10
+//     a = temp //a=10
+// }
+// hcf = a // 10
+// lcm = (x * y) / hcf // 50*30/10 = 1500/10 = 150
+// console.log("HCF is", hcf)
+// console.log("LCM is", lcm)
+
+
+// Write a Java Script Program to check whether a number is Prime number or not
+
+// let a = 19;
+// let i = 2;
+
+// for (i; i <= a; i++) {
+//     if (a % i == 0) break;
+// }
+
+// if (a == i) console.log("it is a prime number");
+// else console.log("it is not a prime number");
+
+// Write a Java Script Program to print all Prime numbers between 1 to n.
+
+// let count = 0
+// let i, j
+// for (j = 2; j <= 100; j++) {
+//     for (i = 1; i <= j; i++) {
+//         if (j % i == 0)
+//             count++
+
+//     }
+
+//     if (count == 2)
+
+//         console.log(j)
+//     count = 0
+// }
+
+// Write a Java Script Program to find sum of all prime numbers between 1 to n.
+// let n = 1000;
+// let num = 2;
+// let sum = 0;
+
+// console.log(`Sum of prime numbers between 1 to ${n}:`);
+
+// while (num <= n) {
+//     let isPrime = true;
+//     let i = 2;
+
+//     while (i <= Math.sqrt(num)) {
+//         if (num % i === 0) {
+//             isPrime = false;
+//             break;
+//         }
+//         i++;
+//     }
+
+//     if (isPrime) {
+//         sum += num;
+//     }
+
+//     num++;
+// }
+
+// console.log(`Sum: ${sum}`);
+
+
+
+// Write a Java Script Program to find all prime factors of a number.
+
+
+// let num = 20;
+// for (let i = 1; i <= num; i++){
+//     if (num % 1 == 0) {
+//         console.log(i);
+//     }
+// }
+
+// Write a Java Script Program to check whether a number is Armstrong number or not.
+
+// let a = 9474;
+// let b = a;
+// let sum = 0;
+// while (b > 0) {
+//     last = b % 10;
+//     sum = sum + (last * last * last * last);
+//     b = parseInt(b / 10);
+// }
+// if (a == sum) {
+//     console.log("number is armstrong");
+// }
+// else {
+//     console.log("number is not armstrong");
+// }
+
+
+// Write a Java Script Program to print all Armstrong numbers between 1 to n
+// let n = 1000;
+// let num = 1;
+
+// console.log(`Armstrong numbers between 1 to ${n}:`);
+
+// while (num <= n) {
+//     let numString = num.toString();
+//     let power = numString.length;
+//     let sum = 0;
+//     let i = 0;
+
+//     while (i < numString.length) {
+//         sum += Math.pow(parseInt(numString[i]), power);
+//         i++;
+//     }
+
+//     if (sum === num) {
+//         console.log(num);
+//     }
+
+//     num++;
+// }
+
+
+
+// Write a Java Script Program to check whether a number is Perfect number or not.
+
+// let num = 28;
+
+// let sum = 0;
+// let i = 1;
+
+// while (i < num) {
+//     if (num % i === 0) {
+//         sum += i;
+//     }
+//     i++;
+// }
+
+// if (sum === num) {
+//     console.log(`${num} is a Perfect number.`);
+// } else {
+//     console.log(`${num} is not a Perfect number.`);
+// }
+
+
+
+// Write a Java Script Program to print all Perfect numbers between 1 to n.
+
+// let n = 1000;
+// let num = 1;
+
+// console.log(`Perfect numbers between 1 to ${n}:`);
+
+// while (num <= n) {
+//     let sum = 0;
+//     let i = 1;
+
+//     while (i < num) {
+//         if (num % i === 0) {
+//             sum += i;
+//         }
+//         i++;
+//     }
+
+//     if (sum === num) {
+//         console.log(num);
+//     }
+
+//     num++;
+// }
+// Write a Java Script Program to check whether a number is Strong number or not
+
+// let num = 145; // The number to check
+// let originalNum = num;
+// let sum = 0;
+
+// let temp = num;
+// while (temp > 0) {
+//     let digit = temp % 10;
+//     let fact = 1;
+//     let i = 1;
+//     while (i <= digit) {
+//         fact *= i;
+//         i++;
+//     }
+//     sum += fact;
+//     temp = Math.floor(temp / 10);
+// }
+
+// if (sum === originalNum) {
+//     console.log(`${originalNum} is a Strong number.`);
+// } else {
+//     console.log(`${originalNum} is not a Strong number.`);
+// }
+
+// Write a Java Script Program to print all Strong numbers between 1 to n.
+
+// let n = 10; // Number of terms
+// let a = 0, b = 1;
+
+// console.log(`Fibonacci series up to ${n} terms:`);
+
+// if (n >= 1) {
+//     console.log(a);
+// }
+
+// if (n >= 2) {
+//     console.log(b);
+// }
+
+// let count = 2; // Already two terms printed
+// while (count < n) {
+//     let fib = a + b;
+//     console.log(fib);
+//     a = b;
+//     b = fib;
+//     count++;
+// }
