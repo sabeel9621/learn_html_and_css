@@ -151,24 +151,24 @@
 // Write a Java Script Program to swap first and last digits of a number.
 
 
-function swapFirstAndLastDigit (number) {
-    let numString = number.toString();
-    let firstDigit = numString[0];
-    let lastDigit = numString[numString.length - 1];
-    let middleDigits = numString.substring(1, numString.length - 1);
+// function swapFirstAndLastDigit (number) {
+//     let numString = number.toString();
+//     let firstDigit = numString[0];
+//     let lastDigit = numString[numString.length - 1];
+//     let middleDigits = numString.substring(1, numString.length - 1);
 
-    if (numString.length === 1) {
-        return number;
-    }
+//     if (numString.length === 1) {
+//         return number;
+//     }
 
-    return parseInt(lastDigit + middleDigits + firstDigit);
-}
+//     return parseInt(lastDigit + middleDigits + firstDigit);
+// }
 
-let number = 123456789;
-let swappedNumber = swapFirstAndLastDigit(number);
+// let number = 123456789;
+// let swappedNumber = swapFirstAndLastDigit(number);
 
-console.log("Original number:", number);
-console.log("Swapped number:", swappedNumber);
+// console.log("Original number:", number);
+// console.log("Swapped number:", swappedNumber);
 
 
 // Write a Java Script Program to calculate sum of digits of a number.
@@ -198,3 +198,40 @@ console.log("Swapped number:", swappedNumber);
 //     console.log(product);
 // }
 // product(4578);
+
+
+// Write a Java Script Program to enter a number and print its reverse.
+
+// function reverse (n) {
+//     let rem = 0;
+//     let rev = 0;
+//     whilel(n != 0){
+//         rem = n % 10;
+//         rev = rev * 10 + rem;
+//         n = parseInt(n / 10);
+//         console.log(rev);
+//     }
+// }
+// reverse(4567);
+
+
+
+// Write a Java Script Program to check whether a number is palindrome or not.
+
+
+// function palindrome (n) {
+//     let rem = 0;
+//     let rev = 0;
+//     let pallendrome = n;
+//     while (n != 0) {
+//         rem = n % 10;
+//         rev = rev * 10 + rem;
+//         n = parseInt(n / 10);
+//     }
+//     if (pallendrome == rev) {
+//         console.log("pallindrome");
+//     }
+//     else {
+//         console.log("not apallindrome")
+//     }
+// } palindrome(12321);
