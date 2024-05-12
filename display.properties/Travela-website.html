@@ -1,0 +1,6064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+
+
+
+.header{
+    /* border: 2px solid black; */
+    width: 100vw;
+    margin: auto;
+    background-color: blue;
+    position: relative;
+    /* top: 0; */
+
+}
+.upper-header{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+
+    /* padding: 0.9em; */
+    flex-wrap: wrap;
+}
+.left{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+}
+
+.left a{
+    padding: 10px;
+    margin: 0.2rem;
+    font-size: 16px;
+    color:white;
+    border: 1px solid white;
+    border-radius: 100px;
+
+}
+
+
+.fa-brands{
+    width: 15px;
+}
+.right{
+    /* padding: 0.5rem; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+}
+
+.right span{
+    padding: 0.5rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+.right i{
+    padding: 5px;
+
+}
+
+
+
+ .lower-header{
+            width: 100%;
+            /* height: 100%; */
+            margin: auto;
+            border-bottom: 1px solid rgb(189, 188, 188);
+            display: flex;
+            justify-content: space-between;
+            position:sticky;
+            top: 0px;
+            z-index:10;
+
+            align-items: center;
+
+
+        }
+.left1 p{
+    padding: 10px;
+    /* font-size: 50px; */
+    text-transform: capitalize;
+    font-family: sans-serif;
+    /* border: 2px solid rgb(19, 18, 18); */
+    margin-left: 20px;
+    font-size: 50px;
+    color: white;
+}
+.left1 i{
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#home2{
+    z-index: 2;
+}
+      .header-ul{
+
+        display: flex;
+        /* border: 2px solid black; */
+        /* height: 100px; */
+        /* padding:30px; */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* overflow: hidden; */
+
+      }
+
+      .header-ul li{
+
+        margin: 0px 20px;
+        list-style: none;
+        height: 100%;
+        font-size: 20px;
+        color: white;
+        /* padding: 20px; */
+        font-family: sans-serif;
+        /* overflow: hidden; */
+      }
+
+.header-ul li button{
+    /* border: 2px solid red; */
+    border: none;
+    margin: 0%;
+    padding: 8px 20px;
+    transition: all 0.5s;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: #13357B;
+    color: white;
+
+}
+.header-ul button:hover {
+    transform:translatez(150px);
+    background-color: #fafbfc;
+    color: #13357B;
+}
+
+
+
+      .overflow{
+
+
+         height: 95px;
+         width: 105px;
+         position: absolute;
+         top: 70px;
+         right: 265px;
+         transition: all 1s ease-in-out;
+
+      }
+
+      .bar{
+        color: blue;
+        font-size: 20px;
+        margin-right: 10px;
+        display: none;
+        border: 1px solid #13357b;
+        padding: 5px 15px;
+        border-radius: 10px;
+      }
+
+      @media (max-width:1218px) {
+        .bar{
+            display: block;
+            font-size: 30px;
+        }
+
+        .header-ul{
+            display: none;
+
+        }
+
+        .upper-header{
+            display: none;
+        }
+
+        .left1 p{
+            color: #13357B;
+        }
+        .left1 i{
+            color: #13357B;
+        }
+
+        .lower-header{
+            background-color: white;
+        }
+
+      }
+
+      @media (min-width:2816px) {
+
+         .content p:nth-child(3){
+    width:45% ;
+ }
+
+ .content{
+    margin-top: 32rem;
+    /* border: 2px solid red; */
+ }
+      }
+
+      @media (max-width:2816px) {
+         .mid-cont{
+            margin-left: 10rem;
+         }
+      }
+
+      .menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        color: white;
+        font-family: sans-serif;
+        text-transform: capitalize;
+        margin: 10px;
+
+      }
+
+      .p{
+        height: 62%;
+        cursor: pointer;
+      }
+
+      /* .header-ul li:nth-child(3){
+        color: red;
+
+      } */
+
+      .blank{
+        /* color: red; */
+        transition: all 1s ease-in-out;
+        overflow: hidden;
+
+      }
+      .blank:hover .menu{
+        display: block;
+        cursor: pointer;
+      }
+
+      .blank:hover .overflow{
+
+        display: block;
+        transform: translateY(-100px);
+        background-color: blue;
+      }
+.over{
+     height: 95px;
+         width: 90px;
+         position: absolute;
+         left: 90px;
+         top: 50px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         /* background-color:transparent; */
+         /* display: none; */
+
+}
+.over1{
+     height: 95px;
+         width: 90px;
+         position: absolute;
+         left: 0px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         background-color:blue;
+         /* display: none; */
+
+}
+.over2{
+     height: 95px;
+         width: 120px;
+         position: absolute;
+         left: 180px;
+         top: 50px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         background-color:transparent;
+         /* display: none; */
+
+}
+.over3{
+     height: 95px;
+         width: 118px;
+         position: absolute;
+         left: 300px;
+         top: 50px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         background-color:transparent;
+         /* display: none; */
+
+}
+.over4{
+     height: 95px;
+         width: 95px;
+         position: absolute;
+         right:370px;
+         top: 50px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         background-color:transparent;
+}
+.over5{
+     height: 95px;
+         width: 105px;
+         position: absolute;
+         right:160px;
+         top: 50px;
+         transition: all 1s ease-in-out;
+         /* z-index: 5; */
+         background-color:transparent;
+}
+
+.over:hover {
+    display: block;
+    transform: translatey(-84%);
+    cursor: pointer;
+    background-color: blue;
+}
+.over1:hover {
+    display: block;
+    cursor: pointer;
+    background-color: blue;
+}
+.over2:hover {
+    display: block;
+    transform: translatey(-84%);
+    cursor: pointer;
+    background-color: blue;
+}
+.over3:hover {
+    display: block;
+    transform: translatey(-84%);
+    cursor: pointer;
+    background-color: blue;
+}
+.over4:hover {
+    display: block;
+    transform: translatey(-84%);
+    cursor: pointer;
+    background-color: blue;
+}
+.over5:hover {
+    display: block;
+    transform: translatey(-84%);
+    cursor: pointer;
+    background-color: blue;
+}
+
+
+
+
+
+
+.container{
+    width: 100%;
+    height: 113vh;
+    /* border: 2px solid black; */
+    background-image: url(https://themewagon.github.io/travela/img/carousel-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+        position: relative;
+    /* position: relative; */
+}
+
+
+.content{
+    width: 60%;
+    margin:6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content p:nth-child(1){
+    color: rgb(255, 254, 254);
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: 0.5rem;
+
+}
+h1{
+    font-size: 4.6rem;
+    margin-top:3rem;
+    color: white;
+    font-family: sans-serif;
+}
+ .content p:nth-child(3){
+    font-size: 20px;
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+
+
+
+
+ button{
+    /* width: 100%; */
+    /* border: 2px solid red; */
+    padding: 12px 55px;
+    border-radius: 50px;
+    margin-top: 30px;
+
+ }
+
+.button button{
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: all 0.8s ease-in-out;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+}
+
+.button:hover button{
+    transform: translatez(-50%);
+    background-color: white;
+    color: black;
+}
+
+
+
+.container1{
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid rgb(9, 9, 9); */
+    position: relative;
+    padding: 50px 40px;
+background-color: rgba(19, 53, 123, 0.8) ;
+    border-radius: 100px;
+    top: -50%;
+    transform: translateY(-50%)
+
+}
+.position{
+width: 95%;
+height: 50px;
+margin: auto;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0px 10px;
+    background-color: #ffffff;
+}
+
+
+.btn button{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: blue;
+    color: #ffffff;
+    font-size:20px ;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    border: none;
+}
+input{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+}
+
+.mid-cont{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.image{
+
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-grow: calc(1); */
+
+}
+
+
+.box {
+    width: 600px;
+
+}
+.box img{
+    width: 400px;
+    border: 50px solid;
+    border-color:  transparent #13357B transparent #13357B;
+
+}
+
+.box1{
+    width: 600px;
+    /* border: 2px solid pink; */
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(https://themewagon.github.io/travela/img/about-img-1.png);
+    background-repeat:repeat-x;
+    background-size: center;
+    background-position: center;
+    background-size:30%;
+}
+.h5{
+    border-bottom: 2px solid #13357B;;
+    position: absolute;
+    top: 20px;
+    left:130px ;
+    width: 50px;
+    color: #13357B;
+}
+h5{
+    font-size: 20px;
+    font-weight: 100;
+    color: #13357b;
+}
+h2{
+    margin: 1.5rem 0rem;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+
+.box1 span{
+ font-size: 40px;
+ color: #13357B;
+ margin: 0px;
+ padding: 0;
+}
+p{
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.5;
+}
+
+.lorem{
+    font-size: 16px;
+    color: #757575;
+    line-height: 1.5;
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+}
+.vontent{
+    width: 80%;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+    /* margin: auto; */
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  p i{
+ color: #13357B;
+ }
+
+ .submit button{
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #13357B;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: all 1s ease-in;
+    /* display: none; */
+    border: none;
+ }
+ button:hover {
+    display: block;
+    transform:translatez(-50%);
+    background-color: rgb(247, 248, 248);
+    color: black;
+ }
+
+ /* third container css start */
+
+ h3{
+    width: 50%;
+    margin: auto;
+ }
+
+
+ .container3{
+    width: 100%;
+margin:15px auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+background-color: #f2f2f2;
+
+ }
+ .container3 h3{
+    width: 15%;
+    margin: auto;
+    text-align: center;
+
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #13357B;
+    background-color: #13357b;
+
+ }
+.container3 h3 span{
+    background-color: #f2f2f2;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+ }
+ .container3 h2{
+    /* color: red; */
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 0;
+    margin: 10px;
+
+ }
+
+ .divition{
+    /* width: 85%; */
+    margin: 18px 18px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+ }
+
+ .service-content{
+    width:630px;
+
+
+ }
+.left-cnt{
+ width: 605px;
+     background-color: #ffffff;
+ border: 1px solid rgb(139, 137, 137);
+ border-radius: 20px;
+ margin: 1.5rem 0rem;
+ transition: all 0.6s ease-in-out;
+ display: flex;
+
+
+ align-items: center;
+ /* flex-grow: calc(1); */
+}
+.service{
+    text-align:right;
+}
+.mb-1{
+    /* width: 90%; */
+    font-size: 1.5rem;
+    margin:1.2rem 0.5rem;
+    color: black;
+    /* border: 2px solid black; */
+    font-family: sans-serif;
+    transition: all 0.6s ease-in-out;
+
+
+}
+.mb-0{
+    font-size:18px;
+    margin:0.6rem;
+    transition: all 0.8s ease-in-out;
+}
+.icon i{
+    margin: 15px;
+    color: #13357b;
+    transition: all 0.6s ease-in-out;
+}
+ .left-cnt:hover   {
+  /* transform: translatey(50%); */
+  color: white;
+  background-color: #13357b;
+ }
+ .left-cnt:hover .mb-1{
+    color: white;
+ }
+  .left-cnt:hover .mb-0{
+
+    color: white;
+
+  }
+  .left-cnt:hover i{
+
+    color: white;
+
+  }
+
+
+
+.service-content1{
+    width: 630px;
+
+
+}
+.right-cnt{
+    width: 630px;
+    background-color: #ffffff;
+    border: 1px solid rgb(139, 137, 137);
+    border-radius: 20px;
+margin: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.6s ease-in-out;
+    overflow: hidden;
+    /* flex-grow: calc(1); */
+
+
+}
+ .right-cnt .service{
+   text-align: left;
+ }
+.right-cnt:hover   {
+  /* transform: translatey(50%); */
+  color: white;
+  background-color: #13357b;
+
+
+ }
+ .right-cnt:hover .mb-1{
+    color: white;
+    transform:scalez(1.5);
+ }
+  .right-cnt:hover .mb-0{
+
+    color: white;
+
+  }
+  .right-cnt:hover i{
+
+    color: white;
+
+  }
+
+
+
+
+
+ .sirvice-more button{
+background-color: #13357b;
+color: #ffffff;
+font-size: 1.5rem;
+padding: 1rem 1.5rem;
+border: none;
+transition: all 0.8s ease-in-out;
+text-transform: capitalize;
+margin: 0;
+margin-bottom: 5rem;
+
+
+ }
+ .sirvice-more:hover button{
+ /* transform: translatey(-50px); */
+background-color: white;
+color: black;
+
+ }
+
+/*     container4 css started */
+
+.main-container{
+    width: 100%;
+margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+}
+
+
+
+.main-container h3{
+    width: 18%;
+    margin: auto;
+    text-align: center;
+
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #13357B;
+    background-color: #13357b;
+
+ }
+.main-container h3 span{
+    background-color: white;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+ }
+
+.main-cont2{
+ /* width: 85%; */
+ margin: auto;
+/* border: 2px solid rgb(225, 36, 11) ; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+gap: 10px;
+
+}
+
+.buts{
+    /* width: 70%; */
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.but{
+    border: 1px solid #13357b;
+    margin: 20px;
+
+
+}
+.but:hover{
+    background-color: #efefef;
+    cursor:pointer;
+}
+.col1{
+    border: 1px solid #13357B;
+    background-color: #13357b;
+    color: #ffffff;
+    margin: 20px;
+}
+.col1:hover{
+    background-color: #13357B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+.inner1{
+    width: 420px;
+    /* border: 2px solid blue; */
+}
+.row1{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: 18px  auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row1:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row1:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+    z-index: 10;
+    display: none;
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #fcfbfb;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row1:hover .col{
+    transform: translate(-150px);
+    display: block;
+
+}
+.col:hover {
+    background-color: #13357B;
+}
+
+.row2{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row2:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row2:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row2:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+ .row3{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row3:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row3:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row3:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.con p:hover{
+    color: blue;
+}
+.con p i:hover{
+    color: blue;
+}
+
+
+.inner2{
+    width: 400px;
+    /* border: 2px solid yellow; */
+}
+
+.row4{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row4 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row4:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row4:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row4:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+.row5{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row5 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row5:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row5:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 15px 15px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row5:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.row6{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row6 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row6:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row6:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row6:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+.inner3{
+
+    width: 430px;
+    /* border: 2px solid purple; */
+}
+
+.row7{
+    width: 400px;
+    height: 615px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    /* height: 300px; */
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row7 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row7:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row7:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row7:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+.row8{
+    width: 400px;
+    background-color: rgba(19, 53, 123, 0.8) ;
+    height: 300px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:10px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.row8 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.row8:hover img{
+    transform: scale(1.1);
+    opacity: 0.8;
+
+
+}
+
+.con{
+    width: 400px;
+    height: 300px;
+    /* background-color: yellow; */
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+.row8:hover .con{
+    transform: translateY(-150px);
+
+}
+.con h2{
+    font-size: 25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.con p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+.con button{
+margin: 0px 40px;
+padding: 12px 20px;
+border: none;
+border: 3px solid #ffffff;
+background-color: #13357b;
+color: #ffffff;
+transition: all 0.8s ease-in-out
+}
+.con:hover button{
+    transform: translatez(150px);
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+.col{
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    z-index: 10;
+    /* display: none; */
+    transition: all 0.8s ease-in-out;
+}
+
+.col i{
+    border: 2px solid rgb(154, 153, 153);
+    color: #757575;
+    /* padding: 20px 20px; */
+    /* border-radius: 100px; */
+}
+
+.row8:hover .col{
+    transform: translate(-120px);
+    display: block;
+}
+.con p i{
+    color: #fcfcfd;
+    font-size: 15px;
+}
+
+
+/* container 4 css start */
+/* hjhsjhJSHJHSJHSJshj */
+
+
+.main-container2{
+    width: 100%;
+margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+/* justify-content:space-evenly; */
+align-items: center;
+padding-top: 6rem;
+}
+
+.main-container h2{
+    margin: 5px;
+    font-weight: 300;
+    /* border: 2px solid black; */
+}
+.main-container2 span{
+    background-color: #ffffff;
+}
+.main-container2 p{
+    width: 52%;
+    text-align: center;
+}
+
+/* @media (max-width:2592px) {
+    .main-container2 p{
+        width:32%
+    }
+} */
+
+
+.explore{
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    line-height: 0em;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #13357B;
+    background-color: #13357B;
+    padding: 0px;
+}
+
+.main-cont1{
+ /* width: 85%; */
+ margin: auto;
+/* border: 2px solid green ; */
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;
+
+/* justify-content: space-evenly; */
+
+}
+.sum{
+    /* border: 2px solid ; */
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.sum button{
+    /* border: 2px solid yellow; */
+    margin: 0px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    /* padding: px 40px; */
+}
+.national{
+    padding: 12px 45px;
+    color: white;
+    font-size: 18px;
+    background-color: #13357B;
+    border: none;
+}
+.International{
+    border: 1px solid blue;
+    font-size: 18px;
+    padding: 12px 40px;
+
+}
+ .national:hover{
+    background-color: #13357B;
+    cursor: pointer;
+    color: #fffefe;
+ }
+
+.item1{
+    width: 400px;
+    /* border: 2px solid yellow; */
+
+}
+
+.colom{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+.colom1{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom1 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom1:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom1:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+
+.item2{
+    width: 400px;
+    /* border: 2px solid red; */
+}
+
+.colom2{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom2 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom2:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:170px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom2:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+
+.colom3{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom3 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom3:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom3:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ .tour {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    background-color: #ffc107;
+    color: #ffffff;
+    font-size: 20px;
+}
+.item3{
+    width: 400px;
+    /* border: 2px solid black; */
+}
+
+.colom4{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:18px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom4 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom4:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 100;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom4:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ .towr {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    padding: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 80px;
+    background: var(--bs-primary);
+    color: var(--bs-white);
+    background-color: #07ffff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.colom5{
+    width: 400px;
+    background-color: rgba(6, 91, 249, 0.992) ;
+    height: 230px;
+    /* border: 2px solid rgb(217, 22, 22); */
+    border-radius: 10px;
+    margin:10px auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.colom5 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+    /* z-index: 20; */
+
+}
+.colom5:hover img{
+    transform: scale(1.2);
+    opacity: 0.7;
+
+
+}
+
+.contineu{
+    width: 400px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: yellow; */
+    top:130px;
+    transition: all 0.8s ease-in-out;
+    position: absolute;
+    /* z-index: 5; */
+}
+
+.contineu h2{
+    font-size:25px;
+    padding: 5px 20px;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 100;
+}
+.contineu p{
+    font-size: 18px;
+    padding: 5px 35px;
+    color: white;
+}
+
+.col3 i{
+    font-size:30px ;
+    color: #fffefe;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 125px;
+    left: 200px;
+    /* background-color: #757575; */
+    display: none;
+    transition: all 0.8s ease-in-out;
+
+}
+ .colom5:hover i{
+ display: block;
+
+ }
+
+.contineu p i{
+    color: #fcfcfd;
+    font-size: 16px;
+
+}
+ p:hover{
+    color: #13357b;
+
+}
+
+
+/* main-container3 css started */
+
+.section6{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid green; */
+    padding-top: 12%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+article{
+    width: 15%;
+    margin: auto;
+    padding: 0px;
+    /* text-align: center; */
+    line-height: 0em;
+    margin: 5px 0px 5px;
+    margin-left: 10px;
+    border: 1px solid #13357B
+
+ }
+ article i{
+    background-color:white;
+    padding: 0px 15px;
+    color: #13357B;
+    /* font-size: 20px; */
+    text-transform:uppercase;
+    font-family: sans-serif;
+    /* text-align: center; */
+ }
+ .section6 h2{
+margin: 20px;
+font-family: normal;
+ }
+ .arrow{
+    width: 82%;
+    /* border: 2px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+
+ }
+
+
+
+ .left-arrow i{
+    /* font-size: 20px; */
+    border: 1px solid #13357B;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #13357B;
+ }
+
+
+ .right-arrow{
+border: 1px solid #13357B;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: #13357B;
+ }
+
+
+.main{
+    /* width: 83%; */
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 22px;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.first-div{
+    /* width: 390px; */
+    /* height: 800px; */
+    border-radius: 15pxpx;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid yellow; */
+    border-radius: 15px;
+    margin-bottom:15px ;
+    /* flex-grow: calc(2); */
+
+}
+
+
+.main-container3 {
+                height: 400px;
+                width: 400px;
+                /* border: 2px solid black; */
+                background-color: rgb(62, 57, 212);
+                border-radius: 10px 10px 0px 0px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                flex-grow: calc(2);
+
+            }
+
+
+
+            .big{
+                height: 0px;
+                width: 0px;
+                /* border: 2px solid black; */
+                background-color: rgb(101, 100, 100);
+                opacity: 0.5;
+                position: absolute;
+                transition-property: background-color, border-radius, height,
+                    width;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                animation-name: big;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+
+                animation: box 0.8s infinite linear;
+
+                transition: all 0.8s ease-in;
+            }
+            .main-container3:hover .big {
+                display: block;
+            height: 800px;
+            width: 800px;
+
+          transform:rotate(45deg) ;
+          transform:scale(0.8);
+          /* transform: skewX(-60deg);
+          transform: skewY(30deg);
+          transform: translateX(-400px);
+          transform: translateY(400px); */
+
+            }
+
+
+             .image1{
+                width: 100%;
+                height: 100%;
+                transition: all 0.8s ease-in-out;
+                position: absolute;
+
+
+            }
+ img{
+    transition: all 0.8s;
+
+
+ }
+
+            .main-container3:hover  img{
+                transform: scale(1.5);
+            }
+
+
+.main-container4{
+    width: 400px;
+    position: relative;
+    background-color: #d7d5d5;
+    /* border: 2px solid green; */
+    flex-grow: calc(2);
+
+}
+
+
+.price{
+    position: absolute;
+    background-color: #13357b;;
+    top: 0px;
+    left: 40%;
+    color:#ffffff;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.package{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.package i{
+    margin: 5px;
+}
+.package p:nth-child(1){
+    border: 2px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+   /* font-size: 20px; */
+   background-color: rgb(173, 173, 151);opacity:0.8 ;
+}
+.package p:nth-child(2){
+    width:25%;
+    border-top: 2px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+   /* font-size: 20px; */
+   background-color: rgb(173, 173, 151);opacity:08 ;
+}
+.package p:nth-child(3){
+    width: 32%;
+    border: 2px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+background-color: rgb(173, 173, 151);opacity:08;
+   /* font-size: 20px; */
+}
+.package i{
+    color: white;
+}
+
+
+.package1{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.package1 i{
+    margin: 5px;
+}
+.package1 p:nth-child(1){
+    border: 1px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+   /* font-size: 20px; */
+   /* background-color: rgb(173, 173, 151);opacity:0.8 ; */
+}
+.package1 p:nth-child(2){
+    width:25%;
+    border-top: 1px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+   /* font-size: 20px; */
+   /* background-color: rgb(173, 173, 151);opacity:08 ; */
+}
+.package1 p:nth-child(3){
+    width: 32%;
+    border: 1px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+   /* font-size: 20px; */
+}
+.package1 i{
+    color: white;
+}
+
+.package2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 365px;
+    /* padding: 10px; */
+    color: white;
+
+
+
+}
+
+.package2 i{
+    margin: 5px;
+}
+.package2 p:nth-child(1){
+    border: 1px solid rgb(241, 235, 235);
+ width: 40%;
+ color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 5px 15px;
+
+}
+.package2 p:nth-child(2){
+    width:25%;
+    border-top: 1px solid rgb(243, 239, 239);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+   padding: 0px 15px;
+
+}
+.package2 p:nth-child(3){
+    width: 32%;
+    border: 1px solid rgb(225, 222, 222);
+    color: white;
+ font-family: sans-serif;
+ font-weight: bold;
+padding: 0px 15px;
+   /* font-size: 20px; */
+}
+.package2 i{
+    color: white;
+}
+
+
+
+
+
+.cat h4,span,h5{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    text-align: left;
+}
+.cat h4{
+    font-family: sans-serif;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.cat h5{
+    font-size: 17px;
+}
+.cat span{
+    /* color: red; */
+    text-align: left;
+    margin-right: 16rem;
+}
+
+.cat p{
+    /* font-size: 18px; */
+    margin: 8px 20px;
+    text-align:justify;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* border: 2px solid blue; */
+    background-color: #13357b;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+
+
+/* section4 css end  */
+
+/* section 5 csss start */
+
+
+
+
+.container-gallery{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    padding: 20px 0px;
+    text-align: center;
+}
+ .awesome article{
+    width: 20%;
+    margin: auto;
+    padding: 0px;
+    /* text-align: center; */
+    /* line-height; */
+    margin: 5px 0px 5px;
+    margin-left: 10px;
+    border: 1px solid #13357B;
+    background-color:#13357B;
+
+ }
+
+ .tour-button{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+ }
+ .tour-button button{
+    padding: 9px 25px;
+    margin: 10px;
+    border: 1px solid #13357B;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+ }
+ .tour-button button:nth-child(1){
+    color: white;
+    padding: 10px 60px;
+    background-color: #13357B;
+
+ }
+.awesome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.awesome i{
+    /* color: red; */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.awesome p{
+    width: 53%;
+    color: #757575;
+}
+
+
+/* .container-gallery article{
+    width: 15%;
+    margin: auto;
+    padding: 0px;
+    line-height: 0em;
+    margin: 5px 0px 5px;
+    margin-left: 10px;
+    border: 1px solid #13357B
+
+ }
+ .container-gallery article i{
+    background-color:white;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    text-align: center;
+
+
+ } */
+
+.gallery{
+    /* width: 99%; */
+    margin:auto;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+
+
+}
+
+.gallery-item1{
+    /* border: 2px solid yellow; */
+    width: 240px;
+
+    /* margin: 0px 10px; */
+    /* height: 250px; */
+}
+.first-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.first-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.first-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 20px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.first-item:hover .iconic{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.gallery-item2{
+    /* border: 2px solid yellow; */
+    width: 350px;
+    /* margin: 0px 10px; */
+    /* height: 250px; */
+}
+
+.second-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.second-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 240px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+}
+
+
+.second-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic{
+
+        position: absolute;
+        top: 120px;
+    left:220px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.second-item:hover .iconic{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.third-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:auto;
+    margin:3% 0;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.third-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+
+}
+
+
+.third-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:220px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.third-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.forth-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin: auto;
+    /* margin-top: 4%; */
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.forth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+
+
+}
+
+
+.forth-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.forth-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+.gallery-item3{
+    /* border: 2px solid yellow; */
+    width: 240px;
+    /* margin: 0px 10px; */
+
+    /* height: 250px; */
+}
+
+.fifth-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.fifth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.fifth-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.fifth-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.sex-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.sex-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.sex-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.sex-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.gallery-item4{
+    /* border: 2px solid yellow; */
+    width: 350px;
+    /* margin: 0px 10px; */
+    /* margin: 10px; */
+    /* height: 250px; */
+}
+
+.seven-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:3% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.seven-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-left: 50px;
+
+
+}
+
+
+.seven-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.seven-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.aerth-item{
+    width: 350px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:3% auto;
+    background-color:#13357b;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+}
+
+.aerth-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.5;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord-1{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    margin-left: 60px;
+
+
+
+}
+
+
+.aerth-item:hover .bord-1{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconi{
+
+        position: absolute;
+        top: 120px;
+    left:280px;
+    color: #fdfbfb;
+   z-index: 6;
+   font-size: 40px;
+   height: 30px;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.aerth-item:hover .iconi{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+.gallery-item5{
+    /* border: 2px solid yellow; */
+    width: 240px;
+    /* height: 250px; */
+}
+
+
+.nine-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+            flex-grow: calc(2);
+        flex-shrink: calc(2);
+}
+
+.nine-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+
+
+.nine-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.nine-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+.ten-item{
+    width: 240px;
+    height: 290px;
+    /* border: 2px solid red; */
+    margin:5% auto;
+    background-color: #140143;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 0px 8px;
+        border-radius: 10px;
+        transition:all 0.5s ease-in-out ;
+
+}
+
+#forfun{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+}
+
+.ten-item:hover #forfun{
+    transform: scale(1.5);
+    opacity: 0.8;
+
+}
+/* .first-item:hover{
+    transform: scale(-1.5);
+} */
+.bord{
+    width: 220px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+align-items: center;
+    /* background-color: aqua; */
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    z-index: 5;
+    color: white;
+    font-size: 20px;
+}
+ #wordl{
+    color: red;
+}
+
+
+.ten-item:hover .bord{
+    transform: translatey(-70px);
+    /* border-radius: 500px; */
+}
+
+.iconic1{
+
+        position: absolute;
+        top: 130px;
+    left:220px;
+font-size: 40px;
+height: 30px;
+
+
+    color: #fbf9f9;
+   z-index: 6;
+
+        display: none;
+        transition: all 0.5s ease-in-out;
+}
+
+.ten-item:hover .iconic1{
+    transform: translateX(-120px);
+    display: block;
+}
+
+
+
+/* section start */
+
+.container10{
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    margin-top: 8rem;
+    background: linear-gradient(rgba(19, 53, 123, .8), rgba(19, 53, 123, .8)), url(https://themewagon.github.io/travela/img/tour-booking-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.item10{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 25rem; */
+
+}
+.left10{
+    width: 600px;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+.left10 button{
+    padding: 20px 60px;
+    margin: 0px;
+    border-radius: 50px;
+    border: none;
+    background-color: #13357b;
+    color: white;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+    text-transform: capitalize;
+
+}
+
+.left10 button:hover{
+    transform:translatez(1.5);
+    background-color: white;
+    color: black;
+}
+
+.reight10{
+    /* border: 2px solid yellow; */
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0px;
+}
+
+.con10 {
+    display: flex;
+    align-items: center;
+
+
+}
+.con10 h5{
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0px 30px;
+}
+
+.con10 span{
+border-bottom: 2px solid rgb(255, 254, 254);
+padding: 0px 30px;
+/* margin-left: 10px; */
+/* margin-top: px; */
+width: 20px;
+}
+
+ #action10 h1{
+    color: white;
+    font-size: 3rem;
+    margin: 20px 0px;
+    /* border: 2px solid red; */
+}
+.left10 h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 20px 0px;
+    /* border: 2px solid red; */
+}
+.left10 p{
+    font-size: 20px;
+    color: white;
+    margin: 30px 0px;
+    /* border: 2px solid green; */
+}
+
+#action10{
+font-size: 30px;
+width: 100%;
+/* border: 2px solid yellow; */
+}
+
+#action10 h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 0px 15px;
+}
+#action10 p{
+font-size: 18px;
+padding: 0px 15px;
+color: white;
+}
+#action10 p span{
+    color: rgb(202, 236, 9);
+    border: none;
+    padding: 0px;
+}
+
+
+.row10{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+
+}
+
+.col10 input{
+    padding: 18px  5rem 18px 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:left ;
+    align-items: flex-end;
+}
+
+#option10{
+padding: 18px  13.7rem 18px 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #868788;
+    text-transform: capitalize;
+
+}
+#option12{
+padding: 18px 12.7rem 18px 5px;
+    margin-top: 20px;
+border-radius: 10px;
+font-size: 20px;
+    color: #868788;
+    text-transform: capitalize;
+
+}
+#option11{
+padding: 18px  12.6rem 18px 5px;
+    margin-top: 20px;
+border-radius: 10px;
+font-size: 20px;
+    color: #868788;
+    text-transform: capitalize;
+
+}
+
+
+
+
+
+ textarea{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px 1.1rem;
+    border-radius: 10px;
+    /* border: 2px solid yellow; */
+    margin-left: 5px;
+    color: #86878a;
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+.col10 button{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.roman{
+    width: 90%;
+    margin-top: 20px;
+    /* border: 2px solid yellow; */
+
+    /* background-color: #13357b; */
+}
+.roman button{
+    width:100%;
+    padding: 15px;
+    border: 10px;
+    bottom: 0px;
+    left: 0;
+    /* margin-left: 10px; */
+    position: absolute;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    background-color: #13357b;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+
+#col11{
+    width: 98%;
+    margin: auto;
+    /* border: 2px solid red; */
+    transition: all 1s ease-in-out;
+
+}
+#col12{
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid red; */
+    transition: all 5s ease-in-out;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+#col12:hover button{
+    transform: rotate(-50px);
+    transform:scale(1.9s);
+background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+/* section 6 css started */
+
+.section8{
+    /* border: 2px solid green; */
+    width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section8 h3{
+    width: 20%;
+    margin: auto;
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 1px solid #13357B;
+    background-color: #13357b;
+    text-align: center;
+    margin: 0%;
+
+ }
+.section8 h3 span{
+    background-color: white;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+
+ }
+
+
+
+.section7{
+    /* border: 2px solid black; */
+    /* width: 90%; */
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.eco-plus{
+/* border: 2px solid red; */
+    width: 300px;
+    /* height: 400px; */
+    margin: auto;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+        .freez{
+/* border: 2px solid yellow; */
+ width: 300px;
+ height: 330px;
+ position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+    }
+.freez img{
+    width: 100%;
+    height: 330px;
+    transition: all 0.5s ease-in-out;
+}
+.eco-plus:hover img{
+    transform: scale(1.2);
+}
+
+.freez2{
+    /* border: 2px solid purple; */
+    width: 300px;
+    background-color:#f2f2f2;
+    height: 120px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 12px 12px;
+    /* justify-content: center; */
+    /* z-index: 4; */
+    transition: all 0.5s ease-in-out;
+
+}
+
+.freez3{
+    /* border: 2px solid rgb(57, 229, 14); */
+    width: 303px;
+    height: 200px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+
+}
+.eco-plus:hover .freez3{
+    transform: translateY(-122px);
+    background-color: #13357b;
+}
+.eco-plus:hover h4{
+    color: white;
+}
+.eco-plus:hover p{
+    color: white;
+}
+.freez2 h4{
+    color: rgb(11, 11, 11);
+    z-index: 4;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+    margin-top: 40px;
+}
+.freez2 p{
+    color: rgb(118, 114, 114);
+    z-index: 4;
+    font-size: 16px;
+    text-transform: capitalize capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-top: 5px;
+
+}
+
+#sector1{
+    /* width: 100%; */
+    margin: auto;
+    border: 1px solid #13357b;
+    position: absolute;
+    top:-30px ;
+    /* left: 60px; */
+    z-index: 8;
+    padding:5px 15px;
+    border-radius: 100px;
+    background-color: rgb(255, 254, 254);
+
+}
+#sector1 i{
+    font-size: 20px;
+    z-index: 5;
+    margin: 0px;
+    padding: 10px 30px 10px 10px;
+    border: 1px solid rgb(88, 80, 245);
+    border-radius: 100px;
+    color: white;
+    background-color: #13357b;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+
+#facebook:hover{
+background-color: white;
+    color: #13357b;
+}
+
+
+/* section 9 blog image started */
+
+
+.travel-blog2{
+    /* border: 2px solid green; */
+    width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-blog2 h3{
+    width: 15%;
+    margin: auto;
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 0.1px solid #13357B;
+    background-color: #13357b;
+    text-align: center;
+    margin: 0%;
+
+ }
+.travel-blog2 h3 span{
+    background-color: white;
+    padding: 0px 15px;
+    color: #13357B;
+    text-transform:uppercase;
+    font-family: sans-serif;
+
+ }
+ .travel-blog2 .lorem2{
+    width: 60%;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-bottom: 40px;
+ }
+ @media (max-width:2816px) {
+    .travel-blog2 .lorem2{
+        width: 40%;
+     }
+ }
+
+.travel-blog{
+        /* width: 90%; */
+        margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.blog{
+        /* width: 420px; */
+    border-radius: 15pxpx;
+    margin: auto;
+    margin: 10px;
+    /* border: 2px solid yellow; */
+    border-radius: 15px;
+}
+.first-blog{
+        height: 400px;
+                /* width: 420px; */
+                /* border: 2px solid black; */
+                background-color: rgb(62, 57, 212);
+                border-radius: 10px 10px 0px 0px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+}
+
+.blog-icon{
+    /* border: 2px solid red; */
+    position: absolute;
+    z-index: 1;
+    top:12rem;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+.first-blog:hover .blog-icon{
+display: block;
+
+}
+
+.inner-blog{
+    height: 0px;
+                width: 420px;
+                /* border: 2px solid black; */
+                /* background-color: rgb(43, 43, 246); */
+                    background: rgba(19, 53, 123, .6);
+                opacity: 0.8;
+                position: absolute;
+                /* display: none; */
+                transition-property: background-color, border-radius, height,
+                    width;
+                transition-duration: 1s;
+                transition-timing-function: ease-in-out;
+                animation-name: big;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+
+                animation: box 0.5s infinite linear;
+
+                transition: all 0.5s ease-in;
+}
+.first-blog:hover .inner-blog{
+                display: block;
+            height: 800px;
+            /* width: 800px; */
+
+          /* transform:rotate(45deg) ; */
+          transform:(0.5);
+          /* transform: skewX(-60deg);
+          transform: skewY(30deg);
+          transform: translateX(-400px);
+          transform: translateY(400px); */
+
+            }
+ .blog-image{
+                width: 100%;
+                height: 100%;
+                transition: all 0.8s ease-in-out;
+                position: absolute;
+
+
+            }
+ .blog-image img{
+    transition: all 0.5s;
+ }
+
+ .first-blog:hover img{
+transform: scale(1.5);
+ }
+
+.blog-packeg{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color:transparent;opacity:08 ;
+    position: absolute;
+    left: 0px;
+    top: 360px;
+    /* padding: 10px; */
+    color: white;
+
+
+}
+
+.blog-packeg i{
+    margin: 5px;
+
+    font-size: 20px;
+}
+.blog-packeg span{
+    color: white;
+    margin:0px;
+    padding: 0%;
+    font-weight: 100;
+}
+
+.blog-packeg:hover p:nth-child(2){
+    color:#13357B;
+    cursor: pointer;
+}
+.blog-packeg:hover p:nth-child(3){
+    color:#13357B;
+    cursor: pointer;
+}
+
+
+.blog-packeg b:nth-child(1){
+    border: 1px solid rgb(241, 235, 235);
+ width: 45%;
+   /* margin: 0px 10px; */
+   padding: 5px 15px;
+   font-size: 20px;
+   background-color:transparent;
+   opacity:0.8 ;
+   color:#13357B;
+
+}
+.blog-packeg p:nth-child(2){
+    width:25%;
+    border-top: 1px solid rgb(243, 239, 239);
+   /* margin: 0px 10px; */
+   padding: 0px 20px;
+   /* font-size: 20px; */
+   background-color:transparent;opacity:08 ;
+   color: white;
+font-size: 20px;
+padding:5px
+}
+.blog-packeg p:nth-child(3){
+    width: 25%;
+    border: 1px solid rgb(225, 222, 222);
+/* margin: 0px 10px; */
+padding: 0px 15px;
+background-color:transparent;
+opacity:08 ;
+color: white;
+font-size: 20px;
+padding:5px
+   /* font-size: 20px; */
+}
+
+.blog-2{
+    width: 420px;
+    border:1px solid #dee2e6;
+    position: relative;
+    background-color:white;
+    border-top: none;
+
+}
+.blog-2 h6{
+    font-size: 16px;
+    margin: 0%;
+    color: #757575;
+    font-weight: 100;
+    /* margin: 8px 20px; */
+    padding: 10px 20px;
+}
+
+.blog-2 span{
+    font-size: 22px;
+}
+
+.blog-2 p{
+font-size: 16px;
+    margin: 0%;
+    color: #757575;
+    font-weight: 100;
+    /* margin: 8px 20px; */
+    padding: 8px 20px;
+}
+
+.blog-button{
+/* border: 2px solid black; */
+margin: 15px 0px;
+
+}
+.blog-button button{
+    margin: 20px 0px;
+    padding: 0%;
+    padding: 10px 25px;
+    margin: 0px 15px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    background-color: #13357B;
+    color: white;
+    border: none;
+    border: 1px solid #13357B;
+
+}
+
+button:hover{
+    transform: scale(120px);
+    background-color: white;
+    color: #13357B;
+    cursor: pointer;
+}
+
+/* clint container started */
+
+
+.main-clint-cont{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top:5rem;
+    padding: 20px;
+}
+
+.main-clint-cont h3{
+    width: 20%;
+    margin: auto;
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 0.1px solid #13357B;
+    background-color: #13357b;
+    text-align: center;
+    margin: 0%;
+
+ }
+.main-clint-cont h3 span{
+    background-color: white;
+    padding: 0px 15px;
+    color: #13357B;
+    font-weight: 100;
+    text-transform:uppercase;
+    font-family: sans-serif;
+
+ }
+
+ .arrow1{
+    width: 85%;
+    /* border: 2px solid green; */
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+ }
+
+
+
+.arrow1 i{
+    color: #13357B;
+    font-size: 20px;
+
+}
+ .arrow1 span{
+    border: 1px solid #13357B;
+    padding: 5px 30px;
+    border-radius: 50px;
+
+ }
+
+
+.clint-container1{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+
+.clint-container{
+ width: 420px;
+ margin: auto;
+ /* border: 2px solid red; */
+ /* margin-top: 50px; */
+ position: relative;
+ margin: 0px 10px;
+
+}
+
+.clint-1{
+
+/* border: 2px solid black; */
+height: 10rem;
+text-align: center;
+background-color: #f2f2f2;
+color:#757575;
+border-radius: 10px;
+padding: 20px 0px;
+font-size: 18px;
+}
+
+
+.clint-2{
+    /* border: 2px solid green; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgb(10, 10, 10);
+    border-style: dotted;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.name{
+    /* border: 2px solid black; */
+    /* margin-bottom:10rem; */
+    position:absolute;
+    left: 140px;
+     bottom:50px;
+     z-index: 2;
+}
+    .clint-container dl {
+                font-size: 20px;
+                margin: 0px;
+                padding: 3px;
+                /* margin-top: 20px; */
+                text-align: center;
+            }
+            .clint-container dd {
+                margin: 0;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            .clint-icon{
+                /* border: 2px solid green; */
+                color:#13357B;
+                height: 50px;
+                /* text-align: center; */
+                padding-top:10px;
+                /* margin-top: 50px; */
+
+            }
+
+.clint-container2{
+ width: 420px;
+ margin: auto;
+ /* border: 2px solid red; */
+ margin-top: 50px;
+ position: relative;
+ margin: 0px 10px;
+ /* margin: 10px; */
+
+}
+
+.clint-3{
+    /* width: 400px; */
+    /* border: 2px solid black; */
+height: 10rem;
+text-align: center;
+background-color: #13357B;
+color: white;
+border-radius: 10px;
+padding: 20px 0px;
+font-size: 18px;
+}
+
+
+.clint-4{
+    /* border: 2px solid green; */
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid white;
+    border-style: dotted;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.name-2{
+    /* border: 2px solid black; */
+    /* margin-bottom:10rem; */
+    position:absolute;
+    left: 140px;
+     bottom:50px;
+     z-index: 2;
+
+}
+
+.clint-container2 dl {
+                font-size: 20px;
+                margin: 0px;
+                padding: 3px;
+                /* margin-top: 20px; */
+                text-align: center;
+            }
+            .clint-container2 dd {
+                margin: 0;
+                font-family: sans-serif;
+                text-align: center;
+                margin-bottom: 5px;
+
+            }
+
+            .clint-icon-2{
+                /* border: 2px solid red; */
+                color:#13357B;
+                height: 50px;
+                text-align: center;
+                padding-top:5px;
+                /* margin-top: 50px; */
+            }
+
+
+    .round{
+        /* border: 2px solid red; */
+        margin-top: 2rem;
+    }
+
+.round b{
+    border: 1px solid #13357b;
+    padding: 0px 8px;
+    margin:0.3em;
+    border-radius: 100px;
+    cursor: pointer;
+    /* margin-top: rem; */
+
+}
+.round b:nth-child(4){
+    padding: 0px 25px;
+    background-color: #13357b;
+}
+
+.subscribe{
+        background: linear-gradient(rgba(19, 53, 123, .6), rgba(19, 53, 123, .6)), url(	https://themewagon.github.io/travela/img/subscribe-img.jpg
+);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+
+
+.mid-subs{
+    width: 65%;
+    padding-top:40px ;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mid-subs p{
+    margin: 20px 0px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.mid-subs h1{
+    font-size: 50px;
+    font-weight: 100;
+}
+.mid-subs h3{
+    width:50px;
+    margin: auto;
+    line-height: 0%;
+    margin: 20px 0px 20px;
+    margin-left: 10px;
+    border: 0.1px solid #fdfeff;
+    background-color:white;
+    margin: 0%;
+    position: relative;
+    top: 50px;
+    right:110px;
+    display: inline;
+ }
+
+ .mid-subs .line-height{
+border: 1px solid rgb(253, 253, 253);
+position: relative;
+left: 80px;
+top: 25px;
+ }
+.mid-subs span{
+
+    padding: 0px 15px;
+    color:white;
+    font-weight: 100;
+    text-transform:uppercase;
+    font-family: sans-serif;
+    position: relative;
+    top: 40px;
+    right: 10px;
+ }
+
+ .input-feild{
+    /* border: 2px solid red; */
+    background-color: white;
+    width: 98%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 50px rgb(19,53,123.6);
+ }
+
+
+ .input-feild input{
+    padding:15px 0px;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+ }
+ .input-feild button{
+    margin: 0;
+    padding: 0;
+    padding:10px 30px;
+    border: none;
+    background-color:#13357b;
+    color: white;
+    border: 1px solid #13357B;
+    font-size: 20px;
+    transition: all 0.8s ease-in-out;
+
+ }
+
+ .input-feild button:hover{
+    background-color:white;
+    cursor: pointer;
+    transform: translatez(120px);
+    color: rgb(14, 13, 13);
+ }
+
+
+/* footer csss started */
+
+
+.main-footer{
+    /* border: 2px solid red; */
+    background-color: #14141f;
+
+}
+
+.footer{
+    width: 100%;
+    /* height: 15rem; */
+    margin: auto;
+    /* border-bottom: 2px solid rgb(30, 14, 211); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
+    /* background-color: #14141f; */
+    gap: 10px;
+
+}
+
+.first-list1{
+    /* border: 2px solid red; */
+    /* height: 400px; */
+    width: 300px;
+
+    /* background-color: black; */
+}
+.first-list1 h4{
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+}
+
+.first-list1 ol li{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+}
+#hover:hover {
+    color: #13357B;
+    transform: scalex(1.1);
+    cursor: pointer;
+
+
+}
+.flex-item{
+    /* border: 2px solid; */
+    margin-top: 15px;
+}
+.flex-item #flex-1{
+    color: white;
+    margin: 0px 10px;
+}
+.flex-item #flex2{
+    color: white;
+    margin: 5px;
+    /* border: 2px solid rgb(197, 34, 34); */
+    border-radius: 50px;
+padding: 8px 8px;
+background-color: #13357B;
+transition: all 0.5s ease-in-out;
+}
+.flex-item #flex3{
+    color: white;
+    margin: 5px;
+    /* border: 2px solid rgb(197, 34, 34); */
+    border-radius: 50px;
+padding: 8px 8px;
+background-color: #13357B;
+transition: all 0.5s ease-in-out;
+}
+.flex-item #flex4{
+    color: white;
+    margin: 5px;
+    /* border: 2px solid rgb(197, 34, 34); */
+    border-radius: 50px;
+padding: 8px 8px;
+background-color: #13357B;
+transition: all 0.5s ease-in-out;
+}
+
+#flex2:hover{
+    transform: translatez(120px);
+    background-color:white;
+    color: #13357B;
+    cursor: pointer;
+}
+#flex3:hover{
+    transform: translatez(120px);
+    background-color:white;
+    color: #13357B;
+    cursor: pointer;
+}
+#flex4:hover{
+    transform: translatez(120px);
+    background-color:white;
+    color: #13357B;
+    cursor: pointer;
+}
+
+.flex-item #flex1{
+    color: white;
+    margin: 5px;
+    /* border: 2px solid rgb(197, 34, 34); */
+    border-radius: 50px;
+padding: 8px 10px;
+background-color: #13357B;
+transition: all 0.5s ease-in-out;
+}
+
+#flex1:hover {
+    transform: translatez(120px);
+    background-color:white;
+    color: #13357B;
+    cursor: pointer;
+}
+
+.first-list2{
+    /* border: 2px solid red; */
+    /* height: 400px; */
+    width: 300px;
+}
+
+.first-list2 h4{
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.first-list2 ol li{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#company:hover {
+    color: #13357B;
+    transform:scalex(1.1);
+    cursor: pointer;
+    /* border: 2px solid yellow; */
+
+}
+
+.first-list3{
+    /* border: 2px solid red; */
+    width: 300px;
+}
+
+
+
+.first-list3 h4{
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px;
+}
+
+.first-list3 ol li{
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#support:hover {
+    color: #13357B;
+    transform: scalex(1.1);
+    cursor: pointer;
+
+}
+.first-list4{
+    /* border: 2px solid red; */
+    /* height: 400px; */
+    width: 350px;
+    /* padding: 10px; */
+
+
+
+}
+
+.english-1{
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.left-button{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 40%;
+    height: 60px;
+    outline: none;
+}
+
+.left-button span{
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #545252;
+}
+
+.left-button select{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding:5px 10px;
+    color: #757575;
+}
+.right-button{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 40%;
+    height: 60px;
+}
+
+.right-button span{
+    padding: 5px 13px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #545252;
+}
+.right-button select{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding:5px 10px;
+    color: #757575;
+    outline: none;
+}
+
+.last-sec-i{
+    /* border: 2px solid yellow; */
+    /* width: 80%; */
+    text-align: center;
+    color: white;
+}
+.last-sec-i b{
+    padding: 0px 5px;
+}
+
+.first-list4 p{
+    color:white;
+    font-size: 25px;
+    padding: 5px 30px;
+    font-family: sans-serif;
+}
+
+.lower-footer{
+    border-top: 1px solid rgb(102, 100, 100);
+    /* padding: 10px; */
+    position: relative;
+    margin-top: 5rem;
+    padding-bottom:15px ;
+
+}
+
+.lower-footer ol{
+    display: flex;
+    margin: 10px;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lower-footer ol li{
+    /* margin: 10px; */
+    /* margin-top: 20px; */
+    list-style: none;
+
+}
+.lower-footer i{
+    color: rgb(136, 129, 129);
+}
+#your-site{
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#all-right{
+    color: #757575;
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+#all{
+    color:#757575;
+    margin-left:2rem;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#html-code{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0%;
+}
+#wagon{
+    color: #13357B;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#wagon:hover {
+    color: #0c2352;
+    cursor: pointer;
+}
+
+.lower-footer span{
+    /* border: 2px solid yellow; */
+    padding: 8px 12px;
+    border-radius: 50px;
+    position:fixed;
+   left:95%;
+   bottom:2.5rem;
+   background-color: #13357B;
+}
+.lower-footer span i{
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.lower-footer span:hover{
+    background-color: white;
+    color: black;
+}
+.lower-footer span:hover i{
+    color: black;
+    /* background-color: white; */
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="container">
+<div class="header">
+<div class="upper-header">
+    <div class="left">
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://fa-facebook-f.com"><i class="fa-brands fa-youtube"></i></a>
+
+    </div>
+    <div class="right">
+<span><i class="fa-solid fa-user"></i>register</span>
+<span><i class="fa-solid fa-right-to-bracket"></i>login</span>
+<span><i class="fa-solid fa-house-chimney"></i>my dashbord <i class="fa-solid fa-caret-down">
+</i>
+</span>
+    </div>
+</div>
+</div>
+<!-- <div class="lower-header">
+    <div class="logo">
+        <span><i class="fa-solid fa-location-dot"></i></span>
+        <span>travela</span>
+    </div>
+        <ul>
+            <li class="home">home</li>
+            <li class="home"></li>
+            <li>about</li>
+            <li></li>
+            <li>services</li>
+            <li></li>
+            <li>pakeges</li>
+            <li></li>
+            <li>blog</li>
+            <li></li>
+            <li class="blog">
+            <li class="pages">pages <i class="fa-solid fa-angle-down"></i></li>
+            <div class="over"></div>
+            <div class="menu">
+                <ol>
+                    <li>destination</li>
+                    <li>explore ture</li>
+                    <li>travel booking</li>
+                    <li>our gallery</li>
+                    <li>travel guides</li>
+                    <li>testimonial</li>
+                    <li>404 page</li>
+                </ol>
+            </div>
+</li>
+            <li>contact</li>
+        </ul>
+
+</div>
+
+ -->
+<div class="lower-header">
+<div class="left1">
+    <p><i class="fa-solid fa-location-dot"></i>travela</p>
+</div>
+<div class="right1">
+   <ul class="header-ul">
+            <li id="home2">Home</li>
+             <div class="over1"></div>
+            <li class="About">About</li>
+            <div class="over"></div>
+            <!-- </li> -->
+            <li>services</li>
+           <div class="over2"></div>
+            <li>packages</li>
+            <div class="over3"></div>
+            <li>blog</li>
+            <div class="over4"></div>
+
+            <li class="blank">
+                <div class="p">Page <i class="fa-solid fa-angle-down"></i></div>
+                <div class="overflow"></div>
+                <div class="menu">
+                    <ul>
+                        <li>distination</li>
+                        <li>Explore Tour</li>
+                        <li>Travel Booking</li>
+                        <li>Our Gallery</li>
+                        <li>Travel Guides</li>
+                        <li>Testimonial</li>
+                        <li>404 Page</li>
+                    </ul>
+                </div>
+            </li>
+            <li>contact</li>
+                        <div class="over5"></div>
+
+            <li><button>Book Now</button></li>
+
+
+        </ul>
+
+    </div>
+    <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </div>
+
+
+<div class="content">
+    <p>EXPLORE THE WORLD</p>
+    <h1>Let's The World Together!</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+
+</p>
+<div class="button">
+    <button>discover now</button>
+</div>
+
+</div>
+
+</div>
+<!-- <div class="container-fluid search-bar position-relative" style="top: -50%; transform: translateY(-50%);">
+            <div class="container">
+                <div class="position-relative style="background: rgba(19, 53, 123, 0.8);>
+                    <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Eg: Thailand">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute me-2" style="top: 50%; right: 46px; transform: translateY(-50%);">Search</button>
+                </div>
+            </div>
+        </div> -->
+
+
+<div class="container1">
+<div class="position">
+    <input type="text" placeholder="Eg:Thailand">
+    <div class="btn">
+        <button>search</button>
+    </div>
+</div>
+</div>
+
+
+<div class="mid-cont">
+    <div class="image">
+        <div class="box">
+        <img src="https://themewagon.github.io/travela/img/about-img.jpg" alt="">
+    </div>
+    <div class="box1">.
+    <h5>ABOUT US</h5> <h5 class="h5"></h5>
+        <h2>Welcome to <span>Travela</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda? Id atque iste consectetur. Commodi odit ab saepe!</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?</p>
+    <div class="vontent">
+        <div class="lft-cont">
+<p><i class="fa-solid fa-arrow-right"></i>First Class Flights</p>
+<p><i class="fa-solid fa-arrow-right"></i>5 Star Accommodations</p>
+<p><i class="fa-solid fa-arrow-right"></i>150 Premium City Tours</p>
+        </div>
+        <div class="right-cont">
+            <p><i class="fa-solid fa-arrow-right"></i>Handpicked Hotels</p>
+
+<p><i class="fa-solid fa-arrow-right"></i>Latest Model Vehicles</p>
+
+<p><i class="fa-solid fa-arrow-right"></i>24/7 Service</p>
+        </div>
+
+
+    </div>
+    <div class="submit">
+<button>Read more</button>
+</div>
+</div>
+
+
+    </div>
+</div>
+
+<div class="container3">
+
+    <h3><span>services</span></h3>
+          <h2>our services</h2>
+
+    <div class="divition">
+<div class="service-content">
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-globe fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >Hotel Reservation</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-hotel fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1"  >Travel Guides</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-user fa-4x text-primary"></i></div>
+</div>
+<div class="left-cnt">
+    <div class="service">
+        <h5 class="mb-1" >Event Management</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+    <div class="icon"><i class="fa fa-cog fa-4x text-primary"></i></div>
+</div>
+</div>
+<div class="service-content1">
+    <div class="right-cnt">
+    <div class="icon"><i class="fa fa-globe fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-hotel fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-user fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+<div class="right-cnt">
+    <div class="icon"><i class="fa fa-cog fa-4x text-primary"></i></div>
+
+    <div class="service">
+        <h5 class="mb-1">WorldWide Tours</h5>
+        <p class="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.</p>
+    </div>
+</div>
+
+</div>
+</div>
+<div class="sirvice-more">
+<button>service more</button>
+</div>
+</div>
+
+
+<div class="main-container">
+    <h3><span>destination</span></h3>
+      <h2>Popular Destination</h2>
+    <div class="buts">
+        <button class="col1">All</button>    <button class="but">USA</button>    <button class="but">canada</button>    <button class="but">Europe</button>    <button class="but">China</button>    <button class="but">Singapore</button>
+    </div>
+
+<div class="main-cont2">
+<div class="inner1">
+<div class="row1">
+    <img src="https://themewagon.github.io/travela/img/destination-1.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>New York City</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row2">
+    <img src="https://themewagon.github.io/travela/img/destination-7.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row3">
+    <img src="https://themewagon.github.io/travela/img/destination-4.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+</div>
+<div class="inner2">
+    <div class="row4">
+    <img src="https://themewagon.github.io/travela/img/destination-2.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row5">
+    <img src="https://themewagon.github.io/travela/img/destination-8.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+<div class="row6">
+    <img src="https://themewagon.github.io/travela/img/destination-8.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+</div>
+</div>
+<div class="inner3">
+    <div class="row7">
+        <img src="https://themewagon.github.io/travela/img/destination-9.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>San francisco</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+    </div>
+    <div class="row8">
+        <img src="https://themewagon.github.io/travela/img/destination-6.jpg" alt="">
+<div class="con">
+    <button>20 Photos</button>
+    <h2>Los angelas</h2>
+    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+</div>
+<div class="col"><i class="fa-solid fa-plus"></i></div>
+    </div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="main-container2">
+    <h3 class="explore"><span>EXPLORE TOUR</span></h3>
+    <h2>The World</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.</p>
+
+    <div class="sum">
+        <button class="national">National tour category</button><button class="International">International tour category</button>
+    </div>
+
+    <div class="main-cont1">
+        <div class="item1">
+            <div class="colom">
+                <img src="https://themewagon.github.io/travela/img/explore-tour-1.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>WEEKEND TOUR </h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+
+    <div class="colom1">
+            <img src="https://themewagon.github.io/travela/img/explore-tour-4.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>HISTORICAL TRIP</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+    </div>
+        </div>
+        <div class="item2">
+            <div class="colom2">
+                    <img src="https://themewagon.github.io/travela/img/explore-tour-2.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>HOLIDAY TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+            </div>
+            <div class="colom3">
+                    <img src="https://themewagon.github.io/travela/img/explore-tour-5.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>FAMILY TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="tour">50 % off</div>
+            </div>
+        </div>
+        <div class="item3">
+            <div class="colom4">
+                <img src="https://themewagon.github.io/travela/img/explore-tour-3.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>ROAD TRIP</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+                <div class="towr">50 % off</div>
+            </div>
+            <div class="colom5">
+<img src="https://themewagon.github.io/travela/img/explore-tour-6.jpg" alt="">
+
+                <div class="col3">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+
+                <div class="contineu">
+                    <h2>BEACH TOUR</h2>
+                    <p>View All Place <i class="fa-solid fa-arrow-right"></i></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section6">
+ <article><i>PAKEGES</i></article>
+<H2>Awesome Packeges</H2>
+<div class="arrow">
+    <div class="left-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+    <div class="right-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+</div>
+
+<div class="main">
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-1.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package">
+<p><i class="fa-solid fa-location-dot"></i>Thayland</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+    <h4>Thayland Trip</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-3.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package1">
+<p><i class="fa-solid fa-location-dot"></i>Vanece Italy</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+    <h4>discover japan</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+
+
+
+
+</div>
+
+</div>
+    <div class="first-div">
+
+
+<div class="main-container3">
+        <div class="image1"><img src="https://themewagon.github.io/travela/img/packages-4.jpg" alt=""></div>
+
+        <div class="big"></div>
+
+<div class="price">
+$649.00
+</div>
+<div class="package2">
+<p><i class="fa-solid fa-location-dot"></i>Venice-Italy</p>
+<p><i class="fa-solid fa-calendar-days"></i>3Days</p>
+<p> <i class="fa-solid fa-user"></i>2 persion</p>
+</div>
+
+
+</div>
+<div class="main-container4">
+    <div class="cat">
+      <h4>Vanece-Italy</h4>
+    <span>hotel deals</span>
+    <h5><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis praesentium sapiente natus error aliquid ipsa, corrupti veniam autem quo nemo </p>
+
+    <div class="text">
+        <div class="left3">
+            read more
+        </div>
+        <div class="right3">book now</div>
+    </div>
+
+    </div>
+</div>
+
+</div>
+    </div>
+</div>
+
+
+<div class="container-gallery">
+    <div class="awesome"><article><i>OUR GALLERY</i></article>
+<H2>Tourism & Traveling Gallery.</H2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.</p>
+</div>
+<div class="tour-button">
+    <button type="button">All
+    <button type="button">World tour</button>
+    <button type="button">Ocean Tour</button>
+    <button type="button">Summer Tour</button>
+    <button type="button">sports Tour</button>
+</div>
+
+
+<div class="gallery">
+<div class="gallery-item1">
+ <div class="first-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-1.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+
+ </div>
+ <div class="second-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-6.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+
+</div>
+<div class="gallery-item2">
+    <div class="third-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-2.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+    <div class="forth-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-7.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+</div>
+<div class="gallery-item3">
+    <div class="fifth-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-3.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+
+ <div class="sex-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-8.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <sup>View All Place </sup>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+ </div>
+</div>
+<div class="gallery-item4">
+    <div class="seven-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-4.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+
+    <div class="aerth-item">
+        <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-9.jpg" alt="">
+
+<div class="bord-1">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconi">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+    </div>
+</div>
+<div class="gallery-item5">
+<div class="nine-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-5.jpg" alt="">
+
+<div class="bord">
+    <b>WORLD TOUR</b>
+    <dt>View All Place </dt>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+
+</div>
+<div class="ten-item">
+    <img id="forfun" src="https://themewagon.github.io/travela/img/gallery-10.jpg" alt="">
+
+<div class="bord">
+    <b id="world">WORLD TOUR</b>
+    <dt id="world">View All Place </dt>
+</div>
+
+<div class="iconic1">
+    <sub><i class="fa-solid fa-plus"></i></sub>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="container10">
+<div class="box10">
+
+<div class="item10">
+
+<div class="left10">
+<div class="con10"><h5>Booking</h5><span></span></div>
+
+<h1>Online Booking</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.</p>
+
+<button>read more</button>
+
+
+</div>
+<div class="reight10">
+    <form id="action10" action="">.
+        <h1>book a tour deal</h1>
+        <p>Get<span> 50% off</span>On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
+<div class="row10">
+
+<div class="col10">
+    <input type="text" placeholder="your name">
+</div>
+<div class="col10">
+    <input type="text"placeholder="your email">
+</div>
+<div class="col10">
+    <input type="text" placeholder="date &time">
+</div>
+<div class="col10">
+    <!-- <div class="col2"> -->
+    <select name="" id="option11">
+        <option value="">destination</option>
+        <option value="">destination1</option>
+        <option value="">destination2</option>
+        <option value="">destination3</option>
+        <label for="">destination</label>
+    </select>
+    </div>
+
+<div class="col10">
+    <!-- <div class="col2"> -->
+            <select name="" id="option12">
+        <option value="">person</option>
+        <option value="">destination1</option>
+        <option value="">destination2</option>
+        <option value="">destination3</option>
+    </select>
+
+    </div>
+
+
+<div class="col10">
+    <!-- <div class="col2"> -->
+    <select name="" id="option10">
+        <option value="">categeory</option>
+        <option value="">kids</option>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <label for="">destination</label>
+    </select>
+    </div>
+    <div class="col10" id="col11">
+    <textarea name="" id="" cols="30" rows="5"> Special Request</textarea>
+</div>
+<div class="col10" id="col12">
+    <div class="roman"> <button>Submit</button></div>
+</div>
+
+</div>
+</form>
+</div>
+     </div>
+</div>
+    </div>
+
+
+
+<div class="section8">
+    <h3><span>TRAVEL GUIDE</span></h3>
+          <h2>Meet Our Guide</h2>
+
+<div class="section7">
+    <div class="eco-plus">
+        <div class="freez">
+            <img src="https://themewagon.github.io/travela/img/guide-1.jpg" alt="">
+        </div>
+        <div class="freez2">
+                <h4> full name</h4>
+    <p>Designation</p>
+
+    <div class="icon" id="sector1">
+        <i class="fa-brands fa-facebook-f" id="facebook"></i>
+        <i class="fa-brands fa-twitter" id="facebook"></i>
+        <i class="fa-brands fa-instagram" id="facebook"></i>
+        <i class="fa-brands fa-linkedin" id="facebook"></i>
+    </div>
+        </div>
+        <div class="freez3"></div>
+    </div>
+    <div class="eco-plus">
+        <div class="freez">
+            <img src="https://themewagon.github.io/travela/img/guide-2.jpg" alt="">
+        </div>
+        <div class="freez2">
+                <h4> full name</h4>
+    <p>Designation</p>
+
+    <div class="icon" id="sector1">
+        <i class="fa-brands fa-facebook-f" id="facebook"></i>
+        <i class="fa-brands fa-twitter" id="facebook"></i>
+        <i class="fa-brands fa-instagram" id="facebook"></i>
+        <i class="fa-brands fa-linkedin" id="facebook"></i>
+    </div>
+        </div>
+        <div class="freez3"></div>
+    </div>
+    <div class="eco-plus">
+        <div class="freez">
+            <img src="https://themewagon.github.io/travela/img/guide-3.jpg" alt="">
+        </div>
+        <div class="freez2">
+                <h4> full name</h4>
+    <p>Designation</p>
+
+    <div class="icon" id="sector1">
+        <i class="fa-brands fa-facebook-f" id="facebook"></i>
+        <i class="fa-brands fa-twitter" id="facebook"></i>
+        <i class="fa-brands fa-instagram" id="facebook"></i>
+        <i class="fa-brands fa-linkedin" id="facebook"></i>
+    </div>
+        </div>
+        <div class="freez3"></div>
+    </div>
+    <div class="eco-plus">
+        <div class="freez">
+            <img src="https://themewagon.github.io/travela/img/guide-4.jpg" alt="">
+        </div>
+        <div class="freez2">
+                <h4> full name</h4>
+    <p>Designation</p>
+
+    <div class="icon" id="sector1">
+        <i class="fa-brands fa-facebook-f" id="facebook"></i>
+        <i class="fa-brands fa-twitter" id="facebook"></i>
+        <i class="fa-brands fa-instagram" id="facebook"></i>
+        <i class="fa-brands fa-linkedin" id="facebook"></i>
+    </div>
+        </div>
+        <div class="freez3"></div>
+    </div>
+</div>
+</div>
+
+
+<!-- travel-blog started -->
+
+<div class="travel-blog2">
+    <h3><span>OUR BLOG</span></h3>
+          <h2>Popular Travel Blogs</h2>
+          <p class="lorem2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti deserunt tenetur sapiente atque. Magni non explicabo beatae sit, vel reiciendis consectetur numquam id similique sunt error obcaecati ducimus officia maiores.</p>
+<div class="travel-blog">
+<div class="blog">
+<div class="first-blog">
+    <div class="blog-image">
+<img src="https://themewagon.github.io/travela/img/blog-1.jpg" alt="">
+    </div>
+<div class="blog-icon"><i class="fa-solid fa-link"></i></div>
+<div class="inner-blog"></div>
+
+<div class="blog-packeg">
+    <b><i class="fa-solid fa-calendar-days"></i><span>28 jan 2050</span></b>
+    <p><i class="fa-solid fa-thumbs-up"></i>1.7 k</p>
+    <p><i class="fa-solid fa-comments"></i>1k</p>
+</div>
+</div>
+<div class="blog-2">
+
+
+
+<div class="inner-blog2">
+    <h6>Posted By: Royal Hamblin</h6>
+    <span>Adventures Trip</span>
+</div>
+
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+<div class="blog-button">
+    <button>Read more</button>
+</div>
+</div>
+</div>
+
+<!-- second image -->
+
+<div class="blog">
+<div class="first-blog">
+    <div class="blog-image">
+<img src="https://themewagon.github.io/travela/img/blog-2.jpg" alt="">
+    </div>
+<div class="blog-icon"><i class="fa-solid fa-link"></i></div>
+<div class="inner-blog"></div>
+
+<div class="blog-packeg">
+    <b><i class="fa-solid fa-calendar-days"></i><span>28 jan 2050</span></b>
+    <p><i class="fa-solid fa-thumbs-up"></i>1.7 k</p>
+    <p><i class="fa-solid fa-comments"></i>1k</p>
+</div>
+</div>
+<div class="blog-2">
+
+
+
+<div class="inner-blog2">
+    <h6>Posted By: Royal Hamblin</h6>
+    <span>Adventures Trip</span>
+</div>
+
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+<div class="blog-button">
+    <button>Read more</button>
+</div>
+</div>
+</div>
+
+<!-- trird image -->
+<div class="blog">
+<div class="first-blog">
+    <div class="blog-image">
+<img src="https://themewagon.github.io/travela/img/blog-3.jpg" alt="">
+    </div>
+<div class="blog-icon"><i class="fa-solid fa-link"></i></div>
+<div class="inner-blog"></div>
+
+<div class="blog-packeg">
+    <b><i class="fa-solid fa-calendar-days"></i><span>28 jan 2050</span></b>
+    <p><i class="fa-solid fa-thumbs-up"></i>1.7 k</p>
+    <p><i class="fa-solid fa-comments"></i>1k</p>
+</div>
+</div>
+<div class="blog-2">
+
+
+
+<div class="inner-blog2">
+    <h6>Posted By: Royal Hamblin</h6>
+    <span>Adventures Trip</span>
+</div>
+
+<p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam eos</p>
+<div class="blog-button">
+    <button>Read more</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- clint container part -->
+
+<div class="main-clint-cont">
+<h3><span>TESTIMONIAL</span></h3>
+          <h2>Our Clients Say!!!e</h2>
+          <div class="arrow1">
+<span><i class="fa-solid fa-arrow-left"></i></span><span><i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+
+
+<div class="clint-container1">
+<div class="clint-container">
+    <div class="clint-1">
+            <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore debitis aut accusamus, fugiat ex, sunt, tenetur asperiores autem repudiandae quo modi molestias incidunt aperiam quasi</nav>
+</div>
+<div class="clint-2">
+    <img src="https://themewagon.github.io/travela/img/testimonial-3.jpg" alt="">
+</div>
+<div class="name">
+<dl>John Abraham </dl>
+                <dd>New York, USA</dd>
+</div>
+
+        <div class="clint-icon">
+            <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+        </div>
+    </div>
+
+
+    <div class="clint-container2">
+<div class="clint-3">
+    <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore debitis aut accusamus, fugiat ex, sunt, tenetur asperiores autem repudiandae quo modi molestias incidunt aperiam quasi</nav>
+</div>
+<div class="clint-4">
+    <img src="https://themewagon.github.io/travela/img/testimonial-4.jpg" alt="">
+</div>
+<div class="name-2">
+<dl>John Abraham </dl>
+                <dd>New York, USA</dd>
+</div>
+
+<div class="clint-icon-2">
+            <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+        </div>
+    </div>
+
+<div class="clint-container">
+    <div class="clint-1">
+            <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore debitis aut accusamus, fugiat ex, sunt, tenetur asperiores autem repudiandae quo modi molestias incidunt aperiam quasi</nav>
+</div>
+<div class="clint-2">
+    <img src="https://themewagon.github.io/travela/img/testimonial-1.jpg" alt="">
+</div>
+<div class="name">
+<dl>John Abraham </dl>
+                <dd>New York, USA</dd>
+</div>
+
+        <div class="clint-icon">
+            <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+                    <i class="fas fa-star text-primary"></i>
+        </div>
+    </div>
+
+
+</div>
+<div class="round">
+        <b></b>
+        <b></b>
+        <b></b>
+        <b></b>
+    </div>
+</div>
+
+<div class="subscribe">
+<div class="subs-cont">
+    <div class="mid-subs">
+
+<h3></h3><span>SUBSCRIBE</span><h3 class="line-height"></h3>
+<h1>Our Newsletter</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.</p>
+
+<div class="input-feild">
+<input type="text" placeholder="Your Email">
+<button>Subscribe</button>
+
+</div>
+
+    </div>
+</div>
+</div>
+
+
+<div class="main-footer">
+<div class="footer">
+    <div class="first-list1">
+        <h4>Get In Touch</h4>
+        <ol>
+
+            <li id="hover"><i class="fas fa-home me-2"></i>&nbsp; 123 Street, New York, USA</li>
+            <li id="hover"><i class="fas fa-envelope me-2"></i>&nbsp; info@example.com</li>
+            <li id="hover"><i class="fas fa-phone me-2"></i>&nbsp; +012 345 67890</li>
+            <li id="hover"><i class="fas fa-print me-2"></i> &nbsp;+012 345 67890</li>
+        </ol>
+        <div class="flex-item">
+            <i class="fas fa-share fa-2x text-white me-2" id="flex-1"></i>
+            <i class="fab fa-facebook-f" id="flex1"></i>
+            <i class="fab fa-twitter" id="flex2"></i>
+            <i class="fab fa-instagram" id="flex3"></i>
+            <i class="fab fa-linkedin-in" id="flex4"></i>
+        </div>
+    </div>
+    <div class="first-list2">
+        <h4>Compony</h4>
+        <ol>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> about</li>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> Careers</li>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> Blog</li>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> Press</li>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> Gift Cards</li>
+            <li id="company"><i class="fas fa-angle-right me-2"></i> Magazine</li>
+        </ol>
+    </div>
+    <div class="first-list3">
+        <h4>support</h4>
+        <ol>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> Contact</li>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> Legal Notice</li>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> Privacy Policy</li>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> Tearm and conditions</li>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> Sitemap</li>
+            <li id="support"><i class="fas fa-angle-right me-2"></i> cookie Policy</li>
+        </ol>
+    </div>
+    <div class="first-list4">
+        <div class="english-1">
+<div class="left-button">
+    <span>english</span>
+    <select name="" id="">
+        <option value="">Arabic</option>
+        <option value="">Germen</option>
+        <option value="">Greek</option>
+        <option value="">New York</option>
+    </select>
+</div>
+<div class="right-button">
+<span><label for="select1">$</label></span>
+<select name="" id="">
+        <option value="">USD</option>
+        <option value="">EUR</option>
+        <option value="">INR</option>
+        <option value="">GRP</option>
+    </select>
+</div>
+        </div>
+
+<p>Payments</p>
+
+    <div class="last-sec-i">
+    <b><i class="fab fa-cc-amex fa-2x"></i></b>
+<b><i class="fab fa-cc-visa fa-2x"></i></b>
+<b><i class="fas fa-credit-card fa-2x"></i></b>
+<b><i class="fab fa-cc-mastercard fa-2x"></i></b>
+<b><i class="fab fa-cc-paypal fa-2x"></i></b>
+<b><i class="fab fa-cc-discover fa-2x"></i></b>
+
+</div>
+    </div>
+</div>
+<div class="lower-footer">
+    <ol>
+        <li><i class="fas fa-copyright me-2"></i></li>
+        <li id="your-site">Your Site Name</li>
+        <li id="all-right">,All right reserved</li>
+        <li id="all">Designed By</li>
+        <li id="html-code">HTML Codex</li>&nbsp
+        <li id="all-right">Distributed By</li>
+        <li id="wagon">themewagon</li>
+    </ol>
+
+<span><i class="fa fa-arrow-up"></i></span>
+</div>
+</div>
+</body>
+</html>
