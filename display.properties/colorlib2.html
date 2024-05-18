@@ -27,6 +27,7 @@
             background-color: rgb(61, 60, 60);
             position: fixed;
             top: 0;
+            z-index: 1;
 
         }
         .left-section{
@@ -245,17 +246,17 @@ align-items: center;
            border: 2px solid red;
         display: flex;
         /* flex-wrap: wrap; */
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         position: relative;
 
       }
       .header-ul li{
 
-        margin: 0px 14px;
+        margin: 0px 16px;
         list-style: none;
-        height: 100%;
-        font-size: 20px;
+        /* height: 100%; */
+        font-size:20px;
         /* color: white; */
         /* padding: 20px; */
         font-family: jost,sans-serif;
@@ -373,18 +374,19 @@ align-items: center;
 }
 .new{
 
-    position: absolute;
+    position:absolute;
 
     background: #FF2020;
     color: #fff;
     text-align: center;
-    border-radius: 4px 4px 4px 0px;
+    border-radius: 6px 6px 6px 0px;
     font-size: 9px;
     top: -25px;
-    right:245px;
+    left: 366px;
     /* padding: 1px 4px; */
     letter-spacing: 1px;
     font-weight: 500;
+    /* border: 2px solid yellow; */
 }
 
 .third-icon span{
@@ -434,7 +436,7 @@ align-items: center;
 
 .bottom-header:hover span{
     letter-spacing: 1px;
-    transform:scalex(1.1);
+    cursor: pointer;
 
 
     color: red;
@@ -457,6 +459,108 @@ transform: none;
 }
 
 
+/* section -1 css started===========
+*******************************
+===============================*/
+
+.section-1{
+    border: 2px solid black;
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+
+@media(max-width:1600px){
+    .section-1{
+        background-position: center;
+        /* width: 100rem; */
+    }
+}
+@media(max-width:1400px){
+    .section-1{
+        background-position: center;
+         width: 100%
+    }
+}
+@media(max-width:900px){
+    .section-1{
+
+        background-position:50%;
+            min-width: 100%
+    }
+
+}
+@media(max-width:700px){
+    .section-1{
+
+        background-position:50%;
+            min-width: 100%
+    }
+
+}
+@media(min-width:650px){
+    .section-1{
+
+        background-position:center;
+        width: 100%
+    }
+
+}
+
+
+.content{
+    border: 2px solid red;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+}
+
+.content h2 {
+    font-size:40px;
+    margin: 10px;
+}
+.content span{
+    font-size: 30px;
+    font-family:cursive;
+    font-style: italic;
+
+}
+.content p{
+    width: 68%;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0.8rem;
+    font-size: 18px;
+}
+.content button{
+    padding: 10px 30px;
+    margin: 10px;
+    transition: all 0.5s ease-in-out;
+    font-size: 18px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+
+}
+
+.content button:hover{
+    /* transform: rotateX(180deg); */
+    transform: scaley(-120px);
+    background-color:white;
+    color: black;
+}
     </style>
 </head>
 <body>
@@ -550,5 +654,14 @@ transform: none;
     </div>
 </div>
 
+
+<div class="section-1">
+<div class="content">
+    <span>Fashion Sale</span>
+    <h2>Minimal Menz Style</h2>
+    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+    <button>shop now</button>
+</div>
+</div>
 </body>
 </html>
