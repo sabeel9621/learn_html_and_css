@@ -477,23 +477,23 @@ transform: none;
 }
 
 
-@media(max-width:1600px){
+/* @media(max-width:1600px){
     .section-1{
         background-position: center;
-        /* width: 100rem; */
+
     }
 }
 @media(max-width:1400px){
     .section-1{
         background-position: center;
-         width: 100%
+
     }
 }
 @media(max-width:900px){
     .section-1{
 
         background-position:50%;
-            min-width: 100%
+
     }
 
 }
@@ -501,7 +501,7 @@ transform: none;
     .section-1{
 
         background-position:50%;
-            min-width: 100%
+
     }
 
 }
@@ -509,40 +509,53 @@ transform: none;
     .section-1{
 
         background-position:center;
-        width: 100%
+
     }
 
 }
 
 
+
+@media (max-width:400px) {
+  .section-1{
+    background-position: center;
+
+  }
+} */
+
 .content{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 40%;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     position: absolute;
-    top: 50%;
-    left: 70px;
+    top: 30%;
+    left: 15%;
 }
 
 .content h2 {
-    font-size:40px;
+    font-size:55px;
     margin: 10px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 400;
 }
 .content span{
-    font-size: 30px;
+    font-size: 40px;
     font-family:cursive;
     font-style: italic;
+    color: red;
 
 }
 .content p{
-    width: 68%;
+    width: 80%;
     text-align: center;
     line-height: 1.5;
     margin: 0.8rem;
     font-size: 18px;
+    color: #9b9b9b;
 }
 .content button{
     padding: 10px 30px;
@@ -560,6 +573,85 @@ transform: none;
     transform: scaley(-120px);
     background-color:white;
     color: black;
+}
+
+
+.section-2{
+border: 2px solid red;
+position: relative;
+overflow: hidden;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.section2{
+/* border: 2px solid rgb(37, 228, 12); */
+position: relative;
+overflow: hidden;
+margin: 10px;
+
+}
+
+
+.section2box{
+    /* border: 2px solid blue; */
+    height: 360px;
+    width: 400px;
+    position: relative;
+}
+
+.section2box img{
+    width: 100%;
+    height: 100%;
+}
+
+.section2box1{
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    top: 270px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(41, 38, 33, 0) 0%, #292621 100%);
+
+
+
+
+}
+
+.section2box1 h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 25px;
+    color: white;
+}
+
+
+.section2box1 span{
+    font-size: 18px;
+    text-align: center;
+border-bottom: 2px solid white;
+    color: white;
+    width: 25%;
+    padding: 10px;
+    letter-spacing: 1.5;
+    /* color: transparent; */
+
+}
+.section2:hover .section2box1{
+    transform: translatey(-70px);
+
+}
+.section2:hover .section-2box1 span{
+    /* transform: translatey(-50px); */
+    color: white;
+
 }
     </style>
 </head>
@@ -661,6 +753,37 @@ transform: none;
     <h2>Minimal Menz Style</h2>
     <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
     <button>shop now</button>
+</div>
+</div>
+
+
+<div class="section-2">
+    <div class="section2">
+    <div class="section2box">
+        <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg" alt="">
+    </div>
+    <div class="section2box1">
+        <h2>Men's Fashion</h2>
+        <span>shop now</span>
+    </div>
+</div>
+    <div class="section2">
+    <div class="section2box">
+        <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items2.jpg" alt="">
+    </div>
+    <div class="section2box1">
+        <h2>Women's Fashion</h2>
+        <span>shop now</span>
+    </div>
+</div>
+    <div class="section2">
+    <div class="section2box">
+        <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items3.jpg" alt="">
+    </div>
+    <div class="section2box1">
+        <h2>Women's Fashion</h2>
+        <span>shop now</span>
+    </div>
 </div>
 </div>
 </body>
