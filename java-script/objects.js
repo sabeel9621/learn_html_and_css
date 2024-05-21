@@ -313,3 +313,12 @@ const complexData = [
 //     })
 // })
 // console.log(b)
+
+// answer no 10
+
+
+// let a = complexData.filter((item) => {
+//     return item.address.country=="USA"&&item.orders.some((i)=>i.amount>50)
+// })
+// console.log(a);
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@media (min-width: 768px) {
+ .header {
+        flex-wrap: nowrap;
+        height: 3.75rem;
+        justify-content: flex-end;
+        padding-left: 60px;
+        padding-top: 20px
+    }
+}
+
+.header{
+    border-bottom: 1px solid rgba(0, 255, 21, 0.734);
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+}
+
+.header ol{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid blue; */
+    text-transform: capitalize;
+}
+
+.header ol li{
+    margin: 0rem 2.2rem;
+    color: rgb(139, 133, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    list-style: none;
+}
+#logo img{
+    height: 40px;
+}
+
+.header ol li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+/* section1 css started */
+
+.section1{
+    /* border: 2px solid yellow; */
+    background-color: #555555;
+}
+
+.section1 p{
+    text-align: center;
+    color:#eeeeee ;
+    font-size: 14px;
+    font-family:roboto, sans-serif ;
+    padding: 14px;
+
+}
+.background-image{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    height: 100vh;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/9d0a8ebf8b1a2e39e745cdefefe9b83d/razer-blade-18-2024-homepage-desktop2x.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .content{
+    padding:3rem;
+ }
+.background-image h1{
+    color: white;
+    font-size:3rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-align: center;
+    cursor: pointer;
+    /* padding: 0.8rem; */
+}
+.background-image h4{
+    color: white;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.background-image p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background-image p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.background-image p span{
+    /* border: 2px solid red; */
+    margin: 0px 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background-image p span i{
+    /* border: 2px solid red; */
+    margin: 0.3rem 0.2rem;
+    font-size: 15px;
+    color: green;
+
+}
+.background-image p i{
+    /* border: 2px solid red; */
+    margin:0.3rem 0.2rem;
+    font-size: 15px;
+    color: green;
+
+
+}
+
+/* section 2 css started */
+
+
+.section2{
+    border: 2px solid yellow;
+    background-color: black;
+}
+.background-image2{
+    border: 2px solid red;
+    height: 120vh;
+    /* width: 100%; */
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/eb50479fa893b4be75eba8f6994f3e78/1920x600.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: auto;
+
+}
+
+.background-image2 h1{
+    color: white;
+    font-size:3rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    text-align: center;
+    cursor: pointer;
+    /* padding: 0.8rem; */
+}
+.background-image2 h4{
+    color: white;
+    font-size:1.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.background-image2 p{
+    color: white;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <ol>
+        <li id="logo"><img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt=""></li>
+        <li>store</li>
+        <li>pc</li>
+        <li>console</li>
+        <li>mobile</li>
+        <li>lifestyle</li>
+        <li>services</li>
+        <li>community</li>
+        <li>support</li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-cart-shopping"></i></li>
+    </ol>
+</div>
+<div class="section1">
+<p>RazerStore Rewards Giveaway: Become a member and stand to win the Razer Nommo V2 Pro. Join Now ></p>
+<div class="background-image">
+    <div class="content">
+<h1>new razer-blade-18</h1>
+<h4>new 4k 200 hz model availabel</h4>
+<p>learn more<i class="fa-solid fa-angle-right"></i><span>buy<i class="fa-solid fa-angle-right"></i></span></p>
+    </div>
+</div>
+</div>
+
+<div class="section2">
+    <div class="background-image2">
+     <div class="content1">
+        <h1>
+SENUA'S SAGA CONTINUES</h1>
+        <h4>get game pass with eligible items</h4>
+        <p>shope now</p>
+     </div>
+    </div>
+</div>
+</body>
+</html>
