@@ -14,7 +14,7 @@
 
 
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
  .header {
         flex-wrap: nowrap;
         height: 3.75rem;
@@ -22,7 +22,7 @@
         padding-left: 60px;
         padding-top: 20px
     }
-}
+} */
 
 .header{
     border-bottom: 1px solid rgba(0, 255, 21, 0.734);
@@ -47,7 +47,7 @@
 }
 
 .header ol li{
-    margin: 0rem 2.2rem;
+    margin: 0rem 2rem;
     color: rgb(139, 133, 133);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -56,6 +56,7 @@
 }
 #logo img{
     height: 40px;
+
 }
 
 .header ol li:hover{
@@ -153,17 +154,22 @@
 .section2{
     border: 2px solid yellow;
     background-color: black;
+
 }
 .background-image2{
     border: 2px solid red;
-    height: 120vh;
+    height: 100vh;
     /* width: 100%; */
     background-image: url(https://assets2.razerzone.com/images/pnx.assets/eb50479fa893b4be75eba8f6994f3e78/1920x600.webp);
-    background-position: center;
+    background-position:bottom;
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: auto;
+    background-size:100rem;
 
+
+
+}
+.content1{
+margin-top:3rem;
 }
 
 .background-image2 h1{
@@ -195,6 +201,146 @@
     padding: 0.8rem;
     font-weight: 400;
     cursor: pointer;
+
+}
+.background-image2 p:hover{
+    text-decoration: underline;
+}
+
+.section2 img{
+    height: 50px;
+   position: relative;
+  top: -100px;
+  left: 36%;
+}
+
+
+
+.section3{
+    border: 2px solid red;
+    width: 100%;
+    position: relative;
+    /* background-color: black; */
+
+}
+
+
+.image3{
+    height: 100vh;
+    /* width: 100%; */
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/64506e5ad9282e95b4a6c5212295016c/kiyo-pro-ultra-homepage-desktop2x.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content2{
+    /* border: 2px solid red; */
+    padding-top: 3.5rem;
+}
+.section3 h1{
+ font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-family: sans-serif;
+
+
+}
+.section3 h4{
+text-align: center;
+    font-size:1.5rem;
+    z-index: 2;
+    color: white;
+    padding: 0.8rem;
+
+}
+.image3 p{
+    color: white;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.image3 p i{
+    margin: 0rem 0.5rem;
+    color: rgb(4, 241, 4);
+    font-size: 15px;
+}
+.image3 p span{
+    margin: 0px 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image3 p span i{
+margin: 0rem 0.5rem;
+    color: rgb(3, 254, 3);
+}
+
+.image3 p:hover{
+    text-decoration: underline;
+}
+.image3 span:hover{
+    text-decoration: underline;
+}
+
+.grid{
+    border-top: 10px solid #323232;
+    background-color: #323232;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+}
+.item1{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/13d4e2184099fa08efb7b704cccbc68a/razer-white-edition-line-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item2{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/2ef5b37da7be946a487d825118880d3c/razer-skins-blade-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item3{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/f84336463b5c2d7466d6474a5ed259e7/razer-viper-v3-pro-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item4{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/e9d1f25b84209661bb678afc1a1580f8/battlestation-glory-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item5{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/f84336463b5c2d7466d6474a5ed259e7/razer-iskur-v2-extended-warranty-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item6{
+    /* border: 2px solid black; */
+    height: 500px;
+    background-image: url(https://assets2.razerzone.com/images/pnx.assets/2ef5b37da7be946a487d825118880d3c/seiren-v3-chroma-quartz-b-950x580-desktop.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     </style>
 </head>
@@ -235,6 +381,39 @@ SENUA'S SAGA CONTINUES</h1>
         <p>shope now</p>
      </div>
     </div>
+    <img src="https://assets2.razerzone.com/images/phoenix/razer-ths-logo.svg" alt="">
 </div>
+
+
+<div class="section3">
+
+    <div class="image3">
+         <div class="content2">
+        <h1>
+RAZER KIYO PRO ULTRA</h1>
+    <h4>THE LARGEST SENSER EVER IN A WEBCAM</h4>
+    <p>learn more<i class="fa-solid fa-angle-right"></i><span>buy<i class="fa-solid fa-angle-right"></i></span></p>
+    </div>
+    </div>
+</div>
+
+<div class="grid">
+    <div class="item1">
+ <div class="content2">
+        <h1>
+RAZER KIYO PRO ULTRA</h1>
+    <h4>THE LARGEST SENSER EVER IN A WEBCAM</h4>
+    <p>learn more<i class="fa-solid fa-angle-right"></i><span>buy<i class="fa-solid fa-angle-right"></i></span></p>
+    </div>
+
+
+    </div>
+    <div class="item2"></div>
+    <div class="item3"></div>
+    <div class="item4"></div>
+    <div class="item5"></div>
+    <div class="item6"></div>
+</div>
+
 </body>
 </html>
