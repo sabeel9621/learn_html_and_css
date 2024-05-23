@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+        #body{
+            text-align: center;
+        }
+
+/* .content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box{
+    border: 2px solid black;
+    width: 25rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+    font-size: 20px;
+}
+
+
+#red{
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: red;
+    border: none;
+    margin: 15px 10px;
+
+}
+#blue{
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: rgb(34, 0, 255);
+    border: none;
+
+}
+#green{
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: rgb(7, 252, 3);
+    border: none;
+    margin: 15px 10px;
+}
+#yellow{
+    padding: 20px 20px;
+    border-radius: 50px;
+    background-color: rgb(255, 251, 0);
+    border: none;
+}
+
+        #select{
+            width: 20%;
+            padding: 8px 0px;
+
+        }
+
+        #upper{
+            text-transform: uppercase;
+            font-size: 15px;
+
+        }
+        #lower{
+            text-transform: lowercase;
+            margin: 15px;
+            font-size: 15px;
+        }
+
+        #capital{
+            text-transform: capitalize;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body id="body">
+<div class="content">
+<div class="box" id="box">
+<select name="" id="select">
+<option value="">none</option>
+</select>
+<div>
+<button id="red"></button>
+<button id="blue"></button>
+<button id="green"></button>
+<button id="yellow"></button>
+</div>
+
+<p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo eveniet maxime aperiam iste voluptate magnam, porro recusandae quidem perferendis nemo accusantium facere ab ut quibusdam harum eius eaque animi. Voluptate cumque ut voluptatibus officiis fugit distinctio qui accusantium eos eius facilis consectetur in sit, veritatis ipsa at porro nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora fugiat corrupti excepturi modi cumque esse animi, laudantium expedita cum officia delectus quaerat. Sed rerum deleniti voluptatem illo quaerat natus!</p>
+
+<button id="upper">uppercase</button>
+<button id="lower">lowercase</button>
+<button id="capital">capitalize</button>
+</div>
+</div>
+
+<script>
+
+document.getElementById("blue").onclick = function () {
+        document.getElementById("para").style.color = "blue";
+        document.getElementById("body").style.background = "blue";
+
+      }
+document.getElementById("green").onclick = function () {
+        document.getElementById("para").style.color = "green";
+        document.getElementById("body").style.background = "green";
+
+      }
+document.getElementById("yellow").onclick = function () {
+        document.getElementById("para").style.color = "yellow";
+        document.getElementById("body").style.background = "orange";
+
+      }
+document.getElementById("red").onclick = function () {
+        document.getElementById("para").style.color = "red";
+        document.getElementById("body").style.background = "red";
+      }
+
+      document.getElementById("upper").onclick=function(){
+        document.getElementById("para").style.textTransform="uppercase";
+      }
+      document.getElementById("lower").onclick=function(){
+        document.getElementById("para").style.textTransform="lowercase";
+
+      }
+
+      document.getElementById("capital").onclick=function(){
+        document.getElementById("para").style.textTransform="capitalize";
+
+      }
+
+
+</script>
+</body>
+</html>
