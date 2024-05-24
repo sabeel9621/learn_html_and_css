@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        min-height: 70vh;
+        width: 50%;
+        margin: auto;
+        margin-top: 50px;
+        border: 2px solid black;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <!-- <textarea name="" id="" rows="10" cols="40"></textarea>
+        <button>Submit</button> -->
+      <span>Select Your Domain :</span>
+      <select name="" id="select">
+        <option value="none">None</option>
+        <option value="aws">Aws</option>
+        <option value="mern">Mern</option>
+        <option value="django">Django</option>
+        <option value="datascience">Data Science</option>
+      </select>
+      <p id="p"></p>
+
+      <button id="inc">increse</button>
+      <button id="dic">decrease</button>
+    </div>
+
+    <script>
+      document.getElementById("select").onclick = function () {
+        let a = document.getElementById("select").value;
+        console.log(a);
+
+
+        if (a == "aws") {
+          document.getElementById("p").innerText =
+            "Amazon Web Services, Inc. (AWS) is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered, pay-as-you-go basis. Clients will often use this in combination with autoscaling (a process that allows a client to use more computing in times of high application usage, and then scale down to reduce costs when there is less traffic). These cloud computing web services provide various services related to networking, compute, storage, middleware, IoT and other processing capacity, as well as software tools via AWS server farms. This frees clients from managing, scaling, and patching hardware and operating systems. One of the foundational services is Amazon Elastic Compute Cloud (EC2), which allows users to have at their disposal a virtual cluster of computers, with extremely high availability, which can be interacted with over the internet via REST APIs, a CLI or the AWS console. AWS's virtual computers emulate most of the attributes of a real computer, including hardware central processing units (CPUs) and graphics processing units (GPUs) for processing; local/RAM memory; Hard-disk(HDD)/SSD storage; a choice of operating systems; networking; and pre-loaded application software such as web servers, databases, and customer relationship management (CRM).";
+        }
+
+        else if (a == "mern") {
+          document.getElementById("p").innerText =
+            "MEAN (MongoDB, Express.js, AngularJS (or Angular), and Node.js)[1] is a source-available JavaScript software stack for building dynamic web sites and web applications.[2] A variation known as MERN replaces Angular with React.js front-end,[3][4] and another named MEVN use Vue.js as front-endThough often compared directly to other popular web development stacks such as the LAMP stack, the components of the MEAN stack are higher-level including a web application presentation layer and not including an operating system layer.[5]";
+        }
+
+
+
+        else if(a=="django"){
+          document.getElementById("p").innerText="Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source."
+        }
+
+        else if(a=="datascience"){
+          document.getElementById("p").innerText= "Data science is a multidisciplinary field that uses scientific methods, processes, and algorithms to extract insights from data. Data scientists use data analytics to find patterns, create predictive models, and develop insights that can guide business decision-making. Data science can be applied to many different types of data, including structured data like databases and unstructured data like text, images, and videos."
+          }
+
+
+        else if(a=="none"){
+
+            document.getElementById("p").innerText = ""
+        }
+      };
+
+
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
