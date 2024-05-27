@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #firsttext{
+            width: 20%;
+            height: 8rem;
+        }
+
+        #secondtext{
+            width: 40%;
+            height: 10rem;
+            border-radius: 10px;
+        }
+
+        h1{
+            font-size: 40px;
+            color: rgb(6, 237, 250);
+            background-color: red;
+
+        }
+
+        input{
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <textarea name="" id="firsttext"></textarea>
+
+
+    <h1>Css Propeteis</h1>
+
+
+    <input type="text" id="color" placeholder="chose your color..">
+    <input type="text" id="backgroundColor" placeholder="chose your bgColor.">
+    <input type="text" id="font-size" placeholder="chose font-size..">
+    <br><br>
+
+    <textarea name="" id="secondtext"></textarea>
+
+    <p id="para">Charecter count :</p>
+
+<script>
+    document.getElementById('firsttext').addEventListener('input',function(){
+  document.getElementById('secondtext').value=this.value;
+  document.getElementById('para').innerText='Charecter count'+this.value.length;
+
+    });
+
+    document.getElementById('color').addEventListener('input',function(){
+        document.getElementById('secondtext').style.color=this.value;
+    });
+
+    document.getElementById('backgroundColor').addEventListener('input',function(){
+        document.getElementById('secondtext').style.backgroundColor=this.value;
+    });
+
+    document.getElementById('font-size').addEventListener('input',function(){
+        document.getElementById('secondtext').style.fontSize=this.value;
+    })
+
+</script>
+
+</body>
+</html>

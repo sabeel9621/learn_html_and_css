@@ -14,12 +14,19 @@
         }
 
         .box1{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             padding: 3rem;
             column-gap: 10px;
             row-gap: 10px;
+        }
+        input{
+            width: 30%;
+            padding: 10px;
+        }
+        button{
+            padding: 10px 20px;
         }
 
         .item{
@@ -53,8 +60,8 @@
         document.getElementById('btn').onclick=function(){
             var color = document.getElementById('color').value;
             var Number = document.getElementById('number').value;
-            console.log(color);
-            console.log(number);
+            // console.log(color);
+            // console.log(number);
             document.getElementById('box'+Number).style.backgroundColor=color;
 
         }
