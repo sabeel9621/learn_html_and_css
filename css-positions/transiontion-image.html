@@ -6,7 +6,13 @@
     <title>Document</title>
     <style>
 
-
+body{
+    width: 30rem;
+    /* height: 40rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
         .guide {
@@ -19,7 +25,7 @@
 
  .guide-item {
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 300px ;
 
 
@@ -47,18 +53,20 @@
 
 .guide-img-efects::after {
     content: "";
-    width:100%;
+    width:0px;
     height: 0;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     transition: 0.5s;
-    /* border: 2px solid red; */
+
+    border: 2px solid red;
 
 }
 
 .guide-item:hover .guide-img-efects::after {
     height: 100%;
+    width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     background: rgba(1, 7, 19, 0.5);
@@ -72,6 +80,7 @@
 }
 .guide-img-efects:hover img{
     transform: scale(1.2);
+
 }
 
     </style>
