@@ -157,3 +157,62 @@ p i:hover{
             color: white;
         }
 
+.section2{
+            /* border: 2px solid black; */
+
+            margin-top: 45px
+        }
+.section2 h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4rem;
+    font-family:sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+.section2 p{
+    text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  color: grey;
+  font-style: italic;
+  margin: auto;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+#created{
+     width: 50%;
+    color: rgb(55, 54, 54);
+    text-align: justify;
+    font-style:normal;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.images{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    height: 280px;
+}
+
+.image1 h3{
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+.image1 img{
+    border-radius: 10px;
+    width: 90%;
+    height: 60%;
+
+}
+
+
+
+
