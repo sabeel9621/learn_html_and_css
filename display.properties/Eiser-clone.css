@@ -308,3 +308,62 @@ h4{
     font-family: sans-serif;
     text-transform: uppercase;
 }
+
+
+/* section 2 css started */
+
+
+.section-2{
+     /* border: 2px solid black; */
+    width: 85%;
+    margin: auto;
+    display: flex;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+
+
+.item{
+     margin: 0;
+    padding: 0;
+    border: 1px solid rgb(33, 208, 10);
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width:280px
+
+
+}
+
+
+ .item span i{
+    font-size:2rem;
+    padding: 1.8rem;
+    color: #3c3b3b;
+}
+ .item h5{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color:#2a2a2a;
+    margin: 0;
+}  .item p{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color:#797979;
+    padding: 20px;
+    margin: 0;
+}
+.content-1{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
