@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .middel-pro{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+        .product-detail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem;
+        }
+        .product-detail span{
+            margin: 0px 0px 20px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 20px;
+    text-decoration-color: rgb(226, 223, 223);
+        }
+        .product-detail p{
+            color: #4A4A4A;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+
+        }
+        .product{
+            /* border: 2px solid black; */
+            /* height: 100vh; */
+            width: 75%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+
+        }
+
+
+        .mini-product1{
+            /* height: 100vh; */
+            width:500px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .mini-product1 .image{
+            padding: 6.5rem 0rem;
+            /* border: 2px solid red; */
+
+        }
+        .mini-product1 .image img{
+            /* margin: 0px 20px; */
+            width: 100%;
+        }
+
+        .mini-product1 h3{
+            margin: 0px 0px 15px;
+            font-size: 32px;
+            font-family:sans-serif;
+            font-weight: 100;
+        }
+        .mini-product1 h5{
+            margin: 0px 0px 20px;
+            font-size:20px;
+            color: #7c7b7b;
+            font-family:sans-serif;
+        }
+        .mini-product1 h4{
+            margin: 0px 0px 25px;
+            color: #2a2a2a;
+            font-size: 30px;
+            font-weight: 100;
+            font-family: 'herbo',sans-serif;
+        }
+     .mini-product1 .btn1 button{
+        padding: 15px 32px;
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #71CD14;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+        text-transform: capitalize;
+     }
+
+     .btn1 button:hover{
+        /* font-size: 50px; */
+        transform: scalez(1.2);
+        background-color: white;
+        color: #71CD14;
+        border: 1px solid #71CD14;
+     }
+        .mini-product2{
+            /* border: 2px solid green; */
+            width: 600px;
+            /* height: 100vh; */
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            gap: 50px;
+        }
+        .container2{
+            /* border: 2px solid yellow; */
+            /* height: 48%; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* flex-direction: column; */
+            gap: 30px;
+            flex-wrap: wrap;
+
+        }
+        .new-container2{
+            /* border: 2px solid yellow; */
+            /* height: 48%; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+
+        }
+        .inner{
+            /* border: 2px solid black; */
+            width: 46%;
+            /* height: 100%; */
+            display: flex;
+            /* flex-direction: column; */
+            min-width: 250px;
+            flex-wrap: wrap;
+
+        }
+        .new-inner{
+            /* border: 2px solid black; */
+            width: 46%;
+            /* height: 100%; */
+            display: flex;
+            /* flex-direction: column; */
+            min-width: 250px;
+            flex-wrap: wrap;
+
+
+
+        }
+        .inner1{
+            /* border: 2px solid red; */
+            height: 250px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .inner1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .inner-inner{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 90%;
+            left: 12px;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            background-color: #71cd1466;
+
+        }
+        .inner:hover .inner-inner{
+            transform: translateY(-50px);
+        }
+        .inner2{
+            border: 2px solid rgb(247, 249, 247);
+            width: 100%;
+            height: 100px;
+        }
+        .new-inner1{
+            /* border: 2px solid red; */
+            height: 250px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .new-inner1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .inner-inner1{
+            /* border: 2px solid red; */
+            height: 200px;
+            width: 90%;
+            left: 12px;
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            /* background-color: rgb(163, 244, 163); */
+ background-color: #71cd1466;
+        }
+        .new-inner:hover .inner-inner1{
+            transform: translateY(-50px);
+        }
+        .new-inner2{
+            border: 2px solid rgb(247, 249, 247);
+            width: 100%;
+            height: 100px;
+        }
+        .inner-inner span i{
+          /* border: 2px solid black; */
+          background-color: white;
+          padding: 10px;
+          border-radius: 50px;
+          margin: 5px 10px;
+        }
+        .inner-inner1 span i{
+          /* border: 2px solid black; */
+          background-color: white;
+          padding: 10px;
+          border-radius: 50px;
+          margin: 5px 10px;
+        }
+        .inner-inner span i:hover{
+         color: white;
+            background-color: rgb(10, 241, 10);
+        }
+
+        .inner-inner1 span i:hover{
+            color: white;
+            background-color: rgb(10, 241, 10);
+        }
+
+
+        .inner2 p:nth-child(1){
+    margin: 15px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #2a2a2a;
+}
+.inner2 p:nth-child(2){
+    margin: 0px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* text-align: center; */
+}
+.inner2 p:nth-child(2) span{
+    margin: 0px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-decoration:line-through;
+    /* text-align: center; */
+}
+.inner:hover .inner2 p:nth-child(1){
+    color: #71CD14;
+}
+
+.new-inner2 p:nth-child(1){
+    margin: 15px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #2a2a2a;
+}
+.new-inner2 p:nth-child(2){
+    margin: 0px 20px;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* text-align: center; */
+}
+.new-inner2 p:nth-child(2) span{
+    margin: 0px 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-decoration:line-through;
+    /* text-align: center; */
+}
+.new-inner:hover .new-inner2 p:nth-child(1){
+    color: #71CD14;
+}
+    </style>
+</head>
+<body>
+       <div class="middel-pro">
+        <div class="product-detail">
+            <span>new products</span>
+            <p>Bring called seed first of third give itself now ment</p>
+
+       </div>
+    <div class="product">
+      <div class="mini-product1">
+        <h5>COLLECTION OF 2019</h5>
+        <h3>MEN’S SUMMER T-SHIRT</h3>
+        <div class="image">
+            <img src="https://themewagon.github.io/eiser/img/product/new-product/new-product1.png" alt="">
+        </div>
+        <h4>$120.70</h4>
+        <div class="btn1">
+            <button>Add to Cart</button>
+        </div>
+      </div>
+      <div class="mini-product2">
+        <div class="container2">
+        <div class="inner">
+            <div class="inner1">
+                <img src="https://themewagon.github.io/eiser/img/product/new-product/n1.jpg" alt="">
+              <div class="inner-inner">
+                    <span><i class="fa-regular fa-eye"></i></span>
+<span><i class="fa-regular fa-heart"></i></span>
+<span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+            </div>
+            <div class="inner2">
+                 <p>LATEST MEN’S SNEAKER</p>
+  <p>$25.00 <span>$35.00</span></p>
+            </div>
+        </div>
+        <div class="new-inner">
+            <div class="new-inner1">
+    <img src="https://themewagon.github.io/eiser/img/product/new-product/n2.jpg" alt="">
+              <div class="inner-inner1">
+                    <span><i class="fa-regular fa-eye"></i></span>
+<span><i class="fa-regular fa-heart"></i></span>
+<span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+            </div>
+            <div class="new-inner2">
+ <p>QUARTZ HAND WATCH</p>
+  <p>$25.00 <span>$35.00</span></p>
+            </div>
+        </div>
+        </div>
+        <div class="new-container2">
+                <div class="inner">
+            <div class="inner1">
+                <img src="https://themewagon.github.io/eiser/img/product/new-product/n3.jpg" alt="">
+              <div class="inner-inner">
+                    <span><i class="fa-regular fa-eye"></i></span>
+<span><i class="fa-regular fa-heart"></i></span>
+<span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+            </div>
+            <div class="inner2">
+                 <p>MEN’S DENIM JEANS</p>
+  <p>$25.00 <span>$35.00</span></p>
+            </div>
+        </div>
+        <div class="new-inner">
+            <div class="new-inner1">
+    <img src="https://themewagon.github.io/eiser/img/product/new-product/n4.jpg" alt="">
+              <div class="inner-inner1">
+                    <span><i class="fa-regular fa-eye"></i></span>
+<span><i class="fa-regular fa-heart"></i></span>
+<span><i class="fa-solid fa-cart-shopping"></i></span>
+              </div>
+            </div>
+            <div class="new-inner2">
+                 <p>ADIDAS SPORT SHOE</p>
+  <p>$25.00 <span>$35.00</span></p>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
