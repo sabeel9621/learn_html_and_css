@@ -206,14 +206,27 @@ db.users.find({ role: "admin", skills: { $exists: true, $ne: [] } }).pretty()
 
 42 Find all documents where the user's role is "customer" and the user has the skill "HTML" but not "CSS".
 
-(ans)
+(ans) db.user.find({role:"customer", skills:"html",skills:{$ne:"CSS"}})
 
 43 Retrieve all documents where the user's role is "admin" and the user has the skill "Java" and "JavaScript".
 
 (ans)db.user.find({role:"admin",skills:{$all:["Java","JavaScript"]}})
 
 44 Find the average age of users.
-(ans)
+(ans) db.user.aggeregate(
+    [
+        {
+            $group:{
+                _id:"$user",
+                averageAge:{$avg:"age"}
+            }
+        },
+        $project:{
+            user:"$_id",
+            averageAge:1
+        }
+    ]
+)
 45 Find all female users from Jaipur who know Python.
 
 (ans)db.user.find({gender:"Female",city:"Jaipur",skills:"Python"})
