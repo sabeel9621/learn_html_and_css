@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <style>
+
+        #taskInput{
+            /* padding: 10px; */
+            font-size: 25px;
+        }
+        .task {
+            width: 100%;
+            /* border: 1px solid #ccc; */
+            margin: 5px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            /* background-color: #f9f9f9; */
+        }
+        .task.completed span {
+            text-decoration: line-through;
+        }
+        .buttons {
+            display: flex;
+            /* justify-content:center; */
+            margin-top: 10px;
+            gap: 10px
+        }
+        .task button {
+            width: 30%;
+            padding: 10px;
+        }
+        #add{
+            padding: 0px 30px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="add" onclick="addTask()">Add</button>
+    <div id="taskList"></div>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            const taskList = document.getElementById('taskList');
+
+            if (taskInput.value.trim() !== "") {
+                const taskDiv = document.createElement('div');
+                taskDiv.className = 'task';
+
+                const taskText = document.createElement('span');
+                taskText.innerText = taskInput.value;
+
+                const buttonsDiv = document.createElement('div');
+                buttonsDiv.className = 'buttons';
+
+                const completeButton = document.createElement('button');
+                completeButton.innerText = 'Complete';
+                completeButton.onclick = function() {
+                    taskDiv.classList.toggle('completed');
+                };
+
+                const deleteButton = document.createElement('button');
+                deleteButton.innerText = 'Delete';
+                deleteButton.onclick = function() {
+                    taskList.removeChild(taskDiv);
+                };
+
+                buttonsDiv.appendChild(completeButton);
+                buttonsDiv.appendChild(deleteButton);
+
+                taskDiv.appendChild(taskText);
+                taskDiv.appendChild(buttonsDiv);
+
+                taskList.appendChild(taskDiv);
+
+                taskInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
