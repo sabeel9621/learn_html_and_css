@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -258,14 +259,14 @@ transform: translateZ(-10px);
 }
 
 .container-1{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
-    background-color: #fff;
+    background-color: #efeded;
 
 }
 
 .left-2{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 50%;
     padding: 4% 14%;
     text-transform: capitalize;
@@ -277,7 +278,7 @@ transform: translateZ(-10px);
     font-family: sans-serif;
 }
 .right-2{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 50%;
 }
 .right-2{
@@ -287,52 +288,213 @@ transform: translateZ(-10px);
     padding-right: 15%;
 }
 .container-2{
-    border: 2px solid green;
-
+    /* border: 2px solid green; */
+margin: 7rem 0rem 4rem;
 }
 .easy{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 70%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.image{border: 2px solid red;
-    width: 50%;
+.image{
+    /* border: 2px solid red; */
+    width: 45%;
 }
 
 .image img{
     width: 100%;
+    height: 100%;
 }
 
 .content-1{
-    border: 2px solid blue;
-    width: 50%;
+    /* border: 2px solid blue; */
+    width: 45%;
     padding-top: 5%;
+    padding-left: 6rem;
 }
 
 .content-1 h3{
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 100;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
 }
 .content-1 h2{
-    color: rgb(42, 245, 42);
-    padding: 0px 20px;
+    color: rgb(34, 253, 34);
+    /* padding: 0px 20px; */
+    margin: 10px 0px;
 }
 
 .content-1 ul li{
     list-style: none;
     padding: 5px 0px;
-}
- .content-1 .list li span{
-  margin: 20px 0px;
-  padding: 20px;
+    cursor: pointer;
 }
 
 
-    </style>
+.content-1 ul li .house{
+    color: rgb(33, 242, 33);
+    margin: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.content-1 ul li .in{
+    margin: 5px;
+    cursor: pointer;
+}
+
+hr{
+    margin: 10px 0px;
+}
+.content-1 p{
+    /* border: 2px solid black; */
+
+    color: #636262;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+    line-height: 20px;
+    font-size: 14px;
+    text-align:left;
+    margin: 20px 0px 70px;
+    padding: 20px 0px 0px;
+
+}
+.content-1 input{
+    width: 10%;
+    padding: 5px;
+    margin: 20px;
+}
+.content-1 .button button{
+    padding: 12px 40px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:#71cd14;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.content-1 .button button:hover{
+    /* transform:translateZ(120px); */
+    background-color: white;
+    color: #71cd14;
+    border: 1px solid rgb(42, 245, 42);
+}
+.content-1 .button span{
+    margin: 15px;
+    padding: 12px;
+    /* border: 2px solid black; */
+    background-color: #eeeeee;
+    transition: all 0.5 sec ease-in-out;
+    cursor: pointer;
+}
+.button span :hover{
+ /* transform: scale(1.5); */
+ box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.container-3{
+border: 2px solid black;
+height: 100vh;
+
+}
+
+.Reviews{
+    width: 70%;
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    background-color: #efeeee;
+}
+.Reviews button{
+    margin: 10px 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border: 1px solid #efeeee;
+}
+#Reviews{
+    background-color: #71cd14;
+    border: none;
+    color: white;
+}
+.rating{
+    /* border: 2px solid red; */
+    width: 70%;
+    border: 1px solid #636262;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.raters{
+    border: 2px solid red;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.raters1{
+    border: 2px solid orangered;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.reveiw-form{
+    border: 2px solid yellow;
+    width: 50%;
+
+}
+
+.overoll{
+    border: 2px solid green;
+    width: 40%;
+    background-color: #f6f6f6;
+    padding: 20px 0px;
+}
+.overoll h5{
+    font-size:24px ;
+    text-align: center;
+}
+.overoll h4{
+    font-size: 48px;
+    color: #71cd14;
+    margin: 0px 0px 8px;
+    text-align: center;
+}
+.overoll h6{
+    font-size: 14px;
+    text-align: center;
+}
+.based{
+    border: 2px solid blue;
+    width: 40%;
+}
+.based h3{
+    margin: 0px 0px 10px;
+    font-size: 18px;
+}
+
+.based ul li i{
+    color:#fdb600;
+}
+.based ul li{
+    color: #797979;
+    font-size: 16px;
+    list-style: none;
+    margin: 0px 0px 8px;
+}
+.blace{
+    border: 2px solid orchid;
+}
+</style>
 </head>
 <body>
     <div class="nav">
@@ -413,13 +575,9 @@ transform: translateZ(-10px);
 <h3>Faded SkyBlu Denim Jeans</h3>
 <h2>$149.99</h2>
 <ul class="list">
-                <li>
-                  <a class="active" href="#">
-                    <span>Category</span> : Household</a>
-                </li>
-                <li>
-                  <a href="#"> <span>Availibility</span> : In Stock</a>
-                </li>
+<li><span>category</span><span class="house"> :household</span></li>
+<li><span>Availibility</span> <span class="in"> : In Stock</span></li>
+<hr>
               </ul>
 
               <p>
@@ -428,11 +586,49 @@ transform: translateZ(-10px);
                 make your interior look awesome, and at the same time give you
                 the pleasant warm feeling during the winter.
               </p>
+              <label for="">Quantity</label>
+<input type="number" placeholder="0">
 
+
+<div class="button">
+    <button>Add to cart</button> <span><i class="fa-regular fa-gem"></i></span>
+    <span><i class="fa-regular fa-heart"></i></span>
+</div>
     </div>
-
     </div>
+ </div>
 
+ <div class="container-3">
+  <div class="Reviews">
+<button>Description</button>
+<button>Specification
+</button><button>Comments</button><button id="Reviews">Reviews</button>
+  </div>
+<div class="rating">
+<div class="raters">
+    <div class="raters1">
+
+
+    <div class="overoll">
+    <h5>Overall</h5>
+        <h4>4.0</h4>
+        <h6>(03 Reviews)</h6>
+    </div>
+    <div class="based">
+        <h3>Based on 3 Reviews</h3>
+        <ul>
+            <li>5 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+            <li>4 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+            <li>3 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+            <li>2 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+            <li>1 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+        </ul>
+    </div>
+    <div class="blace"></div>
+</div>
+</div>
+<div class="reveiw-form"></div>
+</div>
  </div>
 </body>
 </html>
