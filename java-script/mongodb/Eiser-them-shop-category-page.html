@@ -230,7 +230,7 @@ font-size: 14px;
 .bottom-header i{
     /* border: 2px solid black; */
     margin: 10px;
-    color: #2A2A2A;
+    color: #727272;
     transition: all 0.5s ease-in-out;
 
 }
@@ -398,102 +398,305 @@ hr{
  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.container-3{
-border: 2px solid black;
-height: 100vh;
 
+.last-container{
+    /* border: 2px solid black; */
+    width: 100%;
 }
-
-.Reviews{
-    width: 70%;
+.last-container .btn{
+    /* border: 2px solid yellow; */
+    text-align: center;
+    width: 72.8%;
     margin: auto;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    background-color: #efeeee;
+background-color:#f6f6f6;
 }
-.Reviews button{
-    margin: 10px 10px;
-    padding: 10px 25px;
+.last-container .btn button{
+    padding: 10px 20px;
+    margin: 10px;
     cursor: pointer;
-    background-color: white;
     border: none;
-    border: 1px solid #efeeee;
+    background-color: white;
 }
 #Reviews{
     background-color: #71cd14;
-    border: none;
     color: white;
+    border: none;
+
 }
-.rating{
-    /* border: 2px solid red; */
+.container-fluid{
+    border: 1px solid rgb(230, 224, 224);
     width: 70%;
-    border: 1px solid #636262;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    padding: 20px;
+    border-top:none ;
+    flex-wrap: wrap;
 }
-.raters{
-    border: 2px solid red;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
 
-
+.left-Review{
+    /* border: 2px solid blue; */
+    width: 45%;
 }
-.raters1{
-    border: 2px solid orangered;
+.left-Review .box{
+    /* border: 2px solid purple; */
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
 }
-.reveiw-form{
-    border: 2px solid yellow;
-    width: 50%;
-
-}
-
-.overoll{
-    border: 2px solid green;
+.innerbox1{
+    /* border: 2px solid red; */
     width: 40%;
+    text-align: center;
+    padding:20px 0px ;
     background-color: #f6f6f6;
-    padding: 20px 0px;
 }
-.overoll h5{
-    font-size:24px ;
-    text-align: center;
+.innerbox1 h5{
+    font-size: 24px;
+
 }
-.overoll h4{
+.innerbox1 h4{
     font-size: 48px;
-    color: #71cd14;
     margin: 0px 0px 8px;
-    text-align: center;
+    color: #71cd14;
+    font-weight: bolder;
+    font-family: sans-serif;
+
 }
-.overoll h6{
-    font-size: 14px;
-    text-align: center;
-}
-.based{
-    border: 2px solid blue;
-    width: 40%;
-}
-.based h3{
-    margin: 0px 0px 10px;
-    font-size: 18px;
+.innerbox1 h6{
+font-size: 14px;
+color: #797979;
+
 }
 
-.based ul li i{
-    color:#fdb600;
+.innerbox2{
+    /* border: 2px solid green; */
+    width: 40%;
 }
-.based ul li{
+.left-Review .innerbox2 h3{
+ font-size: 18px;
+ margin-bottom:10px;
+ font-weight: 100;
+}
+.left-Review .innerbox2 ul li{
+ margin-bottom:10px;
+ list-style: none;
+ color: #797979;
+}
+.left-Review .innerbox2 ul li i{
+ color: #fbd600;
+ font-size: 12px;
+}
+
+.right-Review{
+    /* border: 2px solid rgb(63, 229, 22); */
+    width: 45%;
+    padding: 0px 30px;
+}
+.box1{
+    /* border: 2px solid yellow; */
+    padding: 0px 30px;
+
+}
+.image1{
+    /* border: 2px solid red; */
+    position: relative;
+    margin: 20px 0px;
+}
+.image1 span{
+ position: absolute;
+ top: 10px;
+ left: 80px;
+}
+.image1 p{
+ position: absolute;
+ top: 35px;
+ left: 80px;
+ color: #fbd600;
+ font-size: 12px;
+}
+
+.image1 h5{
+    padding: 10px 0px 0px;
+    font-size: 14px;
     color: #797979;
+    font-weight: 100;
+    text-transform: capitalize;
+    /* font-family: sans-serif; */
+}
+
+.right-Review h3{
+    font-size: 24px;
+    margin: 0px 0px 20px;
+    font-weight: 100;
+}
+.right-Review p{
+    margin: 10px 0px;
+    color: #797979;
+}
+.right-Review p i{
+    margin: 10px 0px;
+    color:#fbd600;
+    font-size: 12px;
+}
+
+.right-Review input{
+    padding: 8px 12px;
+    border: 1px solid rgb(217, 215, 215);
+    width: 100%;
+    margin: 10px 0px;
     font-size: 16px;
+    outline-offset: 2px;
+    outline-color: rgb(24, 207, 207);
+    /* box-shadow: 0px 0px 10px rgb(0, 229, 255); */
+}
+.right-Review textarea{
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 10px 0px;
+    padding:0px 12px;
+    border: 1px solid rgb(217, 215, 215);
+    outline-offset: 2px;
+    outline-color: rgb(24, 207, 207);
+}
+.submit{
+    /* border: 2px solid red; */
+    text-align: right;
+}
+.submit button{
+    padding: 12px 30px;
+    border: none;
+    background-color: #71cd14;
+    transition: all 0.8s ;
+    color: white;
+    font-size: 16px;
+}
+.submit button:hover{
+    background-color: white;
+    color: #71cd14;
+    border: 1px solid #71cd14;
+    transform: scaleZ(1.5s);
+}
+
+
+.footer{
+    /* border: 2px solid red; */
+    background: #0d0d1f;
+    padding-bottom: 50px;
+    margin: 50px 0px;
+    padding:5rem 0rem 8rem;
+}
+.footer-container{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+.top-products{
+    margin:20px;
+    color: white;
+    text-align: left;
+    /* padding: 0px 30; */
+}
+.top-products ul li{
     list-style: none;
-    margin: 0px 0px 8px;
+text-align: left;
+margin: 20px 0px;
+color: #4A4A4a;
+font-size: 18px;
+text-transform: capitalize;
+font-family:sans-serif;
+
 }
-.blace{
-    border: 2px solid orchid;
+.top-products ul li:hover{
+    color: #fff;
 }
+.top-products h2{
+    margin: 20px 0px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.top-products ul li input{
+padding:19px 10px;
+background-color: #4A4A4a;
+border: none;
+outline-color: blue;
+/* text-align: left; */
+width: 70%;
+
+
+}
+#news-letter{
+    /* border: 2px solid yellow; */
+    position: relative;
+}
+#last button{
+    /* border: 2px solid green; */
+    border: none;
+    position:absolute;
+    right:60px;
+    bottom:78px;
+    padding: 10px 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #71cd14;
+    color:white;
+
+}
+#last button:hover{
+    color:white;
+    background-color: #59a110;
+}
+
+
+.bottom-footer{
+    /* border: 2px solid red; */
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+margin: auto;
+/* padding: 0px 50px; */
+
+}
+
+.left-footer p{
+    color: white;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-right: 16rem;
+}
+.left-footer p span{
+    color: #71cd14;
+    cursor: pointer;
+}
+
+.right-footer{
+    /* border: 2px solid yellow; */
+    padding: 15px;
+    margin-right: 5rem;
+}
+.right-footer a{
+    margin: 4px;
+    padding: 15px 17px;
+    /* border: 2px solid white; */
+    color: white;
+    background-color: #4A4A4a;
+    transition: all 0.5s ease-in-out;
+}
+.right-footer a:hover{
+    background-color: #71cd14;
+}
+#facebook{
+    padding: 15px 20px;
+}
+
 </style>
 </head>
 <body>
@@ -598,37 +801,133 @@ height: 100vh;
     </div>
  </div>
 
- <div class="container-3">
-  <div class="Reviews">
-<button>Description</button>
-<button>Specification
-</button><button>Comments</button><button id="Reviews">Reviews</button>
-  </div>
-<div class="rating">
-<div class="raters">
-    <div class="raters1">
+ <div class="last-container">
+<div class="btn">
+    <button>Description</button><button>Specification</button><button>Comments</button><button id="Reviews">Reviews</button>
+</div>
+    <div class="container-fluid">
+     <div class="left-Review">
+      <div class="box">
+        <div class="innerbox1">
+            <h5>Overall</h5>
+            <h4>4.0</h4>
+            <h6>(03 Reviews)</h6>
+        </div>
+        <div class="innerbox2">
+<h3>Based on 3 Reviews</h3>
+<ul>
+    <li>5 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+    <li>4 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+    <li>3 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+    <li>2 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+    <li>
+        1 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 01
+    </li></ul>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="image1">
+            <img src="https://themewagon.github.io/eiser/img/product/single-product/review-1.png" alt="">
+                    <span>Blake Ruiz</span>
+                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h5>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="image1">
+            <img src="https://themewagon.github.io/eiser/img/product/single-product/review-2.png" alt="">
+                    <span>Blake Ruiz</span>
+                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h5>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="image1">
+            <img src="https://themewagon.github.io/eiser/img/product/single-product/review-3.png" alt="">
+                    <span>Blake Ruiz</span>
+                     <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                     <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h5>
+        </div>
+      </div>
 
-
-    <div class="overoll">
-    <h5>Overall</h5>
-        <h4>4.0</h4>
-        <h6>(03 Reviews)</h6>
+     </div>
+     <div class="right-Review">
+        <h3>Add a Review</h3>
+        <p>Your Rating:<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      Outstanding</p>
+        <div class="form">
+            <input type="text" placeholder="Your Full name"><br>
+            <input type="text" placeholder="Email Address"><br>
+            <input type="text" placeholder="Phone number "><br>
+             <textarea placeholder="review"></textarea>
+             <div class="submit">
+                <button>Submit Now</button>
+             </div>
+        </div>
+     </div>
     </div>
-    <div class="based">
-        <h3>Based on 3 Reviews</h3>
+</div>
+
+
+<div class="footer">
+    <div class="footer-container">
+    <div class="top-products">
+        <h2>Top Products</h2>
         <ul>
-            <li>5 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
-            <li>4 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
-            <li>3 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
-            <li>2 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
-            <li>1 Star<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>      01</li>
+            <li>Manage Website</li>
+            <li>manage reputation</li>
+            <li>power tools</li>
+            <li>marketing service</li>
         </ul>
     </div>
-    <div class="blace"></div>
+    <div class="top-products">
+        <h2>Quick links</h2>
+        <ul>
+            <li>jobs</li>
+            <li>brand assets</li>
+            <li>investor relations</li>
+            <li>tearm of service</li>
+        </ul>
+    </div>
+    <div class="top-products">
+        <h2>features</h2>
+        <ul>
+        <li>jobs</li>
+            <li>brand assets</li>
+            <li>investor relations</li>
+            <li>tearm of service</li>
+        </ul>
+    </div>
+    <div class="top-products">
+        <h2>resources</h2>
+        <ul>
+            <li>guides</li>
+            <li>research</li>
+            <li>expert</li>
+            <li>agencies</li>
+        </ul>
+    </div>
+    <div class="top-products" id="news-letter">
+        <h2>newsletter</h2>
+        <ul id="last">
+            <li>You can trust us. we only send promo offers,</li>
+            <li><input type="text" placeholder="Your Email Address"></li>
+            <li > <button>subscribe</button></li>
+
+        </ul>
+    </div>
+    </div>
+    <div class="bottom-footer">
+    <div class="left-footer">
+        <p>Copyright ©2024 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by <span>Colorlib</span> </p>
+    </div>
+    <div class="right-footer">
+        <a id="facebook" href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-dribbble"></i></a>
+        <a href=""><i class="fa-brands fa-behance"></i></a>
+
+    </div>
+    </div>
 </div>
-</div>
-<div class="reveiw-form"></div>
-</div>
- </div>
 </body>
 </html>
