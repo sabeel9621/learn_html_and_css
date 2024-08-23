@@ -1,403 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
 
-        *{
-            margin: 0%;
-            padding: 0%;
-        box-sizing:border-box;
-        }
-  .header{
-    text-align: center;
-    padding: 20px 0px 10px 0px;
-    font-size: 25px;
-    font-family: "Bree Serif", serif;
+                    *{
+                        margin: 0%;
+                        padding: 0%;
+                    box-sizing:border-box;
+                    }
+              .header{
+                text-align: center;
+                padding: 20px 0px 10px 0px;
+                font-size: 25px;
+                font-family: "Bree Serif", serif;
 
-  }
-  hr{
-    width: 20%;
-    margin: auto;
-  }
-  .main{
-    width: 90%;
-    margin:50px auto;
-     background-color: #f1f1f1c2;
+              }
+              hr{
+                width: 20%;
+                margin: auto;
+              }
+              .main{
+                width: 90%;
+                margin:50px auto;
+                 background-color: #f1f1f1c2;
 
-  }
-
-
-        .container{
-            width: 80%;
-            margin: auto;
-            /* border: 2px solid black; */
-            display: flex;
-            flex-wrap: wrap;
-            padding:20px;
-            justify-content: space-evenly;
-        padding: 50px;
-
-        }
-
-        .box{
-
-           width: 310px;
-            /* border: 2px solid red; */
-            margin: 10px;
-        }
-        .box img{
-            width: 100%;
-            height: 100%;
-        }
-        .button{
-            margin-top: 40px;
-            /* width: 20%; */
-            padding: 10px;/
-
-        }
-        .button button{
-            padding: 10px 40px;
-            background-color: rgb(91, 90, 90);
-            color: #ffffff;
-            font-size: 16px;
-            border: none;
-        }
-        button:hover{
-            background-color: black;
-            cursor:pointer
-        }
-
-        .mid-container{
-            width: 90%;
-            margin: auto;
-            /* border: 2px solid yellow; */
-        border:1px solid rgba(219, 218, 218, 0.537);
-        padding-bottom: 35px;
+              }
 
 
-        }
-        .item1{
-            width: 620px;
-             border: 2px solid;
-        }
-        .item2{
-            width: 620px;
-            /* border: 2px solid blue; */
-        }
-        .item2 img{
-            width: 100%;
-            height: 100%;
-        }
-        .item1 img{
-            width: 100%;
-            height: 100%;
-        }
+                    .container{
+                        width: 80%;
+                        margin: auto;
+                        /* border: 2px solid black; */
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding:20px;
+                        justify-content: space-evenly;
+                    padding: 50px;
+
+                    }
+
+                    .box{
+
+                       width: 310px;
+                        /* border: 2px solid red; */
+                        margin: 10px;
+                    }
+                    .box img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .button{
+                        margin-top: 40px;
+                        /* width: 20%; */
+                        padding: 10px;/
+
+                    }
+                    .button button{
+                        padding: 10px 40px;
+                        background-color: rgb(91, 90, 90);
+                        color: #ffffff;
+                        font-size: 16px;
+                        border: none;
+                    }
+                    button:hover{
+                        background-color: black;
+                        cursor:pointer
+                    }
+
+                    .mid-container{
+                        width: 90%;
+                        margin: auto;
+                        /* border: 2px solid yellow; */
+                    border:1px solid rgba(219, 218, 218, 0.537);
+                    padding-bottom: 35px;
+
+
+                    }
+                    .item1{
+                        width: 620px;
+                         border: 2px solid;
+                    }
+                    .item2{
+                        width: 620px;
+                        /* border: 2px solid blue; */
+                    }
+                    .item2 img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .item1 img{
+                        width: 100%;
+                        height: 100%;
+                    }
 
 
 
 
-        .item img{
-            width: 100%;
-        }
+                    .item img{
+                        width: 100%;
+                    }
 
-        .content{
-            /* border: 2px solid red; */
-            /* width:%; */
-            margin: auto;
-            padding: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-        }
-        .mid-container h3{
-            text-align: center;
-            padding: 20px 0px 10px 0px;
-            font-size: 25px;
-            font-weight: bold;
-        }
-        .item1 p{
-            text-align: center;
-            font-size: 18px;
-            text-transform: capitalize;
-            /* margin-top: 5px; */
-            font-weight: bold;
-        }
-        .item2 p{
-            text-align: center;
-            font-size: 18px;
-            /* margin-top: 5px; */
-            font-weight: bold;
-        }
+                    .content{
+                        /* border: 2px solid red; */
+                        /* width:%; */
+                        margin: auto;
+                        padding: 30px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 40px;
+                    }
+                    .mid-container h3{
+                        text-align: center;
+                        padding: 20px 0px 10px 0px;
+                        font-size: 25px;
+                        font-weight: bold;
+                    }
+                    .item1 p{
+                        text-align: center;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        /* margin-top: 5px; */
+                        font-weight: bold;
+                    }
+                    .item2 p{
+                        text-align: center;
+                        font-size: 18px;
+                        /* margin-top: 5px; */
+                        font-weight: bold;
+                    }
 
-        .content1{
-        border:1px solid rgba(219, 218, 218, 0.537);
-            width: 90%;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:space-between;
-            align-items: center;
-            margin-top: 30px;
+                    .content1{
+                    border:1px solid rgba(219, 218, 218, 0.537);
+                        width: 90%;
+                        margin: auto;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content:space-between;
+                        align-items: center;
+                        margin-top: 30px;
 
-        }
-        .left{
-            width: 700px;
-            /* border: 2px solid black; */
-        }
-        .right{
-            width: 500px;
-            /* border: 2px solid yellow; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* margin-left: 40px; */
-
-
-        }
-        .left h5{
-            font-size: 25px;
-            padding: 5px;
-        }
-        .left p{
-            font-size: 20px;
-        }
+                    }
+                    .left{
+                        width: 700px;
+                        /* border: 2px solid black; */
+                    }
+                    .right{
+                        width: 500px;
+                        /* border: 2px solid yellow; */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        /* margin-left: 40px; */
 
 
-        .input{
-            width:300px ;
-            /* border: 2px solid red; */
-            /* padding: 8px; */
-        }
-
-        .input input{
-            width: 100%;
-            padding: 10px;
-            font-size: 20px;
-        }
-
-        .btn{
-            width: 180px;
-            /* border: 2px solid blue; */
-            margin-right: 80px;
-            /* padding: 10px; */
-        }
-
-        .subscribe{
-            width: 100%;
-            padding: 13px;
-            color: #ffffff;
-            background-color: rgb(179, 175, 175);
-            font-size: 18px;
-            text-transform: capitalize;
-            border: none;
-            border-radius: 5px;
-            margin: 2px;
-
-        }
-        .footer{
-            width: 90%;
-            /* height: 90vh; */
-            margin: auto;
-            border:1px solid rgba(219, 218, 218, 0.537);
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 10px;
-            margin-top: 30px;
+                    }
+                    .left h5{
+                        font-size: 25px;
+                        padding: 5px;
+                    }
+                    .left p{
+                        font-size: 20px;
+                    }
 
 
-        }
+                    .input{
+                        width:300px ;
+                        /* border: 2px solid red; */
+                        /* padding: 8px; */
+                    }
 
-   .left1{
-    width: 450px;
-    /* padding: 5px; */
-    margin-right: 50px;
-    flex-grow: calc(1);
+                    .input input{
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 20px;
+                    }
 
-    /* border: 2px solid black; */
-   }
-   .left1 img{
-    width: 100%;
-   }
-    p{
-      font-size: 20px;
-      padding: 5px;
-    }
+                    .btn{
+                        width: 180px;
+                        /* border: 2px solid blue; */
+                        margin-right: 80px;
+                        /* padding: 10px; */
+                    }
 
-   .mid{
-    width: 350px;
-    /* border: 2px solid red; */
-    /* padding: 5px; */
-margin-right: 50px;
-flex-grow: calc(1);
-   }
-   .mid img{
-    width: 100%;
-   }
+                    .subscribe{
+                        width: 100%;
+                        padding: 13px;
+                        color: #ffffff;
+                        background-color: rgb(179, 175, 175);
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        border: none;
+                        border-radius: 5px;
+                        margin: 2px;
 
-   .inner{
-    height: 230px;
-    border: 1px solid black;
-    /* margin-bottom: 30px; */
-   }
-   .inner img{
-    width: 100%;
-    height: 90%;
-
-   }
-
-
-   .inner1{
-    width: 100%;
-    height: 240px;
-    /* border: 2px solid yellow; */
-    margin-top: 60px;
-    flex-grow:calc(1);
-   }
-   .inner1 img{
-    height: 97%;
-   }
-   .right1{
-    width: 350px;
-    /* border: 2px solid green; */
-    margin-right: 50px;
-    flex-grow:calc(1);
-   }
-.right1 img{
-    width: 100%;
-    height: 100%;
-
-}
-.inner2{
-        /* border: 2px solid red; */
-    height: 230px;
-    flex-grow:calc(1);
-    /* margin-top: 62px; */
-    /* padding: 5px; */
+                    }
+                    .footer{
+                        width: 90%;
+                        /* height: 90vh; */
+                        margin: auto;
+                        border:1px solid rgba(219, 218, 218, 0.537);
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        padding: 10px;
+                        margin-top: 30px;
 
 
-}
-.inner3{
-    border: 1px solid rgb(13, 13, 13);
-    height: 230px;
-    margin-top: 62px;
-    padding: 5px;
-    flex-grow:calc(1);
+                    }
 
-}
+               .left1{
+                width: 450px;
+                /* padding: 5px; */
+                margin-right: 50px;
+                flex-grow: calc(1);
 
-.inner3 img{
-    height: 100%;
-}
+                /* border: 2px solid black; */
+               }
+               .left1 img{
+                width: 100%;
+               }
+                p{
+                  font-size: 20px;
+                  padding: 5px;
+                }
 
-.inner2 img{
-    height: 100%;
-}
+               .mid{
+                width: 350px;
+                /* border: 2px solid red; */
+                /* padding: 5px; */
+            margin-right: 50px;
+            flex-grow: calc(1);
+               }
+               .mid img{
+                width: 100%;
+               }
+
+               .inner{
+                height: 230px;
+                border: 1px solid black;
+                /* margin-bottom: 30px; */
+               }
+               .inner img{
+                width: 100%;
+                height: 90%;
+
+               }
 
 
-    </style>
-</head>
-<body>
+               .inner1{
+                width: 100%;
+                height: 240px;
+                /* border: 2px solid yellow; */
+                margin-top: 60px;
+                flex-grow:calc(1);
+               }
+               .inner1 img{
+                height: 97%;
+               }
+               .right1{
+                width: 350px;
+                margin-right: 50px;
+                flex-grow:calc(1);
+               }
+            .right1 img{
+                width: 100%;
+                height: 100%;
 
-<div class="main">
-    <div class="header">
-<h4>Welcome to DigiHost Web of Digital World</h4>
-</div>
-<hr>
-    <div class="container">
+            }
+            .inner2{
+                height: 230px;
+                flex-grow:calc(1);
+            }
+            .inner3{
+                border: 1px solid rgb(13, 13, 13);
+                height: 230px;
+                margin-top: 62px;
+                padding: 5px;
+                flex-grow:calc(1);
 
+            }
 
-        <div class="box">
-<img src="https://www.digihost.in/assets/images/portfolio/project_02/assesment-portal.jpg" alt="">
+            .inner3 img{
+                height: 100%;
+            }
+
+            .inner2 img{
+                height: 100%;
+            }
+
+                    @media screen and (max-width: 1024px) {
+                        .content, .content1, .footer {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .item1, .item2 {
+                            width: 90%;
+                        }
+                        .left, .right, .left1, .mid, .right1 {
+                            width: 100%;
+                        }
+                        .input, .btn {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .footer {
+                            padding: 20px;
+                        }
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        .header {
+                            font-size: 20px;
+                        }
+                        .button button {
+                            padding: 10px 20px;
+                        }
+                        .mid-container h3 {
+                            font-size: 20px;
+                        }
+                        .left h5, .left p {
+                            font-size: 18px;
+                        }
+                        .input input {
+                            font-size: 16px;
+                        }
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        .box {
+                            width: 100%;
+                        }
+                        .item1, .item2 {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        .left, .right {
+                            width: 100%;
+                        }
+                        .input, .btn {
+                            width: 100%;
+                            margin-top: 10px;
+                        }
+                        .footer {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        .left1, .mid, .right1 {
+                            width: 100%;
+                        }
+                    }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h4>Welcome to DigiHost Web of Digital World</h4>
+            </div>
+            <hr />
+            <div class="container">
+                <div class="box">
+                    <img
+                        src="https://www.digihost.in/assets/images/portfolio/project_02/assesment-portal.jpg"
+                        alt="" />
+                </div>
+                <div class="box">
+                    <img
+                        src="https://www.digihost.in/assets/images/portfolio/project_02/cmc.jpg"
+                        alt="" />
+                </div>
+                <div class="box">
+                    <img
+                        src="https://www.digihost.in/assets/images/portfolio/project_02/Mindfullness-Meditation-App-1280-1617.jpg"
+                        alt="" />
+                </div>
+                <div class="button">
+                    <button>shop now</button>
+                </div>
+            </div>
         </div>
-        <div class="box">
-<img src="https://www.digihost.in/assets/images/portfolio/project_02/cmc.jpg" alt="">
+
+        <div class="mid-container">
+            <h3>Featured Products</h3>
+            <div class="content">
+                <div class="item1">
+                    <img
+                        src="https://img.freepik.com/free-photo/red-gold-headphones-digital-device_53876-97303.jpg"
+                        alt="product" />
+                    <p>philips headphone</p>
+                    <p>$1500</p>
+                </div>
+                <div class="item2">
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&amp;w=1000&amp;q=80"
+                        alt="product" />
+                    <p>boAt Roackers Headphone</p>
+                    <p>$1800</p>
+                </div>
+            </div>
         </div>
-        <div class="box">
-<img src="https://www.digihost.in/assets/images/portfolio/project_02/Mindfullness-Meditation-App-1280-1617.jpg" alt="">
+
+        <div class="content1">
+            <div class="left">
+                <h5>Newsletter</h5>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eos vitae consectetur, laboriosam neque autem fuga magni
+                    voluptatibus nisi tempora laborum ratione ex similique.
+                </p>
+            </div>
+            <div class="right">
+                <div class="input">
+                    <input type="text" placeholder="Email Address" />
+                </div>
+                <div class="btn">
+                    <button class="subscribe">subscribe</button>
+                </div>
+            </div>
         </div>
-        <div class="button">
-            <button>shop now</button>
+
+        <div class="footer">
+            <div class="left1">
+                <img
+                    src="https://www.digihost.in/assets/images/portfolio/project_02/worldflair-1280-1600.jpg"
+                    alt="" />
+                <p>CSI Green And White Rugby Ball</p>
+                <p>$5000</p>
+            </div>
+            <div class="mid">
+                <div class="inner">
+                    <img
+                        src="https://static.toiimg.com/thumb/msid-85477502,width-1280,height-720,resizemode-4/.jpg"
+                        alt="" />
+                </div>
+                <p>Poly Voyager Free 60 TWS</p>
+                <p>$1500</p>
+                <div class="inner1">
+                    <img
+                        src="https://www.hdwallpapers.in/download/headphone_black_background_hd_music-1280x720.jpg"
+                        alt="" />
+                </div>
+                <p>Philips Wireless Headphones</p>
+                <p>$1100</p>
+            </div>
+            <div class="right1">
+                <div class="inner2">
+                    <img
+                        src="https://i.teknolojioku.com/2/1280/720/storage/files/images/2023/06/09/poly-voyager-free-60-tws-1-0xd3-cov-CE9c_cover.jpg"
+                        alt="" />
+                </div>
+                <p>Pebble ELITE Headphone</p>
+                <p>$1200</p>
+                <div class="inner3">
+                    <img
+                        src="https://static.toiimg.com/thumb/msid-96942132,width-1280,height-720,resizemode-4/.jpg"
+                        alt="" />
+                </div>
+                <p>Pebble ELITE Headphone</p>
+                <p>$900</p>
+            </div>
         </div>
-    </div>
-
-</div>
-
-<div class="mid-container">
-    <h3>Featured Products</h3>
-    <div class="content">
-
-
-    <div class="item1">
-        <img src="https://img.freepik.com/free-photo/red-gold-headphones-digital-device_53876-97303.jpg" alt="product">
-<p>philips headphone</p>
-  <p>$1500</p>
-    </div>
-    <div class="item2">
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D&amp;w=1000&amp;q=80" alt="product">
-        <p>boAt Roackers Headphone</p>
-  <p>$1800</p>
-    </div>
-    </div>
-
-</div>
-
-<div class="content1">
-    <div class="left">
-        <h5>Newsletter</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos vitae consectetur, laboriosam neque autem fuga magni voluptatibus nisi tempora laborum ratione ex similique.</p>
-    </div>
-    <div class="right">
-        <div class="input">
-                <input type="text" placeholder="Email Address">
-        </div>
-<div class="btn">
-    <button class="subscribe">subscribe</button>
-</div>
-
-    </div>
-</div>
-
-<div class="footer">
-    <div class="left1">
-<img src="https://www.digihost.in/assets/images/portfolio/project_02/worldflair-1280-1600.jpg" alt="">
-<p>CSI Green And White Rugby Ball
-</p>
-<p>$5000</p>
-    </div>
-<div class="mid">
-        <div class="inner">
-<img src="https://static.toiimg.com/thumb/msid-85477502,width-1280,height-720,resizemode-4/.jpg" alt="">
-        </div>
-        <p>Poly Voyager Free 60 TWS
-</p>
-<p>$1500</p>
-        <div class="inner1">
-<img src="https://www.hdwallpapers.in/download/headphone_black_background_hd_music-1280x720.jpg" alt="">
-        </div>
-        <p>Philips Wireless Headphones
-</p>
-<p>$1100</p>
-    </div>
-    <div class="right1">
-        <div class="inner2">
-            <img src="https://i.teknolojioku.com/2/1280/720/storage/files/images/2023/06/09/poly-voyager-free-60-tws-1-0xd3-cov-CE9c_cover.jpg" alt="">
-        </div>
-        <p>Pebble ELITE Headphone</p>
-        <p>$1200</p>
-        <div class="inner3">
-            <img src="https://static.toiimg.com/thumb/msid-96942132,width-1280,height-720,resizemode-4/.jpg" alt="">
-        </div>
-        <p>Pebble ELITE Headphone</p>
-        <p>$900</p>
-    </div>
-
-
-</div>
-
-</body>
+    </body>
 </html>

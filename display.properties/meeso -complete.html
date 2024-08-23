@@ -209,7 +209,101 @@
                     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
                     no-repeat 13px center;
             }
-        
+
+
+                    /* Media Queries */
+        @media (max-width: 1024px) {
+            .container {
+                width: 50%;
+            }
+            .header ul {
+                flex-direction: column;
+            }
+            .header ul li {
+                margin: 5px 0;
+                padding: 5px;
+                border-right: none;
+                border-bottom: 2px solid #eee;
+            }
+            .header ul li:nth-child(1),
+            .header ul li:nth-child(2) {
+                border-bottom: 2px solid #eee;
+            }
+            input.text2 {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 80%;
+                margin-top: 10%;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header img {
+                width: 100px;
+                height: 80px;
+                margin: 0;
+            }
+            input.text2 {
+                width: 80%;
+                margin-right: 0;
+            }
+            .header ul {
+                width: 100%;
+                justify-content: space-around;
+                flex-direction: row;
+            }
+            .header ul li {
+                margin: 5px 0;
+                padding: 5px;
+                border-right: none;
+                border-bottom: none;
+            }
+            .box1 h6 {
+                font-size: 16px;
+            }
+            button {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 95%;
+                margin-top: 15%;
+            }
+            .header {
+                align-items: center;
+            }
+            .header img {
+                width: 80px;
+                height: 60px;
+            }
+            input.text2 {
+                width: 90%;
+            }
+            .header ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header ul li {
+                margin: 10px 0;
+                padding: 10px;
+                border-bottom: none;
+            }
+            .box1 h6 {
+                font-size: 14px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+
+
         </style>
     </head>
     <body>

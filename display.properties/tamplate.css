@@ -75,7 +75,7 @@ span i{
     flex-direction: column;
     position: absolute;
     top: 51px;
-    left: -10px;
+    left: 0px;
     z-index: 1;
     background-color: white;
 }
