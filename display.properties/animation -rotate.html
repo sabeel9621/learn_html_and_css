@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,9 +15,7 @@
 
 
 
-/* .main{
-    border:2px solid black;
-} */
+
 .second{
     border: 2px solid red;
     width: 400px;
@@ -40,25 +39,33 @@
     width: 400px;
     height: 300px;
     border: 2px solid red;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.9s ease-in-out;
     color: white;
+    text-align: center;
+    text-transform: capitalize;
 }
 .second:hover .content{
     transform: translateY(-120px);
 }
 
 .icon{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 50px;
     border: 2px solid green;
     position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
+    top: 10px;
+    right: -200px;
     transition: all 2s ease-in-out;
 }
+.icon h1{
+    text-align: center;
+        background: linear-gradient(to right,red,blue);
+    background-clip: text;
+    color: transparent;
+}
+
 .second:hover .icon{
-    transform: translatex(-50px);
+    transform: translatex(-220px);
     display: block;
 }
 
@@ -95,7 +102,7 @@
 }
 
 .contineu{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width: 400px ;
     height: 300px;
     display: flex;
@@ -120,7 +127,6 @@
 }
 
 .col3{
-    border: 2px solid red;
     height: 50px;
     width: 50px;
     position: absolute;
@@ -128,6 +134,15 @@
     left: 160px;
     transition: all 0.5s ease-in-out;
     display: none;
+}
+.col3 i{
+    font-size: 30px;
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+top: 8px;
 }
 .colom:hover .col3{
     display: block;
@@ -155,7 +170,7 @@
 }
 
 .main-container3:hover img{
-transform: scale(1.5);
+transform: scale(1.2);
 }
 .big{
     height: 0px;
@@ -174,7 +189,7 @@ transform: scale(1.5);
 
                 animation: box 0.5s infinite linear; */
 
-                transition: all 0.5s ease-in;
+                transition: all 1s ease-in;
             }
             .main-container3:hover .big {
                 display: block;
@@ -190,7 +205,7 @@ transform: scale(1.5);
 
             }
 
-            
+
 
     </style>
 </head>
@@ -208,7 +223,7 @@ transform: scale(1.5);
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
     <div class="icon">
-
+   <h1>Sabeel Khan </h1>
     </div>
 </div>
 
@@ -219,7 +234,7 @@ transform: scale(1.5);
                 <img src="https://themewagon.github.io/travela/img/explore-tour-1.jpg" alt="">
 
                 <div class="col3">
-                    <i class="fa-solid fa-link"></i>
+            <i class="fa-solid fa-plus"></i>
                 </div>
 
                 <div class="contineu">
