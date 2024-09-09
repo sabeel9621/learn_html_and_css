@@ -31,6 +31,7 @@
     color: white;
     font-family: sans-serif;
     font-weight: 100;
+    cursor: pointer;
 }
 
 .left-header ul li:hover {
@@ -68,7 +69,7 @@ span i {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 51px;
+    top: 70px;
     left: 0px;
     z-index: 1;
     background-color: white;
@@ -404,6 +405,10 @@ p i:hover {
     margin: 10px 10px;
 }
 
+.btn button:hover{
+    background-color: #999797;
+    color: #000000;
+}
 .section-5 {
     width: 100vw;
     height: 100vh;
