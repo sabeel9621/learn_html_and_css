@@ -79,4 +79,34 @@ console.log(`a:${a}, b:${b}`);
 let getcount = 100
 ++getcount; //If used prefix, with operator before operand(for example, ++x), the increment operator increments and returns the value after incrementing.
 getcount++ //If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
-console.log(getcount);
+// console.log(getcount);
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack and heap
+
+// stack ke andr sare(premitive data types ) aty hai jab bhe stack memory use hoti hia iska mtlb jo bhe variable decleare kiya hai uske copy milty hia
+
+// let myyoutubename = "heteshchaodhrydotcom"
+// let anothername = myyoutubename;
+// anothername = "chaiorcode"
+
+
+// console.log(myyoutubename)
+// console.log(anothername)
+
+
+//heap ke andr (non premitive data type ) ate hai jb bhe eam memory heap ke andr define hoti hai to bha se array ,object ka jo bhe value bote hi uska refference jata hi (original value) agr value me hoi changes hote hi to bo original value me hoga
+
+// let user = {
+//     name: "anil",
+//     email: "anil@gmail.com",
+//     upi:"anil@ybl"
+// }
+
+// let usertwo = user;
+// usertwo.email = "anilkumar@gmail.com"
+// console.log(user.email);
+// console.log(usertwo.email);
