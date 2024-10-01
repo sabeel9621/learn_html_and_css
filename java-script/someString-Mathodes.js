@@ -47,6 +47,32 @@ console.log(str1.endsWith('best!'));
 
 
 
+const pets = ['Dog', 'Cat', 'Bat']
+console.log(pets.includes("Cat")) //it also include a certain value among its enties or not
+
+
+console.log(GameName.indexOf('l')) //it indicates kon se indexing pr kon sa word hai
+
+
+const paragraph = "I think Ruth's dog is cuter than your dog!";
+
+const searchTerm = 'dog';
+
+console.log(
+    `Index of the last ${searchTerm} is ${paragraph.lastIndexOf(searchTerm)}`,
+);
+
+console.log(searchTerm)
+
+
+console.log(GameName.toLocaleLowerCase());//returns the value of the string converted to lower case according to any locale-specific case mappings
+
+console.log(GameName.toLocaleUpperCase());//returns the value of the string converted to upper case according to any locale-specific case mappings
+console.log(GameName)
+console.log(GameName.toString());
+
+
+
 
 
 
