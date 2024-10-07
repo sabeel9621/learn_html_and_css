@@ -1,4 +1,4 @@
-//
+//Array
 
 const myarr = [0, 1, 2, 3, 4, 5];
 const myheros = ["thor", "avengers", "loki"]
@@ -42,3 +42,10 @@ const myn2 = myarr.splice(1, 3);
 console.log("C", myarr);
 console.log(myn2);
 
+const myn3 = myarr.push(7, 8);
+console.log("D", myarr);
+console.log(myn3);
+
+const myn4 = myarr.pop();
+console.log("E", myarr);
+console.log(myn4)
